@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Necessite ant 1.5 au min et le JDK 1.4 -->
+<project default="doAll" name="2e" basedir="..">
+
+	<!-- répertoire pour les documents -->
+	<property name="docs.dir" location="${basedir}/2e Documents/" />
+	<property name="docs.file" value="2e_seconde" />
+
+	<!-- Sommaire -->
+	<property name="sommaire.dir" value="${basedir}/1S Documents" />
+	<property name="sommaire.file" value="sommaire" />
+
+	<!-- Chapitre N1 -->
+	<property name="n1.dir" value="${basedir}/N1 - Calcul numérique" />
+	<property name="n1.file" value="2e_n1_calcul_numérique" />
+
+	<!-- Chapitre N2 -->
+	<property name="n2.dir" value="${basedir}/N2 - Calcul littéral" />
+	<property name="n2.file" value="2e_n2_calcul_littéral" />
+
+
+	<target name="doAll">
+		<antcall target="mergePdf"/>
+	</target>
+
+	<target name="mergePdf">
+		<delete file="${docs.dir}/${docs.file}.pdf"/>
+		<echoxml file="2e_pdfsam.tmp.xml">
+			<filelist>
+				<file value="${n1.dir}/${n1.file}.pdf" />
+				<file value="${n2.dir}/${n2.file}.pdf" />
+			</filelist>
+		</echoxml>
+		<java jar="/Applications/pdfsam.app/Contents/Resources/Java/lib/pdfsam-console-2.3.1e.jar" fork="true" failonerror="true" output="output">
+			<jvmarg value="-Dlog4j.configuration=console-log4j.xml"/>
+			<arg value="-o"/>
+			<arg value="${docs.dir}/${docs.file}.pdf"/>
+			<arg value="-l"/>
+			<arg value="2e_pdfsam.tmp.xml"/>
+			<arg value="-pdfversion"/>
+			<arg value="3"/>
+			<arg value="concat"/>
+		</java>
+		<delete file="2e_pdfsam.tmp.xml"/>
+		<delete file="output"/>
+		<echo message="Création du fichier de cours ${docs.file}.pdf terminée"/>
+	</target>
+
+</project>

@@ -11,7 +11,7 @@ data-left="$2_e$-$N_1$"
 data-main-width="900">
 
 <!-- Addition et soustraction de nombres relatifs -->
-<div class="box" data-title="Addition et soustraction de nombres relatifs" data-time="2m">
+<div class="box" data-title="Addition et soustraction de nombres relatifs" data-num="$N_1$ \iPencil" data-date="1">
     <div class="titled hide" data-title="\boxE Exemple" data-color="#006666">
 		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
 			$\bullet\; -4-5 = -9$ & $\bullet\;-6-2=-4$ & $\bullet\;-2+2 = 0$ ||
@@ -25,40 +25,33 @@ data-main-width="900">
 		</div>
 	</div>
     
-   
+    <div class="info" data-label="S'entrainer" data-width="830">
+    	<exo-mathablette data-id="4-N1-5" data-height="350" data-num="0"></exo-mathablette>
+   </div>
 	
-    <div class="frame" data-title="Correction" data-width='600' data-title-style="font-variant: small-caps" data-label="Afficher la correction">
-        <div class="table" cells="*,*|w50%" data-table-style="width: 100%">
-        <div class="num">$a=-3$ ; $b=2$ et $c = 6$</div> &
-        <div class="num">c'est une fonction affine</div> ||
-        <div class="num">$a=36$ ; $b=-84$ et $c = 49$</div> &
-        <div class="num">$a=16$ ; $b=64$ et $c = 64$</div> ||
-        <div class="num">$a=9$ ; $b=0$ et $c = 49$</div> &
-        <div class="num">$a=16$ ; $b=-48$ et $c = 36$</div>    
-        </div>    
-    </div>
-    
+   
 	<div class="styled">
         Effectuer les opérations suivantes :
-        <div class="table" cells="*,*|w33%" data-table-style="width: 100%">
-            <div class="num"> $(-2)+(+4)$</div> &
-            <div class="num"> $-10-14$</div> &
-            <div class="num"> $(+7)+(+9)$</div> ||
-            <div class="num"> $16-17$</div>  &
-            <div class="num"> $-15-16$</div> &
-             <div class="num">$21-23$</div>  ||
-             <div class="num">$(-6)-(+21)$</div>  &
-             <div class="num">$(-30)-(-42)$</div>  &
-             <div class="num">$(-6)-(+21)$</div>  || 
-             <div class="num">$-6-19-7+7-(-2)$</div>  &
-             <div class="num">$4-8-6+7-6$</div>  &
-             <div class="num">$-45+9-6+3$</div>  
+        <div class="table" cells="*,*|w33%" data-table-class="input-grp-table" data-table-style="width: 100%" >
+            <div class="num" data-valign-num="middle"><math-input label="$(-2)+(+4) = $" valid="2|+2"  input-width="40"></math-input></div> &
+            <div class="num" data-valign-num="middle"><math-input label="$-10-14 = $" valid="-24"  input-width="40"></math-input></div> &
+            <div class="num" data-valign-num="middle"><math-input label="$(+7)+(+9) = $" valid="16|+16"  input-width="40"></math-input></div> ||
+            
+            <div class="num" data-valign-num="middle"><mi label="$16-17 = $" valid="-1" input-width="40"  input-width="40"></mi></div>  &
+            <div class="num" data-valign-num="middle"><mi label="$-15-16 = $" valid="-31"  input-width="40"></mi></div> &
+             <div class="num" data-valign-num="middle"><mi label="$21-23 = $" valid="-2"  input-width="40"></mi></div>  ||
+             <div class="num" data-valign-num="middle"><mi label="$(-6)-(+21) = $" valid="-27"  input-width="40"></mi></div>  &
+             <div class="num" data-valign-num="middle"><mi label="$(-30)-(-42) = $" valid="+12|12"  input-width="40"></mi></div> &
+            <div class="num" data-valign-num="middle"><mi label="$(-6)-(+21) = $" valid="-27"  input-width="40"></mi></div>  || 
+             <div class="num" data-valign-num="middle"><mi label="$-6-9+7-(-2)= $" valid="-6"  input-width="40"></mi></div>  &
+             <div class="num" data-valign-num="middle"><mi label="$4-8+7-6= $" valid="-16"  input-width="40"></mi></div>  &
+              <div class="num" data-valign-num="middle"><mi label="$-5+9-6+3= $" valid="+1|1" input-width="40"></mi></div> 
         </div>
 	</div>
 </div>	
 
 <!-- Multiplication et division de nombres relatif -->
-<div class="box" data-title="Multiplication et division de nombres relatifs" data-time="2m">
+<div class="box" data-title="Multiplication et division de nombres relatifs" data-num="$N_2$ \iPencil">
 	<div class="titled hide" data-title="\boxP Propriétés : multiplication" data-color="#666666">
 		<div class="table" cells="*,*|w25%" data-table-style="width: 100%">
 			\num1 $(+5)\times(-3) = -15$  & \num2 $(+2)\times(+9) = +18$  & \num3 $(-3)\times(+7) = -21$ & \num4 $(-5)\times(-8) = +40$  
@@ -67,29 +60,26 @@ data-main-width="900">
 	
 	<div class="titled hide" data-title="\boxP Propriétés : division" data-color="#666666">
 		<div class="table" cells="*,*|w25%" data-table-style="width: 100%">
-			\num1 $(+10)\div(-2) = -5$  & \num2 $(+2)\div(+2) = +1$  & \num3 $(-9)\div(+3) = -3$ & \num4 $(-20)\div(-10) = +2$  
+			\num1 $(+10)\div(-2) = -5$  & \num2 $(+2)\div(+2) = +1$  & \num3 $(-9)\div(+3) = -3$ & \num4 $(-2)\div(-3) = +6$  
 		</div>
 	</div>
 	
 	<div class="titled hide" data-title="\boxP Propriété" data-color="#666666">
-		Si le nombre de signe "-" est pair le produit est positif. Si le nombre de signe "-" est impair le produit est négatif.
+		Si le nombre de signe "-" est pair le produit ou le quotient est positif. Si le nombre de signe "-" est impair le produit ou le quotient est négatif.
 	</div>
     
     <div class="styled">
         Effectuer les opérations suivantes :
-        <div class="table" cells="*,*|w33%" data-table-style="width: 100%">
-            <div class="num"> $(-2)+(+4)$</div> &
-            <div class="num"> $-10-14$</div> &
-            <div class="num"> $(+7)+(+9)$</div> ||
-            <div class="num"> $16-17$</div>  &
-            <div class="num"> $-15-16$</div> &
-             <div class="num">$21-23$</div>  ||
-             <div class="num">$(-6)-(+21)$</div>  &
-             <div class="num">$(-30)-(-42)$</div>  &
-             <div class="num">$(-6)-(+21)$</div>  || 
-             <div class="num">$-6-19-7+7-(-2)$</div>  &
-             <div class="num">$4-8-6+7-6$</div>  &
-             <div class="num">$-45+9-6+3$</div>  
+        <div class="table" data-table-class="input-grp-table" cells="*,*|w33%" data-table-style="width: 100%;border-spacing: 0px 5px;">
+            <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div> &
+           <div class="num" data-valign-num="middle"><math-input label="$(-2)\times5 \times (-2) = $" valid="20|+20"></math-input></div>  &
+            <div class="num" data-valign-num="middle"><math-input label="$(-1)\times(-1)\times (-1) = $" valid="-1"></math-input></div>  ||
+           <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>   &
+           <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>  &
+            <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>   ||
+              <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>  &
+             <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>   &
+             <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div> 
         </div>
 	</div>
 	
@@ -97,9 +87,9 @@ data-main-width="900">
 
 
 <!-- Avec des fractions -->
-<div class="box" data-title="Avec des fractions" data-time="2m">
+<div class="box" data-title="Avec des fractions" data-num="$N_3$ \iPencil">
 	<div class="titled hide" data-title="\boxP Propriétés" data-color="#666666">
-		<div class="table" cells="*,*|w25%&2,*|pat15" data-table-style="width: 100%">
+		<div class="table" cells="*,*|w25%&2,*|pat15" data-table-style="width: 100%;border-spacing: 0px 5px;">
 			\num1 $\displaystyle \frac{8}{-2} = -\frac{8}{2} = -4$  & \num2 $\displaystyle \frac{+6}{+5} = \frac{6}{5}$  
 			&
 			
@@ -109,20 +99,14 @@ data-main-width="900">
 	
     
     <div class="styled">
-        Effectuer les opérations suivantes :
+       Simplifier les expressions suivantes :
         <div class="table" cells="*,*|w33%" data-table-style="width: 100%">
-            <div class="num"> $(-2)+(+4)$</div> &
-            <div class="num"> $-10-14$</div> &
-            <div class="num"> $(+7)+(+9)$</div> ||
-            <div class="num"> $16-17$</div>  &
-            <div class="num"> $-15-16$</div> &
-             <div class="num">$21-23$</div>  ||
-             <div class="num">$(-6)-(+21)$</div>  &
-             <div class="num">$(-30)-(-42)$</div>  &
-             <div class="num">$(-6)-(+21)$</div>  || 
-             <div class="num">$-6-19-7+7-(-2)$</div>  &
-             <div class="num">$4-8-6+7-6$</div>  &
-             <div class="num">$-45+9-6+3$</div>  
+            <div class="num" data-valign-num="middle"><math-input label="$\dfrac{2}{-3} = $" valid="-(2/3)"></math-input></div>  &
+            <div class="num" data-valign-num="middle"><math-input label="$\dfrac{2}{-3} = $" valid="-(2/3)"></math-input></div>  &
+            <div class="num" data-valign-num="middle"><math-input label="$\dfrac{2}{-3} = $" valid="-(2/3)"></math-input></div>  ||
+           <div class="num" data-valign-num="middle"><math-input label="$\dfrac{2}{-3} = $" valid="-(2/3)"></math-input></div>  &
+            <div class="num" data-valign-num="middle"><math-input label="$\dfrac{2}{-3} = $" valid="-(2/3)"></math-input></div>  &
+            <div class="num" data-valign-num="middle"><math-input label="$\dfrac{2}{-3} = $" valid="-(2/3)"></math-input></div>  
         </div>
 	</div>
 	
@@ -131,5 +115,213 @@ data-main-width="900">
 
 <div class="newpage"></div>
         
+        
+ <!-- Priorités opératoires -->
+<div class="box" data-title="Priorités opératoires" data-num="$N_4$ \iPencil">
+	<div class="titled hide" data-title="\boxP Propriétés" data-color="#666666">
+		Dans un calcul, on commence en priorité par : vspace{5}
+\num1 Les parenthèses (des plus intérieures au plus extérieures) <br>
+\num2 Les divisions et les multiplications (de gauche à droite) <br>
+\num3 Les additions et les soustractions (de gauche à droite)
+	</div>
+	
+    
+    <div class="styled">
+       Calculer les expressions suivantes :
+       <div class="num" data-valign-num="middle"><math-input  data-height="50" label="$A = (-1)\times \Big[(2-7)+(-3+1)\Big] - 5\times(-2) - 8 \div 2  = $" valid="-(2/3)"></math-input></div>  
+       <div class="num" style="margin-top: 5px" data-valign-num="middle"><math-input data-height="50" label="$B = 9 \div (-13+2 \times 5 ) - \Big( 2 - (5-7) \div (-2) + 6 \Big) - 5 = $" valid="-(2/3)"></math-input></div>  
+       <div class="num" style="margin-top: 5px" data-valign-num="middle"><math-input label="$C = 10 - 2-(+3)(6-7)+(5-6)(-4)\div (-2) = $" valid="-(2/3)" data-height="50"></math-input></div>  
+           
+	</div>
+	
+</div>	
+    
+<!-- Simplifier une fraction  -->
+<div class="box" data-title="Simplifier une fraction" data-num="$N_5$">
+	<div class="titled hide" data-title="\boxE Exemple" data-color="#666666">
+		$\displaystyle \frac{24}{66} = \frac{{\cancel{{\mathbf 2}}}\times 12}{{\cancel{{\mathbf 2}}}\times 33} = \frac{12}{33} = \frac{{\cancel{{\mathbf 3}}}\times 4}{{\cancel{{\mathbf 3}}}\times 11} = \frac{4}{11} $
+	</div>
+	
+    
+    <div class="styled">
+        Simplifier les fractions suivantes : 
+       <div class="table" cells="*,*|w25%" data-table-style="width: 100%;border-spacing: 0px 15px">
+       <div class="num" data-valign-num="middle">$\displaystyle \frac{22}{154} $ </div>  &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{48}{16} $   </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{75}{30} $    </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{120}{150}$   </div> ||   
+       
+           <div class="num" data-valign-num="middle">$\displaystyle \frac{654}{122} $  </div>  &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{66}{18} $    </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{21}{49} $     </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{104}{18}$  </div>
+           </div>
+	</div>
+	
+</div>	  
+    
+<!-- Additionner ou soustraire des fractions  -->
+<div class="box" data-title="Additionner ou soustraire des fractions" data-num="$N_6$">
+	<div class="titled hide" data-title="\boxE Exemples" data-color="#666666">
+		$\displaystyle \frac{7}{6} + \frac{5}{9} = \frac{7\times {\mathbf 3}}{6 \times {\mathbf 3}} + \frac{5\times{\mathbf 2}}{9\times{\mathbf 2}} = \frac{21}{18} + \frac{10}{18} =  \frac{31}{18}$
+
+        vspace{20}
+        
+        $\displaystyle \frac{7}{3} - 2 =  \frac{7}{3} - \frac{2}{1} = \frac{7\times  {\mathbf 1}}{3 \times  {\mathbf 1}} - \frac{2\times{\mathbf 3}}{1\times{\mathbf 3}} = \frac{7}{3} - \frac{6}{3} =  \frac{1}{3}$
+
+vspace{10}
+Pour soustraire ou additionner des fractions, il faut les mettre au même dénominateur.
+	</div>
+	
+    
+    <div class="styled">
+        Calculer et simplifier les expressions suivantes : 
+       <div class="table" cells="*,*|w33%" data-table-style="width: 100%;border-spacing: 0px 20px">
+       <div class="num" data-valign-num="middle">$\displaystyle  \frac{3}{21} + \frac{2}{14}$ </div>  &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{4}{18} + \frac{5}{27}$  </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{1}{5} - \frac{2}{3}$  </div> ||   
+       
+           <div class="num" data-valign-num="middle">$\displaystyle \frac{11}{3} + \frac{1}{7} - \frac{8}{21}$  </div>  &
+        <div class="num" data-valign-num="middle">$\displaystyle 1 - \frac{5}{4}$  </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{11}{8} + \frac{7}{3} - \frac{6}{5}$ </div>
+           </div>
+	</div>
+	
+</div>	
+    
+<div class="newpage"></div>
+    
+<!-- Multipliplier  des fractions  -->
+<div class="box" data-title="Multiplier des fractions" data-num="$N_7$">
+	<div class="titled hide" data-title="\boxE Exemple" data-color="#666666">
+		$\displaystyle E = \frac{9}{7} \times \frac{14}{15} = \frac{\cancel{{\mathbf 3}} \times 3}{\cancel{{\mathbf 7}}}\times\frac{2\times \cancel{{\mathbf 7}}}{\cancel{{\mathbf 3}} \times 5} = \frac{6}{5}$ 
+        
+	</div>
+	
+    
+    <div class="styled">
+        Calculer  les expressions suivantes : 
+       <div class="table" cells="*,*|w33%" data-table-style="width: 100%;border-spacing: 0px 20px">
+       <div class="num" data-valign-num="middle">$\displaystyle A = \frac{-2}{-21} \times \frac{-14}{3}$ </div>  &
+        <div class="num" data-valign-num="middle">$\displaystyle B = \frac{2}{6} \times \frac{-21}{7}$  </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle C = \frac{-3}{-10} \times \frac{11}{3}$  </div> ||   
+       
+           <div class="num" data-valign-num="middle"> $\displaystyle D = \frac{8}{15}\times\frac{35}{24}$ </div>  &
+        <div class="num" data-valign-num="middle"> $\displaystyle E =\Big(\frac{-1}{2}\Big)^2 $  </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle F = \frac{16}{-63}\times\frac{-35}{8} $ </div>
+           </div>
+	</div>
+	
+</div>	    
+    
+<!-- Diviser  des fractions  -->
+<div class="box" data-title="Diviser des fractions" data-num="$N_8$">
+	<div class="titled hide" data-title="\boxE Exemple" data-color="#666666">
+		$\displaystyle E = \frac{10}{3} {\mathbf \div} \frac{\mathbf 5}{\mathbf 9} =  \frac{10}{3} {\mathbf \times} \frac{\mathbf 9}{\mathbf 5} =  \frac{\cancel{{\mathbf 3}}  \times 3}{\cancel{{\mathbf 7}}}\times\frac{2\times \cancel{{\mathbf 7}}}{\cancel{{\mathbf 3}} \times 5} = \frac{6}{5}$
+vspace{15}
+
+$F = \displaystyle \frac{\displaystyle \frac{1}{3}}{\displaystyle \frac{8}{7}} =  \frac{1}{3} \div \frac{8}{7} = \frac{1}{3} \times \frac{7}{8} = \frac{1\times 7}{3 \times 8} = \frac{7}{24} $
+        
+	</div>
+	
+    
+    <div class="styled">
+        Calculer  les expressions suivantes : 
+       <div class="table" cells="*,*|w33%" data-table-style="width: 100%;border-spacing: 0px 20px">
+       <div class="num" data-valign-num="middle">$\displaystyle A = \frac{-4}{13} \div \frac{-76}{9} $ </div>  &
+        <div class="num" data-valign-num="middle"> $\displaystyle B =  \frac{1}{8} \div \frac{7}{11}$  </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle C =  \frac{\displaystyle\frac{3}{5}}{\displaystyle\frac{12}{15}}$  </div> ||   
+       
+           <div class="num" data-valign-num="middle">  $\displaystyle D = \frac{-13}{6}\div  \frac{-1}{32}$</div>  &
+        <div class="num" data-valign-num="middle"> $\displaystyle E =9 \div  \frac{-1}{4} $  </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle F =  \frac{\displaystyle\frac{-5}{12}}{2}$ </div>
+           </div>
+	</div>
+	
+</div>	    
+    
+<!-- Priorités opératoires et fractions -->
+<div class="box" data-title="Priorités opératoires et fractions" data-num="$N_9$">
+	
+    <div class="styled">
+        Calculer  les expressions suivantes : 
+       <div class="table" cells="*,*|w33%" data-table-style="width: 100%;border-spacing: 0px 20px">
+       <div class="num" data-valign-num="middle">$\displaystyle  A = \frac{\displaystyle \frac{1}{3} - 3}{\displaystyle \frac{5}{7} - \frac{2}{5}}$ </div>  &
+        <div class="num" data-valign-num="middle"> $\displaystyle  B = \frac{\displaystyle \frac{4}{7}-2}{ \displaystyle 2 - \frac{11}{14}} $  </div> &
+        <div class="num" data-valign-num="middle"> $\displaystyle  C = \frac{\displaystyle 2-\frac{1}{3}}{\displaystyle 3+\frac{1}{4}}$ </div> ||   
+       
+           <div class="num" data-valign-num="middle"> $\displaystyle  D=\frac{2}{9} - \frac{3}{4}\div\frac{5}{2} $</div>  &
+        <div class="num" data-valign-num="middle">  $\displaystyle  E = \frac{26}{7} - \frac{22}{7}\times\frac{10}{33} $ </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle  F = \frac{\displaystyle (-1) - \frac{-1}{3}}{\displaystyle \frac{-2}{3} - (-1)}$ </div>
+           </div>
+	</div>
+	
+</div>	
+    
+    
+<div class="newpage"></div>
+    
+<!-- Fraction d'un nombre  -->
+<div class="box" data-title="Fraction d'un nombre" data-num="$N_{10}$">
+	<div class="titled hide" data-title="\boxE Exemple" data-color="#666666">
+		Calculer les trois dixièmes de $34$ revient à calculer : 
+
+vspace{5}
+
+ $\displaystyle \frac{3}{10}\times 34 = \frac{3}{10}\times \frac{34}{1} =  \frac{3}{\cancel{{\mathbf 2}}\times5}\times\frac{\cancel{{\mathbf 2}}\times17}{1} = \frac{51}{5} $
+        
+	</div>
+	
+    
+    <div class="styled">
+         <div class="table" cells="*,*|w50%" data-table-style="width: 100%;border-spacing: 0px 2px">
+        <div class="num" data-valign-num="middle">Calculer les six septièmes de $49$. </div> &
+         <div class="num" data-valign-num="middle">Calculer les deux tiers de six demi.</div> ||
+         <div class="num" data-valign-num="middle">Calculer les $25\%$ de quatre neuvièmes. </div> &
+         <div class="num" data-valign-num="middle">Calculer les $\displaystyle \frac{3}{4}$ de $\displaystyle \frac{12}{7}$. </div> ||
+        <div class="num" data-valign-num="middle">Calculer les $\displaystyle \frac{5}{11}$ de $\displaystyle 100$. </div> &
+        <div class="num" data-valign-num="middle">Calculer les $11\%$ de $\displaystyle \frac{27}{121}$. </div>
+             </div>
+	</div>
+	
+</div>	
+    
+<!-- Proportionnalité et pourcentages  -->
+<div class="box" data-title="Proportionnalité et pourcentages" data-num="$N_{11}$">
+    <div class="styled">
+         <div class="num">Aux USA, les températures sont exprimées en degrés Fahrenheit ($^\circ F$) : $77 ^\circ F$ équivaut à $25 ^\circ C$ et $86 ^\circ F$ équivaut à $30 ^\circ C$. Les mesures des températures en $^\circ F$ et en $^\circ C$ sont-elles proportionnelles ?</div>
+        <div class="num">Dans un établissement scolaire de $560$ élèves, il y a $224$  garçons. Quel est le pourcentage de garçons dans cet établissement ? </div>
+        <div class="num">Jean obtient une réduction de $45\%$ sur une vélo valant $158$ \euro{}. Quel est le montant de la réduction obtenue par Jean ? </div>
+        
+        <div class="num">Un robinet d'eau fuit de telle sorte qu'il s'écoule $5$ litres d'eau en $35$ minutes et $7$ litres d'eau en $49$ minutes. S'agit-il d'une situation de proportionnalité ?  </div>
+        
+        <div class="num">Aux USA, les distances routières sont exprimées en miles ($mi$) : $250 \; mi$ équivaut à $402,336 \; km$ et $1250 \; mi$ équivaut à $2011,68 \; km$. Les distances en $mi$ et en $km$ sont-elles proportionnelles ?</div>
+        <div class="num">Patrick a obtenu une réduction de $65,25$ € sur 
+une console de jeu qui valait $225$ €.
+Quel pourcentage de réduction a-t-il obtenu ? Justifier. </div>
+        
+        <div class="num">J'ai utilisé $50\; kg$ de semences pour un terrain 
+de $1600\; m^2$. Quelle   surface   aurais-je   pu   ensemencer   avec
+90 kg de semences ?  </div>
+        
+        <div class="num">Saïd   a   obtenu   une   baisse   de   $45$ €   sur   un 
+appareil photo, soit une baisse de $15 \%$ du prix 
+initial. Quel était le prix initial de l'appareil photo ?  </div>
+        
+        <div class="num">En   roulant   à   une   vitesse   moyenne   de
+$72\; km/h$,   quelle   est   la   distance   parcourue   en
+$25\; min$ ?  </div>
+        
+        <div class="num">Un magasin réalise une *{bold::augmentation} de $25\%$ sur des pantalons coûtant initialement $110$ €. Quel est le nouveau prix des pantalons ?  </div>
+        
+        <div class="num">Au théâtre pour $4$ places achetées, on paye $48$ €. Pour $3$ places, on paye $36$ € et pour $7$ places on paye $80$ €. Est-ce proportionnel ?  </div>
+        
+         <div class="num">Maurice a construit une maquette de la tour Eiffel au $1/600$. Sachant que la tour Eiffel a une hauteur de $324 \; m$, quelle est la hauteur de la maquette en $cm$ ?   </div>
+        
+        <div class="num">Lors des soldes, un magasin propose une *{bold::réduction} de $30\%$ sur des blousons coûtant initialement $150$ €. Quel est le nouveau prix des blousons ?  </div>
+	</div>
+	
+</div>	    
+       
 </body>
 </html>
