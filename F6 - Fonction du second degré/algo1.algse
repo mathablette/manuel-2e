@@ -1,0 +1,32 @@
+// Coefficients du trinôme
+var a = 1;
+var b = 2;
+var c = 1;
+
+// test si a n'est pas égal à zéro
+if ( a == 0 )
+{
+   algo.output("Ce n'est pas un trinôme (a=0).");
+}
+else
+{
+	// discriminant
+    var delta = 0;
+
+    // suivant le signe du discriminant
+    if ( delta < 0){
+          
+    }
+    else if ( delta > 0){
+          
+    }
+    else {
+        
+    }
+}
+
+
+
+
+
+

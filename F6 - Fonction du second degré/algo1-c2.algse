@@ -1,0 +1,46 @@
+// Coefficients du trinôme
+var a = 8;
+var b = 2;
+var c = 1;
+
+// création de la fonction racines
+function racines(a,b,c)
+{
+  // test si a n'est pas égal à zéro
+  if ( a == 0 )
+  {
+      algo.output("Ce n'est pas un trinôme (a=0).");
+      return;
+  }
+  else
+  {
+      // discriminant
+      var delta = Math.pow(b,2)-4*a*c;
+
+      // suivant le signe du discriminant
+      if ( delta < 0){
+          algo.output("Il n'y a pas de racine réelle car le disciminant est négatif.");
+      }
+      else if ( delta > 0){
+          var x1 = (-b-Math.sqrt(delta))/2*a;
+          var x2 = (-b+Math.sqrt(delta))/2*a;
+          algo.output("Il y a 2 racines réelles : ");
+          algo.output("x1 = "+x1);
+          algo.output("x2 = "+x2);
+      }
+      else {
+          var x0 = (-b)/2*a;
+          algo.output("Il y a 1 racine réelle : ");
+          algo.output("x0 = "+x0);
+      }
+  }
+}
+
+// appel de la fonction racine
+racines(a,b,c);
+
+
+
+
+
+

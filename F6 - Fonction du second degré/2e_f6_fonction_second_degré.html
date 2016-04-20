@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Fonction du second degré" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="1S - Fonction du second degré" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="1"
+data-left="$1_S$-$A_1$"
+data-main-width="900">
+
+<!-- forme développée -->
+<div class="box" data-title="Forme développée" data-time="2m">
+    <div class="titled hide" data-title="\boxD Définition : Fonction du second degré" data-color="#660000">
+		Une fonction $f$ définie sur $\R$ est une *{bold::fonction polynôme du second degré} ou *{bold::fonction du second degré} si elle est de la forme *{bo1#000000;pa2::$f(x) = ax^2+bx+c$} où $a$, $b$ et $c$ sont des réels tels que $a \not= 0$.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Définition : Parabole" data-color="#660000">
+		La représentation graphique ou courbe représentative d'une fonction du second degré est une *{bold::parabole}. L'équation de la parabole est :  *{bo1#000000;pa2::$y = ax^2 + bx + c$}
+	</div>
+    
+    <div class="titled hide" data-title="\boxV Vocabulaire" data-color='#000066'  >
+		$\bullet$ L'expression algébrique $ax^2+bx+c$ est appelée *{bold::trinôme du second degré}. vspace{}
+        $\bullet$ L'écriture $f(x) = ax^2+bx+c$ de la fonction $f$ est la *{bold::forme développée de $f$}.
+
+	</div>
+	
+    <div class="frame" data-title="Correction" data-width='600' data-title-style="font-variant: small-caps" data-label="Afficher la correction">
+        <div class="table" cells="*,*|w50%" data-table-style="width: 100%">
+        <div class="num">$a=-3$ ; $b=2$ et $c = 6$</div> &
+        <div class="num">c'est une fonction affine</div> ||
+        <div class="num">$a=36$ ; $b=-84$ et $c = 49$</div> &
+        <div class="num">$a=16$ ; $b=64$ et $c = 64$</div> ||
+        <div class="num">$a=9$ ; $b=0$ et $c = 49$</div> &
+        <div class="num">$a=16$ ; $b=-48$ et $c = 36$</div>    
+        </div>    
+    </div>
+    
+	<div class="styled">
+        Déterminer si les fonctions suivantes sont des fonctions du second degré et donner le cas échéant les trois coefficients $a$, $b$ et $c$ : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num"> $f_1(x) = 6 -3x^2 + 2x$</div> &
+            <div class="num"> $f_2(x) = 4 + 7x$</div> &
+             <div class="num"> $f_3(x) = (6x - 7)^2$</div> ||
+            <div class="num"> $f_4(x) = (8+4x)^2$</div> &
+            <div class="num"> $f_5(x) = (3x+7)(3x-7)$</div> &
+             <div class="num">$f_6(x) = 4(2x-3)^2$</div> 
+        </div>
+	</div>
+</div>	
+
+<!-- forme canonique -->
+<div class="box" data-title="Forme canonique" data-time="2m">
+	<div class="titled hide" data-title="\boxT Théorème : Forme canonique" data-color="#660066">
+		La *{bold::forme canonique} de la fonction du second degré $f$ définie par $f(x) = ax^2+bx+c$ est : vspace{}  
+        *{bo1#000000;pa2::$f(x) = a(x-\alpha)^2 + \beta$}  avec $\displaystyle \alpha = -\frac{b}{2a} $ et $\beta = f(\alpha)$. Cette *{bold::forme canonique} est *{bold::unique}. 
+	</div>
+    
+    <div class="frame" data-title="Correction" data-width='600' data-title-style="font-variant: small-caps" data-label="Afficher la correction">
+        <div class="table" cells="*,*|w50%" data-table-style="width: 100%">
+        <div class="num">$a=-3$ ; $b=2$ et $c = 6$</div> &
+        <div class="num">c'est une fonction affine</div> ||
+        <div class="num">$a=36$ ; $b=-84$ et $c = 49$</div> &
+        <div class="num">$a=16$ ; $b=64$ et $c = 64$</div> ||
+        <div class="num">$a=9$ ; $b=0$ et $c = 49$</div> &
+        <div class="num">$a=16$ ; $b=-48$ et $c = 36$</div>    
+        </div>    
+    </div>
+    
+    <div class="styled">
+        Donner la forme canonique des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num"> $f_1(x) = 4x^2 + 5x + 9$</div> &
+            <div class="num"> $f_2(x) = -3x^2 - 7x  +9$</div> &
+             <div class="num"> $f_3(x) = 7x - x^2 -10$</div> ||
+            <div class="num"> $f_4(x) = 9x^2 + 16 - 24x$</div> &
+            <div class="num"> $f_5(x) = 81 - 49x^2$</div> &
+             <div class="num">$f_6(x) = 7 + \sqrt{140}x +  5x^2$</div> 
+        </div>
+	</div>
+</div>	
+    
+<!-- forme canonique : parabole-->
+<div class="box" data-title="Forme canonique : parabole" data-time="2m">
+	<div class="titled hide" data-title="\boxP Propriété" data-color="#006666">
+		La parabole $C_f$, courbe représentative de la fonction du second degré $f$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ a pour sommet $S(\alpha;\beta)$
+	</div>
+    
+    <div class="styled">
+        Donner la forme canonique des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w300;center">
+            <div class="figure" data-width="7" data-height="6">
+                painterGrid(3)
+                showMark()
+                markUpdate(3,2.5,1,1,1,2,0,0)
+                f1 = curveFunction('2(x-1)^2-4',-10,10,0.001)
+                lineWidth(f1,3)
+                foreground(f1,'#ff0000')
+            </div>
+            &
+            <div class="figure" data-width="7" data-height="6">
+                painterGrid(3)
+                showMark()
+                markUpdate(3,2.5,1,1,1,2,0,0)
+                f1 = curveFunction('-2(x+1)^2+2',-10,10,0.001)
+                lineWidth(f1,3)
+                foreground(f1,'#ff0000')
+            </div>
+            &
+            <div class="figure" data-width="7" data-height="6">
+                painterGrid(3)
+                showMark()
+                markUpdate(3,2.5,1,1,1,2,0,0)
+                f1 = curveFunction('-4(x-2)^2+6',-10,10,0.001)
+                lineWidth(f1,3)
+                foreground(f1,'#ff0000')
+            </div>
+            ||
+            Parabole $C_{f_1}$ & Parabole $C_{f_2}$ & Parabole $C_{f_3}$
+        </div>
+	</div>
+</div>	    
+
+<div class="newpage"></div>
+
+<!-- Symétrie de la parabole -->
+<div class="box" data-title="Symétrie de la parabole" data-time="2m">
+	<div class="titled hide" data-title="\boxP Propriété : Symétrie de la parabole" data-color="#006666">
+		La parabole $C_f$, courbe représentative de la fonction du second degré $f$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ est symétrique par rapport à la droite verticale d'équation $x= \alpha$. 
+	</div>
+    
+    <div class="styled">
+        Tracer la courbe représentative des fonctions suivantes en traçant l'axe de symétrie : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = (x-8)^2+2$</div> &
+            <div class="num"> $f_2(x) = 2(x+1)^2+3$</div> &
+             <div class="num"> $f_3(x) = -2(4+x)^2-3$</div> ||
+            <div class="num"> $f_4(x) = (3x-3)^2$</div> &
+            <div class="num"> $f_5(x) = 6x^2-8x+3$</div> &
+             <div class="num">$f_6(x) = (2x+5)(2x-5)$</div> 
+        </div>
+	</div>
+</div>	
+    
+<!-- Sens de variation -->
+<div class="box" data-title="Sens de variation" data-time="2m">
+	<div class="titled hide" data-title="$\blacksquare$ Propriété : *{#006600::sens de variation avec $a > 0$}" data-color="#660000">
+		La fonction du second degré $f$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ avec $a > 0$ est : vspace{}
+        $\bullet$ *{bold::décroissante} pour $x \in ]-\infty;\alpha]$ vspace{}
+        $\bullet$ *{bold::croissante} pour $x \in [\alpha;+\infty;[$ 
+	</div>
+    
+    <div class="titled hide" data-title="$\blacksquare$ Propriété : *{#006600::sens de variation avec $a < 0$}" data-color="#660000">
+		La fonction du second degré $f$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ avec $a < 0$ est : vspace{}
+        $\bullet$ *{bold::croissante} pour $x \in ]-\infty;\alpha]$ vspace{}
+        $\bullet$ *{bold::décroissante} pour $x \in [\alpha;+\infty;[$ 
+	</div>
+    
+    <div class="styled">
+        Construire le tableau de variations des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
+            <div class="num"> $f_4(x) = (5x-3)^2$</div> &
+            <div class="num"> $f_5(x) = 9x^2-2x+5$</div> &
+             <div class="num">$f_6(x) = (7x+8)(7x-8)$</div> 
+        </div>
+	</div>
+</div>	    
+    
+    
+<!-- equation du second degré -->
+<div class="box" data-title="Equation du second degré" data-time="2m">
+	<div class="titled hide" data-title="$\blacksquare$ Définition : *{#006600::équation du second degré}" data-color="#660000">
+		Une équation du type *{bo1#444444;pa2::$ax^2 + bx+ c = 0$} avec $a$, $b$ et $c$ des nombres réels tels que $a \not=0$ est appelée *{bold::équation du second degré}.
+	</div>
+    
+    <div class="titled hide" data-title="$\blacksquare$ Définition : *{#006600::discriminant}" data-color="#660000">
+		*{bo1#444444;pa2::$\Delta = b^2 - 4ac$} est le *{bold::discriminant} du trinôme du second degré $ax^2 + bx+ c$.
+	</div>
+    
+    <div class="styled">
+        Construire le tableau de variations des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
+        </div>
+	</div>
+</div>	      
+    
+<!-- Racines d'une équation du $2^{nd}$ degré -->
+<div class="box" data-title="Racines d'une équation du $2^{nd}$ degré" data-time="2m">
+	<div class="titled hide" data-title="$\blacksquare$ Vocabulaire : *{#006600::racines}" data-color="#660000">
+		Les solutions de l'équation $ax^2 + bx+ c = 0$ sont appelées *{bold::racines} ou *{bold::zéros}.
+	</div>
+    
+   
+    <div class="styled">
+        Construire le tableau de variations des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
+        </div>
+	</div>
+</div>	          
+
+<div class="newpage"></div>
+    
+<!-- Racines d'une équation du $2^{nd}$ degré et discriminant -->
+<div class="box" data-title="Racines d'une équation du $2^{nd}$ degré et discrimimant" data-time="2m">
+	<div class="titled hide" data-title="$\blacksquare$ Théorème : *{#006600::racines quand $\Delta > 0$}" data-color="#660000">
+		Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::positif} : vspace{}
+
+L'équation $ax^2 + bx+ c = 0$ possède *{tdu::2 racines} $x_1$ et $x_2$ avec $\displaystyle x_1 = \frac{-b - \sqrt{\Delta}}{2a}$ et $\displaystyle x_2 = \frac{-b + \sqrt{\Delta}}{2a}$  
+	</div>
+    
+    <div class="titled hide" data-title="$\blacksquare$ Théorème : *{#006600::racines quand $\Delta = 0$}" data-color="#660000">
+		Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::nul}, l'équation $ax^2 + bx+ c = 0$ possède *{tdu::1 racine} $x_0$ avec $\displaystyle x_0 = \frac{-b}{2a}$  
+	</div>
+    
+    <div class="titled hide" data-title="$\blacksquare$ Théorème : *{#006600::racines quand $\Delta < 0$}" data-color="#660000">
+		Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::négatif},  $ax^2 + bx+ c = 0$ ne possède pas de *{tdu::racine réelle}  
+	</div>
+    
+   
+    <div class="styled">
+        Construire le tableau de variations des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
+        </div>
+	</div>
+</div>	
+    
+    
+<!-- Racines et parabole -->
+<div class="box" data-title="Racines et parabole" data-time="2m">
+	<div class="titled hide" data-title="$\blacksquare$ Théorème" data-color="#660000">
+		La courbe représentative $C_f$ de  la  fonction $f(x) = ax^2 + bx+ c $  : vspace{}
+
+$\bullet$ Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::positif}, $C_f$ coupe l'axe des abscisses en deux points $\Big(\displaystyle x_1 = \frac{-b - \sqrt{\Delta}}{2a};0\Big)$ et $\Big(\displaystyle x_2 = \frac{-b + \sqrt{\Delta}}{2a};0\Big)$ <br>
+$\bullet$ Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::égal à $0$}, $C_f$ coupe l'axe des abscisses en un seul point $\Big(\displaystyle x_0 = \frac{-b}{2a};0\Big)$ qui est le sommet de la parabole.  <br>
+$\bullet$ Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::négatif}, $C_f$  ne coupe pas l'axe des abscisses. 
+	</div>
+    
+   
+    <div class="styled">
+        Construire le tableau de variations des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
+        </div>
+	</div>
+</div>	 
+    
+<!-- Forme factorisée -->
+<div class="box" data-title="Forme factorisée" data-time="2m">
+	<div class="titled hide" data-title="$\blacksquare$ Théorème" data-color="#660000">
+		Soit la forme développée de la fonction  $f(x) = ax^2 + bx+ c $  ($a \not= 0$) : <br>
+
+$\bullet$ Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::positif}, *{bo1#000000::$f(x) = a(x-x_1)(x-x_2)$} <br>
+avec $\displaystyle x_1 = \frac{-b - \sqrt{\Delta}}{2a}$ et $\displaystyle x_2 = \frac{-b + \sqrt{\Delta}}{2a}$ <br>
+
+$\bullet$ Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::égal à $0$}, *{bo1#000000::$f(x) = a(x-x_0)^2$} 
+avec $\displaystyle x_0 = \frac{-b}{2a}$  <br>
+$\bullet$ Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::négatif}, $f$ ne possède pas de forme factorisée dans $\mathbb{R}$
+	</div>
+    
+   
+    <div class="styled">
+        Construire le tableau de variations des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
+        </div>
+	</div>
+</div>
+    
+<div class="newpage"></div>
+    
+ <!-- Inéquation du second degré -->
+<div class="box" data-title="Inéquation du second degré" data-time="2m">
+	<div class="titled hide" data-title="$\blacksquare$ Définition et propriétés" data-color="#660000">
+		Soient  $a$, $b$ et $c$ des nombres réels tels que $a \not= 0$ et $f$ la fonction du second degré définie par $f(x) = ax^2+bx+c$ de courbe représentative $\mathcal{C}_f$.
+
+vspace{10}
+Une inéquation du second degré est du type :
+
+vspace{5}
+$\bullet$ $ax^2 + bx + c < 0$ $\rightarrow$ les abscisses $x$ des points de $\mathcal{C}_f$ strictement en *{bold::dessous} de l'axe des abscisses.
+
+vspace{5}
+$\bullet$ $ax^2 + bx + c > 0$ $\rightarrow$ les abscisses $x$ des points de $\mathcal{C}_f$ strictement au  *{bold::dessus} de l'axe des abscisses.
+
+
+vspace{5}
+$\bullet$ $ax^2 + bx + c \leqslant 0$ $\rightarrow$ les abscisses $x$ des points de $\mathcal{C}_f$  en *{bold::dessous} de l'axe des abscisses.
+
+ 
+ vspace{5}
+$\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points de $\mathcal{C}_f$  au *{bold::dessus} de l'axe des abscisses.
+
+	</div>
+    
+   
+    <div class="styled">
+        Construire le tableau de variations des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
+        </div>
+	</div>
+</div>   
+    
+    
+<!-- Signe d'un trinôme -->
+<div class="box" data-title="Signe d'un trinôme" data-time="2m">
+	<div class="titled hide" data-title="$\blacksquare$ Propriétés" data-color="#660000">
+		On considère le trinôme $ax^2 + bx +c$ associé à la fonction $f(x) = ax^2 + bx +c$ et de discriminant $\displaystyle \Delta = b^2 - 4ac$. 
+
+$x_1$ , $x_2$ et $x_0$ sont les racines de l'équation $ax^2 + bx +c = 0$ lorsque $\Delta > 0$ et $\Delta = 0$. vspace{}
+$\bullet$ Quand $a > 0 $ et $\Delta > 0$ alors $f(x) \geqslant 0$ sur $]-\infty;x_1]\cup[x_2;+\infty[$  et $f(x) \leqslant 0$ sur $[x_1;x_2]$  <br>
+$\bullet$ Quand $a < 0 $ et $\Delta > 0$ alors $f(x) \leqslant 0$ sur $]-\infty;x_1]\cup[x_2;+\infty[$  et $f(x) \geqslant 0$ sur $[x_1;x_2]$  <br> 
+        
+$\bullet$ Quand $a > 0 $ et $\Delta = 0$ alors $f(x) \geqslant 0$ sur $\R$ et $f(x_0) = 0$  <br>
+$\bullet$ Quand $a < 0 $ et $\Delta = 0$ alors $f(x) \leqslant 0$ sur $\R$ et $f(x_0) = 0$  <br>  
+        
+$\bullet$ Quand $a > 0 $ et $\Delta < 0$ alors $f(x) >  0$ sur $\R$ et $f(x) \not= 0$ pour $x \in \R$  <br>
+$\bullet$ Quand $a < 0 $ et $\Delta < 0$ alors $f(x) < 0$ sur $\R$ et $f(x) \not= 0$ pour $x \in \R$  <br>          
+
+	</div>
+    
+   
+    <div class="styled">
+        Construire le tableau de variations des fonctions du second degré  suivantes : 
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
+            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
+            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
+             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
+        </div>
+	</div>
+</div> 
+        
+<!-- Inéquation $f(x) \geqslant g(x)$ -->
+<div class="box" data-title="Inéquation $f(x) \geqslant g(x)$" data-time="2m">
+    <div class="styled" style="text-align: left">
+    Soient $2$ fonctions $f$ et $g$ définies par $f(x) = x^2-6x+2$ et $g(x) = -2x^2-3x+8$ de courbes représentatives $\mathcal{C}_f$ et $\mathcal{C}_g$. 
+<div class="table" cells="*,*|w50%" data-table-style="width: 100%">
+ <div class="num">  Etudier le signe de $f(x) - g(x)$</div> &
+ <div class="num"> Résoudre $f(x) \geqslant g(x)$</div> ||
+ <div class="num">  Etudier la position de $\mathcal{C}_f$ par rapport à  $\mathcal{C}_g$. </div> &
+ <div class="num"> Dans un même repère, tracer $\mathcal{C}_f$ et $\mathcal{C}_g$. </div> 
+  </div>    
+    </div>
+</div> 
+        
+<!-- Histoire de pont -->
+<div class="box" data-title="Histoire de pont" data-time="2m">        
+<div class="styled">
+Un pont est soutenu par un arc parabolique d'une portée de $200\;m$ et d'une hauteur de $80\;m$. Le pont et l'arc se coupent à $40\;m$ de la rive. Quelle est la hauteur du pont ?
+</div>
+</div>  
+        
+<div class="newpage"></div>        
+        
+<!-- Algorithme 1 -->
+<div class="box" data-title="Algorithme : forme canonique" data-time="2m">        
+<div class="styled">
+Soit une fonction du second degré $f(x) = ax^2+bx+c$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$.
+Ecrire un algorithme en *{bold::javascript} qui détermine les réels $\alpha$ et $\beta$ de la forme canonique d'une fonction du second degré.
+</div>
+</div>   
+        
+<!-- Dans un jardin -->
+<div class="box" data-title="Dans un jardin" data-time="2m">        
+<div class="styled">
+À l'intérieur d'un jardin carré dont la longueur du côté est $10$ mètres, un jardinier souhaite installer, le long du bord, une allée en graviers de largeur constante. Comment faire en sorte que l'aire de l'allée soit égale à celle du carré intérieur ?
+</div>
+</div>  
+        
+<!-- Algorithme : Racines d'un trinôme -->
+<div class="box" data-title="Algorithme : Racines d'un trinôme" data-time="2m"> 
+<div class="frame" data-title="Correction de l'exercice $n^\circ 17$" data-width="600">
+	<div class="styled">
+	Voici une <a class="algse btn btn-default" data-editable="0" data-file="algo1-c1.algse" target="_blank"><i class="fa fa-file-code-o fa-lg no-print"></i> correction</a>. vspace{10}	
+	Voici une autre <a class="algse btn btn-default" data-editable="0" data-file="algo1-c2.algse" target="_blank"><i class="fa fa-file-code-o fa-lg no-print"></i> correction</a> utilisant une fonction javascript.  
+</div>
+	
+</div>	
+	
+	       
+<div class="styled">
+Ecrire un <dropdown data-id="algse-1" data-class="btn btn-default" label="<i class='fa fa-file-code-o'></i> algorithme" style="margin-left: -2px;margin-right: -2px"></dropdown>   qui détermine les solutions de l'équation du second degré $ax^2 + bx + c = 0$.
+
+<div drop-id="algse-1" style="width: 800px;margin: auto;margin-top: 10px" data-init='true'>
+          <iframe style="margin-top: 0px;border: 1px solid #444444" class="algse" data-file="algo1.algse"></iframe>
+      </div>
+        
+</div>
+</div>          
+        
+</body>
+</html>

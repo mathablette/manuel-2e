@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Statistiques descriptives" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Statistiques descriptives" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="7"
+data-left="$2_e$-$SP_1$"
+data-main-width="900">
+
+<!-- Série statistique -->
+<div class="box" data-title="Série statistique" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxD Définitions" data-color="#666666">
+        Lors d’un relevé de mesures effectué sur un *{bold::caractère quantitatif} des individus d’une population, l’ensemble des données collectées constitue une série statistique : c'est une liste de nombres que l'on appelle généralement en statistique des *{bold::valeurs}.<br>
+,, Une série statistique à caractère quantitatif est dite ordonnée
+après que les valeurs collectées ont été rangées dans l’ordre croissant (ou décroissant).<br>
+        ,, L’*{bold::étendue} désigne l’écart entre la plus grande et la plus petite des valeurs
+prises par le caractère. <br>
+        ,, L’*{bold::effectif total} désigne le nombre de valeurs présents dans la série statistique.
+	</div>
+    
+    <div class="titled hide" data-title="\boxD Modalités" data-color="#666666">
+        Les différentes valeurs possibles pour un caractère s’appellent les *{bold::modalités} du caractère. vspace{10}
+        ,, Si le nombre $p$ de modalités, notées $x_1, x_2 , \cdots, x_p$ rangées dans l'ordre croissant, est *{tdu::petit}, on repésente une série statistique par un *{bold::tableau d'effectifs} :
+        <div class="table" cells="*,*|bo1#444444&*,2:3:4:5|w50;c&1,*|b#dddddd&*,1|b#aaaaaa" data-table-style="border-collapse: collapse">
+        Modalités du caractère & $x_1$ & $x_2$ & $\cdots$ & $x_p$ ||
+        Nombre de valeurs par modalité (*{bold::effectif}) & $n_1$ & $n_2$ & $\cdots$ & $n_p$     
+        </div>
+        L'étendue de cette série statistique vaut : $x_p - x_1$. Cette série statistique possède $n_1$ valeurs toutes égales à $x_1$ et  $n_p$ valeurs toutes égales à $x_p$. L'effectif total vaut : $n_1 + n_2 +\cdots + n_p$
+        vspace{10}
+        ,, Si le nombre $p$ de modalités est *{tdu::grand}, on remplace la première ligne par des intervalles de modalités appelés *{bold::classe de valeurs}. On choisit généralement le *{centre} de la classe pour représenter celle-ci : 
+        <div class="table" cells="*,*|bo1#444444&*,2:3:4:5|w130;c&1,*|b#dddddd&*,1|b#aaaaaa" data-table-style="border-collapse: collapse">
+        Classe de modalités du caractère & $[a_1;a_2[$ & $[a_2;a_3[$ & $\cdots$ & $[a_p;a_{p+1}]$ ||
+        Centre de classe & $c_1 = \dfrac{a_1+a_2}{2}$ & $c_2 = \dfrac{a_2+a_3}{2}$ & $\cdots$ & $c_p = \dfrac{a_p+a_{p+1}}{2}$  ||    
+        Nombre de valeurs par classe (*{bold::effectif}) & $n_1$ & $n_2$ & $\cdots$ & $n_p$     
+        </div>
+        L'étendue de cette série statistique vaut : $a_p - a_1$. Cette série statistique possède $n_1$ valeurs comprises entre $a_1$ et $a_2$ et  $n_p$ valeurs comprises entre $a_p$ et $a_{p+1}$. L'effectif total vaut : $n_1 + n_2 +\cdots + n_p$
+	</div>
+    
+   
+   
+	
+   
+	<div class="styled">
+            <div class="num" data-valign-num="top">On a demandé aux élèves d'une classe de seconde de donner leur taille en $cm$. Voici leur réponse : $156$ , $158$ , $156$ , $156$ , $156$ , $156$ , $156$ ,$156$ ,$156$ ,  $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$ , $156$</div>
+             <div class="item" data-value="a)" style="margin-left: 50px" data-valign-num="middle">Dresser un tableau d’effectifs de cette série statistique. </div>
+        <div class="item" data-value="d)" style="margin-left: 50px" data-valign-num="middle">Déterminer l'étendue et l'effectif total de cette série statistique. </div>
+        <div class="num" data-valign-num="top">On a demandé aux élèves d'une classe de seconde de donner le nombre d'enfant dans leur fatrie. Voici leur réponse : $1$ , $1$ , $1$ , $2$ , $2$ , $2$ , $2$ ,$3$ ,$2$ ,  $4$ , $2$ , $3$ , $2$ , $2$ , $2$ , $1$ , $1$ , $1$ , $4$ , $2$ , $1$ , $1$ , $2$ , $3$ , $3$ , $3$ , $2$ , $2$ , $4$ , $2$ , $3$ , $2$ , $1$ , $4$ , $1$ , $2$</div>
+             <div class="item" data-value="a)" style="margin-left: 50px" data-valign-num="middle">Dresser un tableau d’effectifs de cette série statistique. </div>
+        <div class="item" data-value="d)" style="margin-left: 50px" data-valign-num="middle">Déterminer l'étendue et l'effectif total de cette série statistique. </div>
+        <div class="num" data-valign-num="top">On lance un dé à six faces plusieurs fois. Voici le numéro des faces obtenues : $1$, $1$, $3$, $3$, $4$ ,$4$ , $2$, $3$, $2$, $4$, $5$, $2$, $6$, $3$, $2$, $6$, $6$, $6$, $5$ , $1$ , $2$ , $4$, $5$, $4$</div>
+             <div class="item" data-value="a)" style="margin-left: 50px" data-valign-num="middle">Dresser un tableau d’effectifs de cette série statistique. </div>
+        <div class="item" data-value="d)" style="margin-left: 50px" data-valign-num="middle">Déterminer l'étendue et l'effectif total de cette série statistique. </div>
+        <div class="num" data-valign-num="top">Voici des températures relevées à six heures du matin au mois de janvier : $-1,2$; $2$; $-2,1$; $1,9$; $0,3$; $-0,3$; $-2,7$; $-2,1$; $-0,6$;  $-1,7$; $-2,1$; $0,2$; $0,4$; $-2,8$; $-0,1$; $-0,8$</div>
+             <div class="item" data-value="a)" style="margin-left: 50px" data-valign-num="middle">Dresser un tableau d’effectifs de cette série statistique. </div>
+        <div class="item" data-value="d)" style="margin-left: 50px" data-valign-num="middle">Déterminer l'étendue et l'effectif total de cette série statistique. </div>
+	</div>
+</div>	
+
+    
+ 
+<!-- Fréquence apparition -->
+<div class="box" data-title="Fréquence d'apparition" data-num="$N_2$" data-date="1" data-newpage="before">
+    <div class="titled hide" data-title="\boxD Définition" data-color="#666666">
+       On considère une série statistique comportant $p$ modalités (ou $p$ classes) d’effectifs $n_1,\cdots, n_p$ et d’effectif total $N = n_1+ n_2 + \cdots+n_p$. La *{bold::fréquence d’apparition} de la modalité (ou de la classe) correspond à la proportion d’individus dont le caractère est égal à cette modalité (ou appartenant à cette classe). Ainsi, pour tout entier $i$ compris entre $1$ et $p$ :
+$f_i = \dfrac{n_i}{N}$ et $f_1 + f_2 + \cdots + f_p =1$
+	</div>
+    
+    <div class="styled">
+        <table>
+        <tr>
+        <td style="vertical-align: top">
+            Le tableau ci-contre indique la répartition du nombre d’enfasnts de moins de 25 ans dans les familles des Bouches-du-Rhône en 1999 et 2009.
+            <div class="num">Construire un tableau avec les fréquence d'apparition en pourcentages (arrondir au dixième)</div>
+            <div class="num">Construire un diagramme en barres comparatif de 1999 et 2009.</div>
+        </td>
+        <td style="width: 50%">
+           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&1,1|w250" data-table-style="border-collapse: collapse;background: #ffffff">
+            Nombre de famille avec & 2009 & 1999 ||
+            Aucun enfant & $244\;918$ & $220\;109$ ||
+            $1$ enfant  & $131\;271$ & $124\;597$ || 
+            $2$ enfants  & $109\;776$ & $102\;135$ || 
+            $3$ enfants  & $35\;907$ & $35\;708$ || 
+            $4$ enfants et plus  & $13\;311$ & $14\;564$ ||
+            Total   & $535\;183$ & $497\;113$   
+            </div> 
+        </td>    
+        </tr>
+        </table>
+    </div>   
+    
+    
+</div>  
+    
+    
+<!-- Médiane -->
+<div class="box" data-title="Médiane" data-num="$N_3$" data-date="1" data-newpage="none">
+    <div class="titled hide" data-title="\boxD Définition" data-color="#666666">
+       Dans une série statistique ordonnée :
+une *{bold::médiane} partage les valeurs prises par le caractère en deux groupes de même effectif (soit $50\%$ de l'effectif total). <br>
+     La médiane correspond donc à la plus petite valeur prise par le caractère telle qu’*{tdu::au moins} $50\%$ des valeurs lui soient inférieures ou égales.    
+	</div>
+    
+    <div class="styled">
+        <table>
+        <tr>
+        <td style="vertical-align: top">
+            On a demandé à un groupe d'élèves de donner leur âge. Les réponses sont rassemblées ci-contre.
+            <div class="num">Déterminer la médiane (*{bold;tdu::effectif total impair}) en ordonnant la série statistique.</div>
+        </td>
+        <td style="width: 50%;vertical-align: top">
+           $16$; $15$; $15$; $16$; $17$; $16$; $18$; $18$; $16$; $17$; $17$; $15$; $16$; $17$; $16$; $17$; $18$; $16$; $15$; $18$; $17$       
+        </td>    
+        </tr>
+        </table>
+    </div>  
+    
+    <div class="styled">
+        <table>
+        <tr>
+        <td style="vertical-align: top">
+            On a demandé à un groupe d'élèves de donner leur âge. Les réponses sont rassemblées ci-contre.
+            <div class="num">Déterminer la médiane (*{bold;tdu::effectif total pair}) en ordonnant la série statistique.</div>
+        </td>
+        <td style="width: 50%;vertical-align: top">
+           $16$; $15$; $15$; $16$; $17$; $16$; $18$; $18$; $16$; $17$; $17$; $15$; $16$; $17$; $16$; $17$; $18$; $16$; $15$; $18$; $17$       
+        </td>    
+        </tr>
+        </table>
+    </div>  
+    
+    
+    <div class="styled">
+        <table>
+        <tr>
+        <td style="vertical-align: top">
+            Le tableau ci-contre indique la répartition du nombre d’enfants de moins de 25 ans dans les familles des Bouches-du-Rhône en 1999 et 2009.
+            <div class="num">Déterminer la médiane en construisant un tableau avec les fréquences d'apparition en pourcentages et les *{bold::fréquences cumulées croissantes} d'apparition en pourcentages.  </div>
+        </td>
+        <td style="width: 50%">
+           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&1,1|w250" data-table-style="border-collapse: collapse;background: #ffffff">
+            Nombre de famille avec & 2009 & 1999 ||
+            Aucun enfant & $244\;918$ & $220\;109$ ||
+            $1$ enfant  & $131\;271$ & $124\;597$ || 
+            $2$ enfants  & $109\;776$ & $102\;135$ || 
+            $3$ enfants  & $35\;907$ & $35\;708$ || 
+            $4$ enfants et plus  & $13\;311$ & $14\;564$ ||
+            Total   & $535\;183$ & $497\;113$   
+            </div> 
+        </td>    
+        </tr>
+        </table>
+    </div>   
+    
+    <div class="styled">
+        <table>
+        <tr>
+        <td style="vertical-align: top">
+            Le tableau ci-contre indique la répartition du nombre d’enfants de moins de 25 ans dans les familles des Bouches-du-Rhône en 1999 et 2009.
+            <div class="num">Déterminer la médiane en construisant le polygone des *{bold::fréquences cumulées croissantes} d'apparition en pourcentages.  </div>
+        </td>
+        <td style="width: 50%">
+           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&1,1|w250" data-table-style="border-collapse: collapse;background: #ffffff">
+            Nombre de famille avec & 2009 & 1999 ||
+            Aucun enfant & $244\;918$ & $220\;109$ ||
+            $1$ enfant  & $131\;271$ & $124\;597$ || 
+            $2$ enfants  & $109\;776$ & $102\;135$ || 
+            $3$ enfants  & $35\;907$ & $35\;708$ || 
+            $4$ enfants et plus  & $13\;311$ & $14\;564$ ||
+            Total   & $535\;183$ & $497\;113$   
+            </div> 
+        </td>    
+        </tr>
+        </table>
+    </div>   
+</div>      
+    
+<!-- Quartiles -->
+<div class="box" data-title="Quartiles" data-num="$N_4$" data-date="1" data-newpage="before">
+    <div class="titled hide" data-title="\boxD Définition" data-color="#666666">
+      Le *{bold::premier quartile} d’une série statistique numérique est la plus petite valeur prise
+par le caractère telle qu’*{tdu::au moins} $25\%$ des valeurs lui soient inférieures ou égales.
+Le *{bold::troisième quartile} d’une série statistique numérique est la plus petite valeur prise par le caractère telle qu’*{tdu::au moins} $75\%$ des valeurs lui soient inférieures ou égales. <br>
+        La médiane correspondrait au deuxième quartile soit a plus petite valeur prise par le caractère telle qu’*{tdu::au moins} $50\%$ des valeurs lui soient inférieures ou égales.
+	</div>
+    
+    
+    <div class="styled">
+        <table>
+        <tr>
+        <td style="vertical-align: top">
+            Le tableau ci-contre indique la répartition du nombre d’enfants de moins de 25 ans dans les familles des Bouches-du-Rhône en 1999 et 2009.
+            <div class="num">Déterminer la médiane, le premier et troisième quartiles en construisant un tableau avec les fréquences d'apparition en pourcentages et les *{bold::fréquences cumulées croissantes} d'apparition en pourcentages.  </div>
+        </td>
+        <td style="width: 50%">
+           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&1,1|w250" data-table-style="border-collapse: collapse;background: #ffffff">
+            Nombre de famille avec & 2009 & 1999 ||
+            Aucun enfant & $244\;918$ & $220\;109$ ||
+            $1$ enfant  & $131\;271$ & $124\;597$ || 
+            $2$ enfants  & $109\;776$ & $102\;135$ || 
+            $3$ enfants  & $35\;907$ & $35\;708$ || 
+            $4$ enfants et plus  & $13\;311$ & $14\;564$ ||
+            Total   & $535\;183$ & $497\;113$   
+            </div> 
+        </td>    
+        </tr>
+        </table>
+    </div>   
+    
+    <div class="styled">
+        <table>
+        <tr>
+        <td style="vertical-align: top">
+            Le tableau ci-contre indique la répartition du nombre d’enfants de moins de 25 ans dans les familles des Bouches-du-Rhône en 1999 et 2009.
+            <div class="num">Déterminer la médiane, le premier et troisième quartiles  en construisant le polygone des *{bold::fréquences cumulées croissantes} d'apparition en pourcentages.  </div>
+        </td>
+        <td style="width: 50%">
+           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&1,1|w250" data-table-style="border-collapse: collapse;background: #ffffff">
+            Nombre de famille avec & 2009 & 1999 ||
+            Aucun enfant & $244\;918$ & $220\;109$ ||
+            $1$ enfant  & $131\;271$ & $124\;597$ || 
+            $2$ enfants  & $109\;776$ & $102\;135$ || 
+            $3$ enfants  & $35\;907$ & $35\;708$ || 
+            $4$ enfants et plus  & $13\;311$ & $14\;564$ ||
+            Total   & $535\;183$ & $497\;113$   
+            </div> 
+        </td>    
+        </tr>
+        </table>
+    </div>   
+</div>  
+    
+<!-- Moyenne -->
+<div class="box" data-title="Moyenne" data-num="$N_5$" data-date="1" data-newpage="before">
+    <div class="titled hide" data-title="\boxD Définition" data-color="#666666">
+        La *{bold::moyenne} d'une série statistique se note $\overline{x}$ et vaut : vspace{10}
+        ,, $\overline{x} = \dfrac{n_1\times x_1 + n_2\times x_2 + \cdots + n_p\times x_p }{n_1 + n_2 + \cdots + n_p}$ <br>
+        où $x_1, x_2, \cdots ,x_p$ désignent les $p$ modalités et $n_1, n_2, \cdots ,n_p$ désignent les effectifs correspondants. vspace{30}
+        
+        ,, $\overline{x} = \dfrac{n_1\times c_1 + n_2\times c_2 + \cdots + n_p\times c_p }{n_1 + n_2 + \cdots + n_p}$ <br>
+        où $c_1, c_2, \cdots ,c_p$ désignent les centres des $p$ classes de modalités et $n_1, n_2, \cdots ,n_p$ désignent les effectifs correspondants. 
+    </div> 
+    <div class="titled hide" data-title="\boxD Fréquences" data-color="#666666">
+        La *{bold::moyenne} d'une série statistique se note $\overline{x}$ et vaut : vspace{10}
+        ,, $\overline{x} = f_1\times x_1 + f_2\times x_2 + \cdots + f_p\times x_p $ <br>
+        où $x_1, x_2, \cdots ,x_p$ désignent les $p$ modalités et $f_1, f_2, \cdots ,f_p$ désignent les fréquences d'apparition correspondantes. vspace{30}
+        
+        ,, $\overline{x} = f_1\times c_1 + f_2\times c_2 + \cdots + f_p\times c_p $ <br>
+        où $c_1, c_2, \cdots ,c_p$ désignent les centres des $p$ classes de modalités et $f_1, f_2, \cdots ,f_p$ désignent les fréquences d'apparition correspondantes. 
+    </div> 
+    <div class="styled">
+        
+    </div>    
+</div>    
+       
+</body>
+</html>

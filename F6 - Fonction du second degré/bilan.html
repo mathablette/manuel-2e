@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<script id="pfmath" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body data-title="Fonction du second degré" data-type="list" data-main-style="frame" data-main-width="850" data-font-size="18">
+<div class="box" data-title="Trinôme, racines, factorisation et signes" data-num="none" data-info-label="Cours">
+    <div class="info" data-name="Définition : discriminant $\Delta$">
+         $\Delta = b^2 - 4ac$ est le *{bold::discriminant} du trinôme du second degré $ax^2 + bx+ c$ ($a \not= 0$).
+    </div>
+    <div class="info" data-name="Racines quand $\Delta > 0$" data-width="570">
+        Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::positif} : 
+        
+        $\quad\bullet$  L'équation $ax^2 + bx+ c = 0$ possède *{bob1#444444::$2$ racines réelles } $x_1$ et $x_2$. 
+
+$\quad\bullet$ avec $\displaystyle x_1 = \frac{-b - \sqrt{\Delta}}{2a}$ et $\displaystyle x_2 = \frac{-b + \sqrt{\Delta}}{2a}$  
+    </div>
+    <div class="info" data-name="Racine quand $\Delta = 0$">
+        Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::nul} : 
+        
+        $\quad\bullet$  L'équation $ax^2 + bx+ c = 0$ possède *{bob1#444444::$1$ racine réelle} $x_0$. 
+
+$\quad\bullet$ avec $\displaystyle x_0 = \frac{-b}{2a}$   
+    </div>
+    <div class="info" data-name="Racine quand $\Delta < 0$" data-width="570">
+        Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::négatif} : 
+        
+        $\quad\bullet$  L'équation $ax^2 + bx+ c = 0$  n'admet pas de racine réelle.   
+    </div>
+    <div class="info" data-name="Factorisation quand $\Delta > 0$">
+        Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::positif}, la forme *{bold::factorisée} de $ax^2 + bx+ c$ est alors $a(x-x_1)(x-x_2)$  
+    </div>
+    <div class="info" data-name="Factorisation quand $\Delta = 0$">
+        Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::égale à zéro}, la forme *{bold::factorisée} de $ax^2 + bx+ c$ est alors $a(x-x_0)^2$  
+    </div>
+    <div class="info" data-name="Factorisation quand $\Delta < 0$">
+        Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::négatif}, $ax^2 + bx+ c$ n'a pas de forme factorisée dans $\R$. 
+    </div>
+    <div class="info" data-name="Signes quand $\Delta > 0$" data-width="550">
+        Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::positif} ($x_1 < x_2$) alors : 
+        $\quad$ Si $a > 0 $ :
+       	$\quad\quad\bullet\; ax^2 + bx+ c \geqslant 0$  sur $]-\infty;x_1]$
+        $\quad\quad\bullet\; ax^2 + bx+ c  \leqslant 0$ sur $[x_1;x_2]$  
+        $\quad\quad\bullet\; ax^2 + bx+ c  \geqslant 0$ sur $[x_2;+\infty[$
+        $\quad$ Si $a < 0 $ :
+       	$\quad\quad\bullet\; ax^2 + bx+ c \leqslant 0$  sur $]-\infty;x_1]$
+        $\quad\quad\bullet\; ax^2 + bx+ c  \geqslant 0$ sur $[x_1;x_2]$  
+        $\quad\quad\bullet\; ax^2 + bx+ c  \leqslant 0$ sur $[x_2;+\infty[$
+    </div>
+    <div class="info" data-name="Signes quand $\Delta = 0$" data-width="550">
+        Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::nul}  alors : 
+        $\quad$ Si $a > 0 $ :
+       	$\quad\quad\bullet\; ax^2 + bx+ c \geqslant 0$  sur $\R$
+        $\quad$ Si $a < 0 $ :
+       	$\quad\quad\bullet\; ax^2 + bx+ c \leqslant 0$  sur $\R$
+    </div>
+    <div class="info" data-name="Signes quand $\Delta < 0$" data-width="550">
+        Lorsque le discriminant $\Delta = b^2 - 4ac$ est *{bold::négatif}  alors : 
+        $\quad$ Si $a > 0 $ :
+       	$\quad\quad\bullet\; ax^2 + bx+ c > 0$  sur $\R$
+        $\quad$ Si $a < 0 $ :
+       	$\quad\quad\bullet\; ax^2 + bx+ c < 0$  sur $\R$
+    </div>
+<div class="styled" data-ref="b0" style="margin-top: 10px">
+		Soit le trinôme  <span style="border: 1px solid #444444;border-radius: 5px;padding: 4px;background: #ccccee;padding-left: 15px;padding-right: 15px">ref{t.a}$x^2$ref{t.b}$x$ref{t.c}</span> avec :
+		$a = $ <cell ref= "a" width="45">4</cell> 
+		$b = $ <cell ref= "b" width="45">4</cell> 
+		$c = $ <cell ref= "c" width="45">4</cell> \\
+		*{fs14;italic::cliquer sur les coefficients du trinôme pour modifier leur valeur.}
+	</div>	
+
+	<div class="styled" data-ref="b2" style="margin-top: 20px;border-left: 4px solid #444444;margin-left: 10px">
+		Le discriminant est égal à $\Delta = $ <cell data-onchange="delta" ref="delta">b^2-4*a*c</cell>
+	</div>
+	
+	<div class="styled" data-ref="b3" style="margin-top: 10px;border-left: 4px solid #444444;margin-left: 10px">
+		Comme $\Delta > 0$, il y a deux racines dans $\R$ : 
+		tab{2} $x_1$ ref{eq1::$=$} <cell ref="x1">racine1(a,b,c)</cell> et $x_2$ ref{eq2::$=$} <cell ref="x2">racine2(a,b,c)</cell>
+	</div>
+	
+	<div class="styled" data-ref="b31" style="margin-top: 10px;border-left: 4px solid #444444;margin-left: 10px">
+		Comme $\Delta = 0$, il y a une seule racine dans $\R$ : 
+		tab{2} $x_0 $ ref{eq0::$=$} <cell ref="x0">racine1(a,b,c)</cell> 
+	</div>
+	
+	<div class="styled" data-ref="b32" style="margin-top: 10px;border-left: 4px solid #444444;margin-left: 10px">
+		Comme $\Delta < 0$, il n'y a aucune racine dans $\R$.
+	</div>
+	
+	<div class="styled" data-ref="fact" style="margin-top: 20px;border-left: 4px solid #444444;margin-left: 10px">
+	</div>
+	
+	
+	
+	<div class="styled" style="margin-top: 20px">
+	    La courbe représentative (Parabole) de la fonction associée au trinôme est :  \\
+	    la partie *{#0000FF::bleue} correspond à un intervalle où ref{tri1} $\leqslant 0$ \\
+	    la partie *{#FF0000::rouge} correspond à un intervalle où ref{tri2} $\geqslant 0$
+	</div>
+	<div class="figure" data-width="18" data-height="10" data-ref="f1" style="margin: auto;margin-top: 5px">
+		painterGrid(3)
+		showMark()
+		markUpdate(9,5,1,1,1,1,0,0)
+		f1 = curveFunction('1/x',-10,-0.1,0.01)
+	</div>
+	
+	<div class="script">
+	    var va = box.cell('a').val();
+		box.value('t.a','$'+va+'$');
+		
+		var vb = box.cell('b').val();
+		if ( vb > 0 )
+		{
+			vb = '+'+vb;
+		}
+		box.value('t.b','$'+vb+'$');
+		
+		var vc = box.cell('c').val();
+		if ( vc > 0 )
+		{
+			vc = '+'+vc;
+		}
+		box.value('t.c','$'+vc+'$');
+		
+		box.fn.delta = function(evt)
+		{
+			var factorisation = box.fact;
+		    var expr = "";
+			var va = box.cell('a').val();
+			box.value('t.a','$'+va+'$');
+			expr += va+"x^2";
+			
+			var vb = box.cell('b').val();
+			if ( vb > 0)
+				vb = "+"+vb;
+			box.value('t.b','$'+vb+'$');
+			expr += vb+"x";
+			
+			var vc = box.cell('c').val();
+			if ( vc > 0 )
+			{
+				vc = '+'+vc;
+			}
+			if ( vc < 0 )
+			{
+				vc = '-'+Math.abs(vc);
+			}
+			box.value('t.c','$'+vc+'$');
+			expr += vc;
+			
+			box.ref('b3').hide();
+			box.ref('b31').hide();
+			box.ref('b32').hide();
+			if ( evt.value > 0)
+			{
+			    if (box.cell('x1').exact )
+			    {
+			        box.eq1.html(doMathSpan('='));
+			    }
+			    else
+			    {
+			        box.eq1.html(doMathSpan('\\approx'));
+			    }   
+			    if (box.cell('x2').exact )
+			    {
+			        box.eq2.html(doMathSpan('='));
+			    }
+			    else
+			    {
+			        box.eq2.html(doMathSpan('\\approx'));
+			    }   
+				box.ref('b3').show();
+				
+				var x1 = box.cell('x1').val();
+				var x2 = box.cell('x2').val();
+				
+				
+				if (box.cell('x1').exact && box.cell('x2').exact)
+				{
+				    var content = 'Comme $\\Delta > 0$ alors  $ $1  = $2 (x $3)(x $4)$ . \\\\';
+				    if ( va > 0)
+	        		{
+	        			content += "Comme $a > 0$ alors : \\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\geqslant 0$ pour tout $x \\in ]-\\infty ; $5]$.\\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\leqslant 0$ pour tout $x \\in [$5 ; $6]$.\\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\geqslant 0$ pour tout $x \\in [$6 ; +\\infty[$.";
+	        		}
+	        		if ( va < 0)
+	        		{
+	        			content += "Comme $a < 0$ alors : \\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\leqslant 0$ pour tout $x \\in ]-\\infty ; $5]$.\\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\geqslant 0$ pour tout $x \\in [$5 ; $6]$.\\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\leqslant 0$ pour tout $x \\in [$6 ; +\\infty[$.";
+	     
+	        		}
+        			
+        			if ( x1 < x2)
+        				factorisation.format(content,expr,va,formatDecimalX(-x1,'+0.00'),formatDecimalX(-x2,'+0.00'),formatDecimalX(x1,'+0.00'),formatDecimalX(x2,'+0.00'));
+      				 else
+      				 {
+      				 	factorisation.format(content,expr,va,formatDecimalX(-x2,'+0.00'),formatDecimalX(-x1,'+0.00'),formatDecimalX(x2,'+0.00'),formatDecimalX(x1,'+0.00'));
+      				 }
+				}
+				else
+				{
+				   var content = 'Comme $\\Delta > 0$ alors  $ $1  = $2 (x - x_1)(x - x_2)$ . \\\\';
+        			if ( va > 0)
+	        		{
+	        			content += "Comme $a > 0$ alors : \\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\geqslant 0$ pour tout $x \\in ]-\\infty ; $5]$.\\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\leqslant 0$ pour tout $x \\in [$5 ; $6]$.\\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\geqslant 0$ pour tout $x \\in [$6 ; +\\infty[$.";
+	        		}
+	        		if ( va < 0)
+	        		{
+	        			content += "Comme $a < 0$ alors : \\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\leqslant 0$ pour tout $x \\in ]-\\infty ; $5]$.\\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\geqslant 0$ pour tout $x \\in [$5 ; $6]$.\\\\";
+	        			content += "hspace{30}$\\bullet\\; $1 \\leqslant 0$ pour tout $x \\in [$6 ; +\\infty[$.";
+	     
+	        		}
+        			
+        			if ( x1 < x2)
+        				factorisation.format(content,expr,va,formatDecimalX(-x1,'+0.00'),formatDecimalX(-x2,'+0.00'),formatDecimalX(x1,'+0.00'),formatDecimalX(x2,'+0.00'));
+      				 else
+      				 {
+      				 	factorisation.format(content,expr,va,formatDecimalX(-x2,'+0.00'),formatDecimalX(-x1,'+0.00'),formatDecimalX(x2,'+0.00'),formatDecimalX(x1,'+0.00'));
+      				 }
+				}
+				
+				
+				if ( x1 < x2)
+				{
+    				var fig = box.figure('f1');
+            		fig.clear();
+            		fig.exec('painterGrid(3)');
+            		fig.exec('showMark()');
+            	    fig.exec('markUpdate(9,5,1,1,2,10,0,0)');
+            		fig.exec('f1 = curveFunction("$1",-20,$2,0.01)',expr,x1);
+            		fig.exec('lineWidth(f1,3)');
+            		if ( va > 0 )
+        	            fig.exec('foreground(f1,"#FF0000")');
+        		    else
+        		        fig.exec('foreground(f1,"#0000FF")');
+        		        
+        		    fig.exec('f2 = curveFunction("$1",$2,$3,0.01)',expr,x1,x2);
+            		fig.exec('lineWidth(f2,3)');
+            		if ( va > 0 )
+        	            fig.exec('foreground(f2,"#0000FF")');
+        		    else
+        		        fig.exec('foreground(f2,"#FF0000")');  
+        		        
+        		    fig.exec('f3 = curveFunction("$1",$2,20,0.01)',expr,x2);
+            		fig.exec('lineWidth(f3,3)');
+            		if ( va > 0 )
+        	            fig.exec('foreground(f3,"#FF0000")');
+        		    else
+        		        fig.exec('foreground(f3,"#0000FF")'); 
+        		        
+            		fig.compute();
+        		}
+        		
+        		if ( x1 > x2)
+				{
+    				var fig = box.figure('f1');
+            		fig.clear();
+            		fig.exec('painterGrid(3)');
+            		fig.exec('showMark()');
+            	    fig.exec('markUpdate(9,5,1,1,2,10,0,0)');
+            		fig.exec('f1 = curveFunction("$1",-20,$2,0.01)',expr,x2);
+            		fig.exec('lineWidth(f1,3)');
+            		if ( va > 0 )
+        	            fig.exec('foreground(f1,"#FF0000")');
+        		    else
+        		        fig.exec('foreground(f1,"#0000FF")');
+        		        
+        		    fig.exec('f2 = curveFunction("$1",$2,$3,0.01)',expr,x2,x1);
+            		fig.exec('lineWidth(f2,3)');
+            		if ( va > 0 )
+        	            fig.exec('foreground(f2,"#0000FF")');
+        		    else
+        		        fig.exec('foreground(f2,"#FF0000")');  
+        		        
+        		    fig.exec('f3 = curveFunction("$1",$2,20,0.01)',expr,x1);
+            		fig.exec('lineWidth(f3,3)');
+            		if ( va > 0 )
+        	            fig.exec('foreground(f3,"#FF0000")');
+        		    else
+        		        fig.exec('foreground(f3,"#0000FF")');  
+        		        
+            		fig.compute();
+        		}
+			
+			}
+			
+			// delta
+			if ( evt.value == 0)
+			{
+				var x0 = box.cell('x0');
+			    if (x0.exact )
+			    {
+			    	box.eq0.math('=');
+			       var content = 'Comme $\\Delta = 0$ alors  $ $1  = $2 (x $3) ^2$ . \\\\';
+        			if ( va > 0)
+        			{
+        				content += "Comme $a > 0$ alors $ $1 \\geqslant 0$ pour tout $x \\in \\R$.";
+        			}
+        			if ( va < 0)
+        			{
+        				content += "Comme $a < 0$ alors $ $1 \\leqslant 0$ pour tout $x \\in \\R$.";
+        			}
+        			
+        			factorisation.format(content,expr,va,formatDecimalX(-x0.val(),'+0.00'));
+			    }
+			    else
+			    {
+			        box.eq0.math('\\approx');
+			        var content = 'Comme $\\Delta = 0$ alors  $ $1  = a (x - x_0) ^2$ . \\\\';
+        			if ( va > 0)
+        			{
+        				content += "Comme $a > 0$ alors $ $1 \\geqslant 0$ pour tout $x \\in \\R$.";
+        			}
+        			if ( va < 0)
+        			{
+        				content += "Comme $a < 0$ alors $ $1 \\leqslant 0$ pour tout $x \\in \\R$.";
+        			}
+        			
+        			factorisation.format(content,expr,va,formatDecimalX(-x0.val(),'+0.00'));
+			    }   
+				box.ref('b31').show();
+				var fig = box.figure('f1');
+        		fig.clear();
+        		fig.exec('painterGrid(3)');
+        		fig.exec('showMark()');
+        	    fig.exec('markUpdate(9,5,1,1,2,10,0,0)');
+        		fig.exec('f1 = curveFunction("$1",-15,15,0.01)',expr);
+        		fig.exec('lineWidth(f1,3)');
+        		if ( va > 0 )
+        		    fig.exec('foreground(f1,"#FF0000")');
+        		else
+        		    fig.exec('foreground(f1,"#0000FF")');
+        		fig.compute();
+			}
+			
+			// delta négatif
+			if ( evt.value < 0)
+			{
+				box.ref('b32').show();
+				var fig = box.figure('f1');
+        		fig.clear();
+        		fig.exec('painterGrid(3)');
+        		fig.exec('showMark()');
+        	    fig.exec('markUpdate(9,5,1,1,2,10,0,0)');
+        		fig.exec('f1 = curveFunction("$1",-15,15,0.01)',expr);
+        		fig.exec('lineWidth(f1,3)');
+        		if ( va > 0 )
+        		    fig.exec('foreground(f1,"#FF0000")');
+        		else
+        		    fig.exec('foreground(f1,"#0000FF")');
+        		fig.compute();
+        		
+        		var content = 'Comme $\\Delta < 0$, le trinôme $ $1 $ n\'a pas de factorisation dans $\\R$. \\\\';
+        		if ( va > 0)
+        		{
+        			content += "Comme $a > 0$ alors $ $1 > 0$ pour tout $x \\in \\R$.";
+        		}
+        		if ( va < 0)
+        		{
+        			content += "Comme $a < 0$ alors $ $1 < 0$ pour tout $x \\in \\R$.";
+        		}
+        		factorisation.format(content,expr);
+			}
+			box.tri1.html(doMathSpan(expr));
+	    	box.tri2.html(doMathSpan(expr));    
+		
+		};
+		box.ref('b3').hide();
+		box.ref('b31').hide();
+		
+		var delta = box.cell('delta');
+		box.fn.delta({value: delta.val()});
+		
+		
+	</div>
+	
+</div>
+
+
+</body>
+
+</html>

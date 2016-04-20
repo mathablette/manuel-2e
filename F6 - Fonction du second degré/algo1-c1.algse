@@ -1,0 +1,42 @@
+// Coefficients du trinôme
+var a = 2;
+var b = 4;
+var c = 1;
+
+// test si a n'est pas égal à zéro
+if ( a == 0 )
+{
+   algo.output("Ce n'est pas un trinôme car $a=0$.");
+}
+else
+{
+  	// affichage
+  	algo.output("Pour le trinôme $#1x^2 #2x #3$ : ",a,algo.formatNumber(b,'+0.000'),algo.formatNumber(c,'+0.000'));
+  
+	// discriminant
+    var delta = Math.pow(b,2)-4*a*c;
+
+  	// affichage
+  	algo.output("$\\Delta = #1$",delta);
+  
+    // suivant le signe du discriminant
+    if ( delta < 0){
+          algo.output("Il n'y a pas de racine réelle car $\\Delta < 0$.");
+    }
+    else if ( delta > 0){
+          var x1 = (-b-Math.sqrt(delta))/2*a;
+          var x2 = (-b+Math.sqrt(delta))/2*a;
+      
+      	  // affichage
+          algo.output("Il y a 2 racines réelles car $\\Delta > 0$ : ");
+          algo.output("$x_1 = #1$",algo.formatNumber(x1,'0.000'));
+          algo.output("$x_2 = #1$",algo.formatNumber(x2,'0.000'));
+    }
+    else {
+        var x0 = (-b)/2*a;
+      
+        // affichage
+        algo.output("Il y a 1 racine réelle car $\\Delta = 0$ : ");
+        algo.output("$x_0 = #1$",x0);
+    }
+}

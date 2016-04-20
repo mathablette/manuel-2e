@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
+</head>
+
+<body  data-type="animation" data-title="Coordonnées dans le plan" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Coordonnées dans le plan" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+data-start-page="7"
+data-left="$2_e$-$G_1$"
+data-main-width="900">
+
+<!-- Repère et coordonnées -->
+<div class="box" data-title="Repère et coordonnées" data-num="$N_1$" data-date="1">
+    
+    <div class="titled hide" data-title="\boxR Définition : repère" data-color="#666666">
+        
+        Un répère c'est donner trois points $O$ ; $I$ et $J$ non alignés. On note un repère $(O;I;J)$ avec : <br>
+        ,, $O$ est l'*{bold::origine} du repère. <br>
+        ,, La droite $(OI)$ est l'*{bold::axes des abscisses} (orienté de $O$ vers $I$). L'axe des abscisses $(0I)$ est très fréquemment horizontal. <br>
+        ,, La droite $(OJ)$ est l'*{bold::axes des ordonnées} (orienté de $O$ vers $J$). L'axe des abscisses $(0I)$ est très fréquemment vertical. <br>
+        ,, La longueur $OI$ est l'unité sur l'axe des abscisses qui correspond à la distance entre deux graduations sur cet axe. <br>
+        ,, La longueur $OJ$ est l'unité sur l'axe des ordonnées qui correspond à la distance entre deux graduations sur cet axe.
+        vspace{10}
+        Dans la grande majorité des cas le répère est *{bold::orthogonal} c'est à dire que le triangle $OIJ$ est rectangle en $O$ (quand ce n'est pas spécifié, le repère est orthogonal). <br>
+        Quand le triangle $OIJ$ est isocèle-rectangle en $O$ ($OI = OJ$) on dit que le répère $(O;I;J)$ est *{bold::orthonormé}.
+	</div>
+    
+    <div class="titled hide" data-title="\boxR Définition : coordonnées" data-color="#666666">
+        
+        On considère un repère $(O;I;J)$. Un point est repéré par un couple de deux réels. Le premier réel est le répérage sur l'axe des abscisses et correspond à l'abscisse du point. Le deuxième réel est le répérage sur l'axe des ordonnées et correspond à l'ordonnées du point. Le couple de ces deux réels est appelé *{bold::coordonnées} du point. Pour le point $M$ on note ses coordonnées $M(x;y)$ où $x$ est l'abscisse du point $M$ et $y$ son ordonnée. 
+        
+        <draw width='22cm' height='9cm' style="border: 1px solid #444444;background: #ffffff;border-radius: 5px;margin: auto;margin-bottom: 10px">
+		mark({Ox : '11cm', Oy : '4cm',dx: 2,cmx : 4,cmy: 2})
+      	grid(3)
+        width(3)
+        point(0,0,{name: 'O',left: -1.3,top: -1})    
+        point(6,3,{name: 'M',left: -0.01,top: 0.2})
+        math('(6;3)','lastX+1.3','lastY+1.1')    
+        dash(4)
+        line(6,0,6,3)
+        line(0,3,6,3)    
+        dash(0)
+        arrow('<-')
+        line(1.1,-0.1,3,-2)
+        math('I','lastX+0.1','lastY+0.1')
+        line(-0.1,1,-3,1)
+        math('J','lastX-0.8','lastY+0.5') 
+        line(6.1,-0.1,7,-2)
+        text('abscisse de $M$','lastX+0.2','lastY+0.5')   
+        line(-0.1,3,-3,4)
+        text('ordonnée de $M$','lastX-6.5','lastY+1')       
+	</draw>
+        Dans un repère $(0;I;J)$ : $O(0;0)$ ; $I(1;0)$ et $J(0;1)$
+	</div>
+    
+   
+	
+   
+	<div class="styled">
+            <div class="num">Construire un repère orthonormé $(0;I;J)$ d'unité $2\;cm$</div>
+            <div class="item" data-value="a." style="margin-left: 50px">Placer $A(2;-2)$ ; $B(5;4)$ et $C(9;3)$</div>
+            <div class="item" data-value="b." style="margin-left: 50px">Placer le point $D$ pour que $ABCD$ soit un parallèlogramme. Donner les coordonnées de $D$.</div>
+            <div class="item" data-value="c." style="margin-left: 50px">Donner les coordonnées de $D$.</div>
+         <div class="num">Construire un repère orthonormé $(0;I;J)$ d'unité $2\;cm$</div>
+            <div class="item" data-value="a." style="margin-left: 50px">Placer $A(2;-2)$ ; $B(5;4)$ et $C(9;3)$</div>
+            <div class="item" data-value="b." style="margin-left: 50px">Placer le point $D$ pour que $ABCD$ soit un parallèlogramme. Donner les coordonnées de $D$.</div>
+            <div class="item" data-value="c." style="margin-left: 50px">Donner les coordonnées de $D$.</div>
+	</div>
+</div>	
+
+    
+<!-- Milieu d'un segment -->
+<div class="box" data-title="Milieu d'un segment" data-num="$N_2$" data-date="1" data-newpage="before">
+    <div class="titled hide" data-title="\boxP Propriété" data-color="#666666">
+        On considère un repère $(O;I;J)$ et deux points $A$ et $B$ tels que $A(x_A;y_A)$ et $B(x_B;y_B)$. Le point $I$, milieu du segment $[AB]$ a pour coordonnées : $I\Big( \dfrac{x_A+x_B}{2} ; \dfrac{y_A+y_B}{2}\Big)$
+	</div>
+    <div class="styled">
+        Dans un repère $(O;I;J)$, on donne les points : $R(-1;4)$ ; $S(-2;1)$ ; $T(3;0)$ et $U(4;3)$
+        <div class="num">Construire $(O;I;J)$ puis placer les points $R$ ; $S$ ; $T$ et $U$</div>
+        <div class="num">Calculer les coordonnées du milieu de $[RT]$ et $[SU]$. Que conclure ?</div>
+    </div>    
+    
+</div>  
+    
+<!-- Longueur d'un segment -->
+<div class="box" data-title="Longueur d'un segment" data-num="$N_3$" data-date="1" data-newpage="none">
+    <div class="titled hide" data-title="\boxP Propriété" data-color="#666666">
+        On considère un repère *{bold::orthonormé} $(O;I;J)$ et deux points $A$ et $B$ tels que $A(x_A;y_A)$ et $B(x_B;y_B)$. La longueur du segment $[AB]$ vaut : $AB = \sqrt{(x_B-x_A)^2 + (y_B-y_A)^2}$
+	</div>
+    <div class="styled">
+        Dans un repère *{bold::orthonormé} $(O;I;J)$, on donne les points : $R(1;4-1$ ; $S(-2;0)$ ; $T(0;6)$ et $U(3;5)$
+        <div class="num">Construire $(O;I;J)$ puis placer les points $R$ ; $S$ ; $T$ et $U$</div>
+        <div class="num">Calculer $RT$ et $SU$. Que conclure ?</div>
+    </div>    
+    
+</div>      
+
+       
+</body>
+</html>
