@@ -5,26 +5,31 @@
 <script id="pfmath"  hash="__#HASH#__" type="text/javascript" src="http://mathablette.fr/lib/pfmath.js"></script>
 </head>
 
-<body  data-type="animation" data-title="Fonction affine" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Fonction affine" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
+<body  data-type="animation" data-title="Fonction inverse" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Fonction inverse" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
 data-start-page="7"
-data-left="$2^e$-$F_3$"
+data-left="$2^e$-$F_5$"
 data-main-width="900">
 
 <!--Définition et vocabulaire-->
 <div class="box" data-title="Définitions et propriétés" data-num="$N_1$ \iPencil" data-date="1">
     
-    <div class="titled hide" data-title="\boxD Fonction affine" data-color="#666666">
-       Une fonction *{bold::affine} $f$ est définie par $f(x) = a\times x +b$ où $a$ et $b$ sont deux nombres réels. <br>
-    $a$ est le *{coefficient directeur} de la fonction $f$ et $b$ est l'*{bold::ordonnée à l'origine}. <br>
-    Quand $b=0$ alors la fonction $f(x) = a\times x$ est appelée fonction *{bold::linéaire}.    
+    <div class="titled hide" data-title="\boxD Fonction inverse" data-color="#666666">
+       Une fonction *{bold::inverse} $f$ est définie par $f(x) = \dfrac{1}{a x +b}$ où $a$ et $b$ sont deux nombres réels tels que $a\not=0$. (c'est l'inverse d'une fonction affine).
+        
+	</div>
+    
+    <div class="titled hide" data-title="\boxP Ensemble de définition" data-color="#666666">
+       Soit $f$ une fonction inverse telle que $f(x) = \dfrac{1}{a x +b}$ alors son ensemble de définition est : <br>
+    $\mathcal{D}_f = \R\backslash\{\frac{-b}{a}\} = ]-\infty;\frac{-b}{a}[\cup ]\frac{-b}{a};+\infty[$ <br>
+    En effet comme on ne peut pas "diviser" par $0$, il faut donc que $ax+b \not=0$    
         
 	</div>
     
     <div class="titled hide" data-title="\boxP Tableau de variation" data-color="#666666">
-        On considère une fonction affine $f(x) = ax +b$ avec $a \not= 0$. Si $a=0$ cette fonction affine est *{bold::constante} et vaut $f(x) = b$. L'ensemble de définition de $f$ est $\mathcal{D}_f = ]-\infty;+\infty[ = \R$. vspace{1}
+        On considère une fonction inverse $f(x) = \dfrac{1}{a x +b}$ avec $a \not= 0$. Si $a=0$ cette fonction inverse est *{bold::constante} et vaut $f(x) = \frac{1}{b}$. vspace{1}
        <div class="table 2cols" cells="*,*|c">
         si $a > 0$ & si $a < 0$ ||
-         <drawing width='300' height='150' style="margin-left: 60px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+         <drawing width='285' height='130' style="margin-left: 60px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
 		move(10,5)
 		down('h-10')
 		right('w-20')
@@ -38,37 +43,52 @@ data-main-width="900">
 		
 		math('x',30,15,{fontSize: '14pt'})
 		math('-\\infty','lastX+45','lastY',{fontSize: '14pt'})
+        math('\\frac{-b}{a}','w-125','lastY',{fontSize: '14pt'})   
+		math('+\\infty','w-50','lastY',{fontSize: '14pt'})
+		
+		math("f",30,'h-60',{fontSize: '14pt'})
+		arrow('->')
+		move(85,'h-70')
+		line(70,50) 
+           
+        arrow('-')   
+		line('w-112',50,'w-112','h-5')
+        line('w-116',50,'w-116','h-5') 
+        arrow('->')
+		move(185,'h-70')
+		line(70,50)   
+	</drawing>     
+        
+        &
+        
+        <drawing width='285' height='130' style="margin-left: 60px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+		move(10,5)
+		down('h-10')
+		right('w-20')
+		up('h-10')
+		left('w-20')
+		
+		move(70,5)
+		down('h-10')
+		move(10,50)
+		right('w-20')
+		
+		math('x',30,15,{fontSize: '14pt'})
+		math('-\\infty','lastX+45','lastY',{fontSize: '14pt'})
+        math('\\frac{-b}{a}','w-125','lastY',{fontSize: '14pt'})   
 		math('+\\infty','w-50','lastY',{fontSize: '14pt'})
 		
 		math("f",30,'h-60',{fontSize: '14pt'})
 		arrow('->')
 		move(85,'h-20')
-		line(180,-60)
-		
-	</drawing>     
-        
-        &
-        
-        <drawing width='300' height='150' style="margin-left: 60px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
-		move(10,5)
-		down('h-10')
-		right('w-20')
-		up('h-10')
-		left('w-20')
-		
-		move(70,5)
-		down('h-10')
-		move(10,50)
-		right('w-20')
-		
-		math('x',30,15,{fontSize: '14pt'})
-		math('-\\infty','lastX+45','lastY',{fontSize: '14pt'})
-		math('+\\infty','w-50','lastY',{fontSize: '14pt'})
-		
-		math("f",30,'h-60',{fontSize: '14pt'})
-		arrow('->')
-		move(85,'h-80')
-		line(180,60)
+		line(70,-50) 
+           
+        arrow('-')   
+		line('w-112',50,'w-112','h-5')
+        line('w-116',50,'w-116','h-5') 
+        arrow('->')
+		move(185,'h-20')
+		line(70,-50)   
 		
 	</drawing>     
            
@@ -92,49 +112,29 @@ data-main-width="900">
     
     
 <!--Représentation graphique-->
-<div class="box" data-title="Représentation graphique d'une fonction affine" data-num="$N_2$" data-date="1">
+<div class="box" data-title="Représentation graphique d'une fonction inverse" data-num="$N_2$" data-date="1">
     
     
     <div class="titled hide" data-title="\boxP Représentation graphique" data-color="#666666">
-        On considère une fonction affine $f(x) = ax +b$. La représentation graphique $\mathcal{C}_f$ de $f$ est une droite non-verticale. Pour la tracer il suffit de placer  $2$ points. Cette droite a pour équation $y = f(x) = ax+b$. vspace{1}
-       <div class="table 3cols" cells="*,*|c">
-        si $a > 0$ & si $a < 0$ & si $a = 0$ ||
-         <draw width='6cm' height='6cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+        On considère une fonction inverse $f(x) = \dfrac{1}{a x +b}$. La représentation graphique $\mathcal{C}_f$ de $f$ est une *{bold::hyperbole}. vspace{1}
+       <div class="table 2cols" cells="*,*|c">
+        si $a > 0$ & si $a < 0$ ||
+         <draw width='10cm' height='5cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
 		mark({center: 'middle'})
 		grid(5)
-		curve('2x+1',-10,10)
-        arrow('<-')
-        line(0.2,1,1.5,1)
-        math('b','lastX+0.2','lastY+0.3') 
-        point('-1.6','2*(-1.6)+1','E') 
-        point('0.6','2*(0.6)+1','F')     
+        width(3)   
+		curve('1/(2x+2)',-10,10)   
 	</draw>
         
         &
         
-        <draw width='6cm' height='6cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+        <draw width='10cm' height='5cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
 		mark({center: 'middle'})
 		grid(5)
-		curve('-3x-1.5',-10,10)
-        arrow('<-')    
-        line(0.2,-1.5,1.5,-1.5)
-        math('b','lastX+0.2','lastY+0.3') 
-        point('-1.2','-3*(-1.2)-1.5','A') 
-       point('0.2','-3*(0.2)-1.5','B')     
+        width(3)    
+		curve('1/(-3x+3)',-10,10)  
 	</draw>
-        &
-
-        <draw width='6cm' height='6cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
-		mark({center: 'middle'})
-		grid(5)
-		curve('1.5',-10,10)
-        arrow('<-')     
-        line(0.2,1.4,1.5,0.5)
-        math('b','lastX+0.2','lastY+0.3') 
-        point('-2','1.5','I') 
-       point('1.3','1.5','J')        
-	</draw> ||
-        $\mathcal{C}_f$ est la droite $(EF)$ & $\mathcal{C}_f$ est la droite $(AB)$ & $\mathcal{C}_f$ est la droite $(IJ)$
+       
         </div>   
         
 	</div>
@@ -156,12 +156,12 @@ data-main-width="900">
             
 <div class="newpage"></div>            
             
-<!--Signe d'une fonction affine -->
-<div class="box" data-title="Signe d'une fonction affine" data-num="$N_3$" data-date="1">
+<!--Signe d'une fonction inverse -->
+<div class="box" data-title="Signe d'une fonction inverse" data-num="$N_3$" data-date="1">
     
     
-    <div class="titled hide" data-title="\boxP Signe d'une fonction affine" data-color="#666666">
-        On considère une fonction affine $f(x) = ax +b$. Si $a=0$ alors $f(x)$ est du signe de $b$ sinon :
+    <div class="titled hide" data-title="\boxP Signe d'une fonction inverse" data-color="#666666">
+        On considère une fonction affine $f(x) = \dfrac{1}{a x +b}$ :
       <div class="table 2cols" cells="*,*|c">
         si $a > 0$ & si $a < 0$ ||
          <drawing width='350' height='100' style="margin-left: 60px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
@@ -186,9 +186,8 @@ data-main-width="900">
 		//math('+\\infty','w-50','lastY',{fontSize: '14pt'})
         //math('\\frac{-b}{a}','w-170','lastY',{fontSize: '14pt'}) 
         width(1)
-        dash(3)
-        line(190,50,190,'h-5') 
-         math('0','185','h-40',{fontSize: '14pt'})   
+        line(188,50,188,'h-5')  
+        line(192,50,192,'h-5')    
           
 		math("f(x)",20,'h-40',{fontSize: '14pt'})
 		
@@ -219,9 +218,8 @@ data-main-width="900">
 		//math('+\\infty','w-50','lastY',{fontSize: '14pt'})
         //math('\\frac{-b}{a}','w-170','lastY',{fontSize: '14pt'}) 
         width(1)
-        dash(3)
-        line(190,50,190,'h-5') 
-         math('0','185','h-40',{fontSize: '14pt'})   
+        line(188,50,188,'h-5')  
+        line(192,50,192,'h-5')      
           
 		math("f(x)",20,'h-40',{fontSize: '14pt'})
 		
@@ -244,27 +242,36 @@ data-main-width="900">
     </div>
 	
 </div>	     
-            
-            
-<!-- Intersetion de deux droites affines -->
-<div class="box" data-title="Intersection de deux droites affines" data-num="$N_4$" data-date="1" data-newpage="none">
     
+ <!-- Fonction $\frac{1}{u}$ -->
+<div class="box" data-title="Fonction $\frac{1}{u}$" data-time="2m" data-num="$N_4$">
     
-    <div class="titled hide" data-title="\boxP Intersection" data-color="#666666">
-        On considère deux fonctions affines $f_1(x) = a_1x+b_1$ et $f_2(x) = a_2x+b_2$ de représentation graphique $\mathcal{C}_{f_1}$ et $\mathcal{C}_{f_2}$ d'équation respective $y = a_1x+b_1$ et $y=a_2x+b_2$. vspace{10}
-        Le point d'intersection (s'il existe)  $M(x_m;y_m)$ des courbes (droites) $\mathcal{C}_{f_1}$ et $\mathcal{C}_{f_2}$ est tel que son abscisse $x_m$ est la solution de l'équation : $a_1x+b_1 =a_2x+b_2$ et son ordonnée vaut : $y_m =a_1x_m+b_1 = a_2x_m+b_2  $
+    <div class="styled">
+    Soit $u$ une fonction définie sur $D_u$ telle pour tout $x \in D_u$ ; $u(x) \not= 0$. 
     </div>
-	<div class="styled">
-        Pour chaque fonction affine suivante, donner le coefficient directeur, l'ordonnée à l'origine puis tracer sa représentation graphique : 
-       <div class="table 3cols">
-           <div class="num">$f_{1} = 4x - 6$</div> & <div class="num">$f_{2} = -3x +9$</div> & <div class="num">$f_{3} = -3x$</div> ||
-           <div class="num">$f_{4} = -9$</div> & <div class="num">$f_{5} = 6-2x$</div> & <div class="num">$f_{6} = 2+8x$</div> ||
-           <div class="num">$f_{7} = 6x$</div> & <div class="num">$f_{8} = 2(5 - 2x)$</div> & <div class="num">$f_{9} = -3(2x+1)$</div> ||
-        </div>   
     
-    </div>
-	
-</div>	                 
+	<div class="titled hide" data-title="\boxD Définition" data-color="#660000">
+		La fonction $\frac{1}{u}$ est définie sur $D_u$ et par : $(\frac{1}{u})(x) =\frac{1}{u(x)}$
+	</div>
+    
+    
+    <div class="titled hide" data-title="\boxP Propriété : variations" data-color="#006666">
+		Si $u$ est monotone sur un intervalle $I$ et si pour tout $x \in I$, $u(x) \not= 0$ alors la fonction $\displaystyle \frac{1}{u}$ a le  sens de variation contraire à celui de $u$ sur $I$. 
+	</div>
+    
+   
+    <div class="styled">
+        Construire un tableau de variation des fonctions suivantes sur leur ensemble de définition : 
+		<div class="table" cells="*,*|w25%" data-table-style="width: 100%">
+            <div class="num">  $f_1(x) = 3x^2$</div> &
+            <div class="num"> $f_2(x) = |x|- 4$</div> &
+             <div class="num"> $f_3(x) =  \sqrt{x} - 1$</div> &
+            <div class="num" data-valign-num="7px">   $\displaystyle f_4(x) = \frac{1}{x} - 5 $ </div> 
+        </div>
+	</div>
+    
+</div>	
+                           
 
        
 </body>

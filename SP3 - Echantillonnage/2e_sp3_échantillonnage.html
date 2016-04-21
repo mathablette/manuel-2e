@@ -15,6 +15,20 @@ data-main-width="900">
     
     <div class="titled hide" data-title="\boxD Echantillon" data-color="#666666">
         Soit une *{bold::population} (ce n'est pas forcément des êtres humains) de $N \in \mathbb{N}$ individus. On choisit avec remise $n$ individus, on obtient un *{bold::échantillon} de taille $n$. On note $p$ la proportion du caractère étudié dans la population et on note $f$ cette proportion dans l'échantillon. 
+        
+        
+         <div class="draw" width='700' height='320' style="margin: auto;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+		oval(350,160,300,120)
+        text('population',430,120,{css: 'tdu;textsc;bold;fs16'})
+        text('Taille : $N$',440,160) 
+        text('Proportion du caractère : $p$',370,180)       
+        color('#ff0000')
+        oval(220,160,120,100)
+        text('échantillon',165,90,{css: 'tdu;textsc;bold;fs16'}) 
+        text('Taille : $\\color{#ff0000}{n}$',180,130) 
+        text('Proportion du caractère : $\\color{#ff0000}{f}$',110,150)      
+	</div>
+        
 	</div>
     
     <div class="titled hide" data-title="\boxP Intervalle de fluctuation" data-color="#666666">
@@ -22,10 +36,10 @@ data-main-width="900">
 
 <centering-box>$ f \in \Bigg[\;  p -  \dfrac{1}{\sqrt{n}}  ;  p +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
 
-        vspace{10}
+        vspace{5}
 avec une probabilité de $95\%$.
 
-vspace{10}
+vspace{}
 Cet intervalle est appelé  *{bold::intervalle de fluctuation asymptotique à $95\%$} qui a pour amplitude $\dfrac{2}{\sqrt{n}}$.
 	</div>
     
@@ -45,17 +59,18 @@ Cet intervalle est appelé  *{bold::intervalle de fluctuation asymptotique à $9
 	</div>
 </div>	
 
+<div class="newpage"></div>    
     
  <!-- Prise de décision -->
-<div class="box" data-title="Prise de décision" data-num="$N_2$" data-date="1" data-newpage="before">
+<div class="box" data-title="Prise de décision" data-num="$N_2$" data-date="1" data-newpage="none">
     <div class="titled hide" data-title="\boxM Méthode" data-color="#666666">
         On prélève un échantillon de taille $n$ tel que $n \geqslant 25$.
 La proportion $p$ (telle que $p\in [0,2;0,8]$) dans la population est connue et la proportion $f$ dans cet échantillon  est connue.
 
-vspace{10}
+vspace{}
 <centering-box>L'échantillon provient-il de la population ? *{bold::On fait l'hypothèse que oui.}</centering-box>
 
-vspace{10}
+vspace{}
  <centering-box>Si : $ f \not\in \Bigg[\;  p -  \dfrac{1}{\sqrt{n}}  ;  p +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
  vspace{10}
 Il y a $95\%$ de chance que l'hypothèse précédente soit fausse : on rejette l'hypothèse au seuil de $95\%$ ou avec un risque de $5\%$ (sinon on ne la rejette pas).
@@ -81,10 +96,10 @@ On décide de changer les méthodes de travail des équipes de cette chaîne de 
 
 <centering-box>$ p \in \Bigg[\;  f -  \dfrac{1}{\sqrt{n}}  ;  f +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
 
-        vspace{10}
+        vspace{}
 avec une probabilité de $95\%$.
 
-vspace{10}
+vspace{}
 Cet intervalle est appelé  *{bold::intervalle de confiance à $95\%$} qui a pour amplitude $\dfrac{2}{\sqrt{n}}$.
 	</div>
     
@@ -133,8 +148,9 @@ Pour chacun des échantillons, examiner l'hypothèse suivante : cet échantillon
 </div>    
 </div>      
     
+<div class="newpage"></div>    
      <!-- Comparaison de $2$ échantillons -->
-<div class="box" data-title="Comparaison de $2$ échantillons" data-num="$N_4$" data-date="1" data-newpage="before">
+<div class="box" data-title="Comparaison de $2$ échantillons" data-num="$N_4$" data-date="1" data-newpage="none">
     
     
     
@@ -208,8 +224,9 @@ Peut-on conclure que cette pilule est efficace au vu des résultats obtenus sur 
 </div>    
 </div>     
     
+<div class="newpage"></div>     
 <!-- Epidemie -->    
-<div class="box" data-title="Epidémie" data-newpage="before">
+<div class="box" data-title="Epidémie" data-newpage="none">
 <div class="styled">
 Le département de la Réunion a fait face à une épidémie. Pour évaluer le budget nécessaire qui permettra d'affronter efficacement cette maladie, il faut connaître le nombre de patients qui seront atteints par cette maladie. L'épidémie est partie du Sud de la Réunion et on estime qu'elle est dans cette partie en phase de disparition. Dans   un village de $1\;800$ habitants, on a comptabilisé $430$ cas maintenant que l'épidémie est finie.
 
@@ -227,10 +244,8 @@ Le département de la Réunion a fait face à une épidémie. Pour évaluer le b
 La répression des fraudes a enquêté au casino « Le Lion Vert ».
 Elle a estimé que la roulette française n’était pas équilibrée et que le casino avait fraudé avec une probabilité d’environ $95\%$.
 Ils ont, pour cela, effectué une analyse informatique des tirages de l’année précédente et remarqué que la couleur rouge était sortie avec une fréquence de $49\%$ sur un certain nombre de lancers au jeu de la mise sur chance simple Noir-Rouge.
-
-<div class="num">Quelle est la taille minimale de l’échantillon pour que la répression des fraudes puisse arriver à cet conclusion ?</div> 
-<div class="num">La veille, un client notant le déséquilibre en a profité pour l’utiliser.
-Quelle stratégie le client a-t-il pu mettre en place ?</div>    
+vspace{5}
+Quelle est la taille minimale de l’échantillon pour que la répression des fraudes puisse arriver à cet conclusion ? La veille, un client notant le déséquilibre en a profité pour l’utiliser. Quelle stratégie le client a-t-il utilisé ?   
     
 </div>    
 </div>  
@@ -242,9 +257,8 @@ Quelle stratégie le client a-t-il pu mettre en place ?</div>
 En décembre 2012, un sondage a été réalisé auprès de 1 003 personnes résidant en France, âgées de 18 ans et plus. L’échantillon a été constitué d’après la méthode des quotas (sexe, âge, catégorie socioprofessionnelle du répondant) par région et taille d’agglomération.
 $772$ personnes interrogées ont déclaré avoir déjà été confrontées à une arnaque ou une tentative d’arnaque sur Internet.
 Dans le même temps, $211$ personnes interrogées déclarent avoir déjà été piégées sur Internet par un mail ou un site Internet leur demandant leurs coordonnées personnelles.
-
-<div class="num">Estimer le pourcentage de personnes en France confrontées à une arnaque sur Internet.</div> 
-<div class="num">Estimer le pourcentage de personnes en France ayant déjà été piégées sur internet.</div>    
+vspace{5}
+Estimer le pourcentage de personnes en France confrontées à une arnaque sur Internet puis le pourcentage de personnes en France ayant déjà été piégées sur internet.  
     
 </div>    
 </div>      
