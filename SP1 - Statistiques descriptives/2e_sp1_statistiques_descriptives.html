@@ -7,7 +7,7 @@
 
 <body  data-type="animation" data-title="Statistiques descriptives" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Statistiques descriptives" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
 data-start-page="7"
-data-left="$2_e$-$SP_1$"
+data-left="$2^e$-$SP_1$"
 data-main-width="900">
 
 <!-- Série statistique -->
@@ -61,9 +61,10 @@ prises par le caractère. <br>
 </div>	
 
     
+<div class="newpage"></div>    
  
 <!-- Fréquence apparition -->
-<div class="box" data-title="Fréquence d'apparition" data-num="$N_2$" data-date="1" data-newpage="before">
+<div class="box" data-title="Fréquence d'apparition" data-num="$N_2$" data-date="1" >
     <div class="titled hide" data-title="\boxD Définition" data-color="#666666">
        On considère une série statistique comportant $p$ modalités (ou $p$ classes) d’effectifs $n_1,\cdots, n_p$ et d’effectif total $N = n_1+ n_2 + \cdots+n_p$. La *{bold::fréquence d’apparition} de la modalité (ou de la classe) correspond à la proportion d’individus dont le caractère est égal à cette modalité (ou appartenant à cette classe). Ainsi, pour tout entier $i$ compris entre $1$ et $p$ :
 $f_i = \dfrac{n_i}{N}$ et $f_1 + f_2 + \cdots + f_p =1$
@@ -137,18 +138,18 @@ une *{bold::médiane} partage les valeurs prises par le caractère en deux gro
         <table>
         <tr>
         <td style="vertical-align: top">
-            Le tableau ci-contre indique la répartition du nombre d’enfants de moins de 25 ans dans les familles des Bouches-du-Rhône en 1999 et 2009.
+            Les résultats d’un contrôle de vitesse dans une agglomération (vitesse limitée à $50\;km/h$) sont consignés dans le tableau ci-contre.
             <div class="num">Déterminer la médiane en construisant un tableau avec les fréquences d'apparition en pourcentages et les *{bold::fréquences cumulées croissantes} d'apparition en pourcentages.  </div>
         </td>
         <td style="width: 50%">
-           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&1,1|w250" data-table-style="border-collapse: collapse;background: #ffffff">
-            Nombre de famille avec & 2009 & 1999 ||
-            Aucun enfant & $244\;918$ & $220\;109$ ||
-            $1$ enfant  & $131\;271$ & $124\;597$ || 
-            $2$ enfants  & $109\;776$ & $102\;135$ || 
-            $3$ enfants  & $35\;907$ & $35\;708$ || 
-            $4$ enfants et plus  & $13\;311$ & $14\;564$ ||
-            Total   & $535\;183$ & $497\;113$   
+           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&*,1|w150;c" data-table-style="border-collapse: collapse;background: #ffffff">
+            Vitesse en $km/h$ & Effectif  ||
+            $[20;50[$ & $104$  ||
+            $[50;70[$  & $54$  || 
+            $[70;80[$  & $13$  || 
+            $[80;90[$  & $7$  || 
+            $[90;100[$  & $5$ ||
+            $[100;130[$   & $2$   
             </div> 
         </td>    
         </tr>
@@ -159,27 +160,28 @@ une *{bold::médiane} partage les valeurs prises par le caractère en deux gro
         <table>
         <tr>
         <td style="vertical-align: top">
-            Le tableau ci-contre indique la répartition du nombre d’enfants de moins de 25 ans dans les familles des Bouches-du-Rhône en 1999 et 2009.
+            Le tableau ci-contre indique la pointure d'un groupe d'élèves
             <div class="num">Déterminer la médiane en construisant le polygone des *{bold::fréquences cumulées croissantes} d'apparition en pourcentages.  </div>
         </td>
         <td style="width: 50%">
-           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&1,1|w250" data-table-style="border-collapse: collapse;background: #ffffff">
-            Nombre de famille avec & 2009 & 1999 ||
-            Aucun enfant & $244\;918$ & $220\;109$ ||
-            $1$ enfant  & $131\;271$ & $124\;597$ || 
-            $2$ enfants  & $109\;776$ & $102\;135$ || 
-            $3$ enfants  & $35\;907$ & $35\;708$ || 
-            $4$ enfants et plus  & $13\;311$ & $14\;564$ ||
-            Total   & $535\;183$ & $497\;113$   
-            </div> 
+           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&*,1|w150;c" data-table-style="border-collapse: collapse;background: #ffffff">
+            Pointure & Effectif  ||
+            $35$ & $78$  ||
+            $36$  & $82$  || 
+            $37$  & $43$  || 
+            $38$  & $21$  || 
+            $39$  & $17$ ||
+            $40$   & $5$   
+            </div>
         </td>    
         </tr>
         </table>
     </div>   
 </div>      
     
+<div class="newpage"></div>    
 <!-- Quartiles -->
-<div class="box" data-title="Quartiles" data-num="$N_4$" data-date="1" data-newpage="before">
+<div class="box" data-title="Quartiles" data-num="$N_4$" data-date="1" >
     <div class="titled hide" data-title="\boxD Définition" data-color="#666666">
       Le *{bold::premier quartile} d’une série statistique numérique est la plus petite valeur prise
 par le caractère telle qu’*{tdu::au moins} $25\%$ des valeurs lui soient inférieures ou égales.
@@ -231,10 +233,56 @@ Le *{bold::troisième quartile} d’une série statistique numérique est la 
         </tr>
         </table>
     </div>   
+    
+    <div class="styled">
+        <table>
+        <tr>
+        <td style="vertical-align: top">
+            Le tableau ci-contre indique la répartition du nombre d’enfants de moins de 25 ans dans les familles des Bouches-du-Rhône en 1999 et 2009.
+            <div class="num">Déterminer la médiane, le premier et troisième quartiles en construisant un tableau avec les fréquences d'apparition en pourcentages et les *{bold::fréquences cumulées croissantes} d'apparition en pourcentages.  </div>
+        </td>
+        <td style="width: 50%">
+           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&1,1|w250" data-table-style="border-collapse: collapse;background: #ffffff">
+            Nombre de famille avec & 2009 & 1999 ||
+            Aucun enfant & $244\;918$ & $220\;109$ ||
+            $1$ enfant  & $131\;271$ & $124\;597$ || 
+            $2$ enfants  & $109\;776$ & $102\;135$ || 
+            $3$ enfants  & $35\;907$ & $35\;708$ || 
+            $4$ enfants et plus  & $13\;311$ & $14\;564$ ||
+            Total   & $535\;183$ & $497\;113$   
+            </div> 
+        </td>    
+        </tr>
+        </table>
+    </div>   
+    
+    <div class="styled">
+        <table>
+        <tr>
+        <td style="vertical-align: top">
+            Le tableau ci-contre indique la répartition du nombre d’enfants de moins de 25 ans dans les familles des Bouches-du-Rhône en 1999 et 2009.
+            <div class="num">Déterminer la médiane, le premier et troisième quartiles  en construisant le polygone des *{bold::fréquences cumulées croissantes} d'apparition en pourcentages.  </div>
+        </td>
+        <td style="width: 50%">
+           <div class="table" cells="*,*|bo1#444444&*,2:3|w100;c&1,1|w250" data-table-style="border-collapse: collapse;background: #ffffff">
+            Nombre de famille avec & 2009 & 1999 ||
+            Aucun enfant & $244\;918$ & $220\;109$ ||
+            $1$ enfant  & $131\;271$ & $124\;597$ || 
+            $2$ enfants  & $109\;776$ & $102\;135$ || 
+            $3$ enfants  & $35\;907$ & $35\;708$ || 
+            $4$ enfants et plus  & $13\;311$ & $14\;564$ ||
+            Total   & $535\;183$ & $497\;113$   
+            </div> 
+        </td>    
+        </tr>
+        </table>
+    </div>   
 </div>  
     
+<div class="newpage"></div>        
+    
 <!-- Moyenne -->
-<div class="box" data-title="Moyenne" data-num="$N_5$" data-date="1" data-newpage="before">
+<div class="box" data-title="Moyenne" data-num="$N_5$" data-date="1" >
     <div class="titled hide" data-title="\boxD Définition" data-color="#666666">
         La *{bold::moyenne} d'une série statistique se note $\overline{x}$ et vaut : vspace{10}
         ,, $\overline{x} = \dfrac{n_1\times x_1 + n_2\times x_2 + \cdots + n_p\times x_p }{n_1 + n_2 + \cdots + n_p}$ <br>

@@ -17,6 +17,58 @@
 	<!-- Chapitre N2 -->
 	<property name="n2.dir" value="${basedir}/N2 - Calcul littéral" />
 	<property name="n2.file" value="2e_n2_calcul_littéral" />
+	
+	<!-- Chapitre F1 -->
+	<property name="f1.dir" value="${basedir}/F1 - Notion de fonction" />
+	<property name="f1.file" value="2e_f1_notion_fonction" />
+	
+	<!-- Chapitre F2 -->
+	<property name="f2.dir" value="${basedir}/F2 - Etude de fonction" />
+	<property name="f2.file" value="2e_f2_etude_fonction" />
+	
+	<!-- Chapitre F3 -->
+	<property name="f3.dir" value="${basedir}/F3 - Fonction affine" />
+	<property name="f3.file" value="2e_f3_fonction_affine" />
+	
+	<!-- Chapitre F4 -->
+	<property name="f4.dir" value="${basedir}/F4 - Fonction du second degré" />
+	<property name="f4.file" value="2e_f4_fonction_second_degré" />
+	
+	<!-- Chapitre F5 -->
+	<property name="f5.dir" value="${basedir}/F5 - Fonction inverse" />
+	<property name="f5.file" value="2e_f5_fonction_inverse" />
+	
+	<!-- Chapitre F6 -->
+	<property name="f6.dir" value="${basedir}/F6 - Fonction racine carrée" />
+	<property name="f6.file" value="2e_f6_fonction_racine_carrée" />
+	
+	<!-- Chapitre G1 -->
+	<property name="g1.dir" value="${basedir}/G1 - Coordonnées dans le plan" />
+	<property name="g1.file" value="2e_g1_coordonnées_plan" />
+	
+	<!-- Chapitre G2 -->
+	<property name="g2.dir" value="${basedir}/G2 - Vecteurs et droites du plan" />
+	<property name="g2.file" value="2e_g2_vecteurs_droites" />
+	
+	<!-- Chapitre G3 -->
+	<property name="g3.dir" value="${basedir}/G3 - Repérage sur le cercle trigonométrique" />
+	<property name="g3.file" value="2e_g3_repérage_cercle_trigonométrique" />
+	
+	<!-- Chapitre G4 -->
+	<property name="g4.dir" value="${basedir}/G4 - Géométrie espace" />
+	<property name="g4.file" value="2e_g4_géométrie_espace" />
+	
+	<!-- Chapitre SP1 -->
+	<property name="sp1.dir" value="${basedir}/SP1 - Statistiques descriptives" />
+	<property name="sp1.file" value="2e_sp1_statistiques_descriptives" />
+	
+	<!-- Chapitre SP2 -->
+	<property name="sp2.dir" value="${basedir}/SP2 - Probabilités" />
+	<property name="sp2.file" value="2e_sp2_probabilités" />
+	
+	<!-- Chapitre SP3 -->
+	<property name="sp3.dir" value="${basedir}/SP3 - Echantillonnage" />
+	<property name="sp3.file" value="2e_sp3_échantillonnage" />
 
 
 	<target name="doAll">
@@ -29,6 +81,19 @@
 			<filelist>
 				<file value="${n1.dir}/${n1.file}.pdf" />
 				<file value="${n2.dir}/${n2.file}.pdf" />
+				<file value="${f1.dir}/${f1.file}.pdf" />
+				<file value="${f2.dir}/${f2.file}.pdf" />
+				<file value="${f3.dir}/${f3.file}.pdf" />
+				<file value="${f4.dir}/${f4.file}.pdf" />
+				<file value="${f5.dir}/${f5.file}.pdf" />
+				<file value="${f6.dir}/${f6.file}.pdf" />
+				<file value="${g1.dir}/${g1.file}.pdf" />
+				<file value="${g2.dir}/${g2.file}.pdf" />
+				<file value="${g3.dir}/${g3.file}.pdf" />
+				<file value="${g4.dir}/${g4.file}.pdf" />
+				<file value="${sp1.dir}/${sp1.file}.pdf" />
+				<file value="${sp2.dir}/${sp2.file}.pdf" />
+				<file value="${sp3.dir}/${sp3.file}.pdf" />
 			</filelist>
 		</echoxml>
 		<java jar="/Applications/pdfsam.app/Contents/Resources/Java/lib/pdfsam-console-2.3.1e.jar" fork="true" failonerror="true" output="output">

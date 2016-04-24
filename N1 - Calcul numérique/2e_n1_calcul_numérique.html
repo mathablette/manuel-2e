@@ -7,7 +7,7 @@
 
 <body  data-type="animation" data-title="Calcul numérique" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Calcul numérique" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
 data-start-page="1"
-data-left="$2_e$-$N_1$"
+data-left="$2^e$-$N_1$"
 data-main-width="900">
 
 <!-- Addition et soustraction de nombres relatifs -->
@@ -79,6 +79,9 @@ data-main-width="900">
             <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>   ||
               <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>  &
              <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>   &
+             <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div> ||
+              <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>  &
+             <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div>   &
              <div class="num" data-valign-num="middle"><math-input label="$(-2)\times(+4) = $" valid="-8"></math-input></div> 
         </div>
 	</div>
@@ -117,7 +120,7 @@ data-main-width="900">
         
         
  <!-- Priorités opératoires -->
-<div class="box" data-title="Priorités opératoires" data-num="$N_4$ \iPencil">
+<div class="box" data-title="Priorités opératoires" data-num="$N_4$ \iPencil" data-date="1">
 	<div class="titled hide" data-title="\boxP Propriétés" data-color="#666666">
 		Dans un calcul, on commence en priorité par : vspace{5}
 \num1 Les parenthèses (des plus intérieures au plus extérieures) <br>
@@ -161,7 +164,7 @@ data-main-width="900">
 </div>	  
     
 <!-- Additionner ou soustraire des fractions  -->
-<div class="box" data-title="Additionner ou soustraire des fractions" data-num="$N_6$">
+<div class="box" data-title="Additionner ou soustraire des fractions" data-num="$N_6$" data-date="1">
 	<div class="titled hide" data-title="\boxE Exemples" data-color="#666666">
 		$\displaystyle \frac{7}{6} + \frac{5}{9} = \frac{7\times {\mathbf 3}}{6 \times {\mathbf 3}} + \frac{5\times{\mathbf 2}}{9\times{\mathbf 2}} = \frac{21}{18} + \frac{10}{18} =  \frac{31}{18}$
 
@@ -180,6 +183,10 @@ Pour soustraire ou additionner des fractions, il faut les mettre au même dénom
        <div class="num" data-valign-num="middle">$\displaystyle  \frac{3}{21} + \frac{2}{14}$ </div>  &
         <div class="num" data-valign-num="middle">$\displaystyle \frac{4}{18} + \frac{5}{27}$  </div> &
         <div class="num" data-valign-num="middle">$\displaystyle \frac{1}{5} - \frac{2}{3}$  </div> ||   
+       
+           <div class="num" data-valign-num="middle">$\displaystyle \frac{11}{3} + \frac{1}{7} - \frac{8}{21}$  </div>  &
+        <div class="num" data-valign-num="middle">$\displaystyle 1 - \frac{5}{4}$  </div> &
+        <div class="num" data-valign-num="middle">$\displaystyle \frac{11}{8} + \frac{7}{3} - \frac{6}{5}$ </div> ||   
        
            <div class="num" data-valign-num="middle">$\displaystyle \frac{11}{3} + \frac{1}{7} - \frac{8}{21}$  </div>  &
         <div class="num" data-valign-num="middle">$\displaystyle 1 - \frac{5}{4}$  </div> &
@@ -291,7 +298,7 @@ vspace{5}
     <div class="styled">
          <div class="num">Aux USA, les températures sont exprimées en degrés Fahrenheit ($^\circ F$) : $77 ^\circ F$ équivaut à $25 ^\circ C$ et $86 ^\circ F$ équivaut à $30 ^\circ C$. Les mesures des températures en $^\circ F$ et en $^\circ C$ sont-elles proportionnelles ?</div>
         <div class="num">Dans un établissement scolaire de $560$ élèves, il y a $224$  garçons. Quel est le pourcentage de garçons dans cet établissement ? </div>
-        <div class="num">Jean obtient une réduction de $45\%$ sur une vélo valant $158$ \euro{}. Quel est le montant de la réduction obtenue par Jean ? </div>
+        <div class="num">Jean obtient une réduction de $45\%$ sur une vélo valant $158$ €. Quel est le montant de la réduction obtenue par Jean ? </div>
         
         <div class="num">Un robinet d'eau fuit de telle sorte qu'il s'écoule $5$ litres d'eau en $35$ minutes et $7$ litres d'eau en $49$ minutes. S'agit-il d'une situation de proportionnalité ?  </div>
         
@@ -321,7 +328,174 @@ $25\; min$ ?  </div>
         <div class="num">Lors des soldes, un magasin propose une *{bold::réduction} de $30\%$ sur des blousons coûtant initialement $150$ €. Quel est le nouveau prix des blousons ?  </div>
 	</div>
 	
-</div>	    
-       
+</div>
+    
+<div class="newpage"></div>
+    
+ <!-- Racines carrées  -->
+<div class="box" data-title="Racines carrées" data-num="$N_{12}$ \iPencil">
+	<div class="titled hide" data-title="\boxD Définition et propriétés" data-color="#666666">
+		On considère deux nombres entiers naturels $a$ et $b$.
+        <div class="table 4cols">
+            ,, $\sqrt{a^2} = a$ & ,, $\sqrt{a}^2 = a$ & ,, $\sqrt{a\times b } = \sqrt{a}\times \sqrt{b}$ & ,, $\sqrt{a^2\times b } = a \sqrt{b}$ ||
+            ,, $\sqrt{0} = 0$ & ,, $\sqrt{1} = 1$ & ,, $\sqrt{4 } = 2$ & ,, $\sqrt{9} = 3$ ||
+            ,, $\sqrt{16} = 4$ & ,, $\sqrt{25} = 5$ & ,, $\sqrt{36} = 6$ & ,, $\sqrt{49} = 7$ ||
+            ,, $\sqrt{64} = 8$ & ,, $\sqrt{81} = 9$ & ,, $\sqrt{121} = 11$ & ,, $\sqrt{144} = 12$ 
+        </div>
+	</div>
+	
+    
+    <div class="styled">
+        Simplifier les racines carrées suivantes : 
+         <div class="table 3cols">
+        <div class="num" data-valign-num="middle"><math-input label="$\sqrt{50} = $" valid="5sqrt(2)"  input-width="90"></math-input></div> &
+        <div class="num" data-valign-num="middle"><math-input label="$\sqrt{20} = $" valid="2sqrt(5)"  input-width="90"></math-input></div> &
+             <div class="num" data-valign-num="middle"><math-input label="$\sqrt{80} = $" valid="4sqrt(5)"  input-width="90"></math-input></div> ||
+            <div class="num" data-valign-num="middle"><math-input label="$\sqrt{50} = $" valid="5sqrt(2)"  input-width="90"></math-input></div> &
+        <div class="num" data-valign-num="middle"><math-input label="$\sqrt{20} = $" valid="2sqrt(5)"  input-width="90"></math-input></div> &
+             <div class="num" data-valign-num="middle"><math-input label="$\sqrt{80} = $" valid="4sqrt(5)"  input-width="90"></math-input></div> ||
+             <div class="num" data-valign-num="middle"><math-input label="$\sqrt{50} = $" valid="5sqrt(2)"  input-width="90"></math-input></div> &
+        <div class="num" data-valign-num="middle"><math-input label="$\sqrt{20} = $" valid="2sqrt(5)"  input-width="90"></math-input></div> &
+             <div class="num" data-valign-num="middle"><math-input label="$\sqrt{80} = $" valid="4sqrt(5)"  input-width="90"></math-input></div> 
+             </div>
+	</div>
+	
+</div>	   
+    
+<!-- Puissances  -->
+<div class="box" data-title="Puissances" data-num="$N_{13}$ \iPencil">
+	<div class="titled hide" data-title="\boxD Définition et propriétés" data-color="#666666">
+		Soient $x$ un nombre réel et $n$ un nombre entier relatif. <br>
+        ,, $x^n = \underbrace{x\times x \times \cdots x}_{n \text{ facteurs}}$ pour $n > 0$ 
+        hspace{70},, $x^0 = 1$ hspace{70},, $x^{-n} = \dfrac{1}{\underbrace{x\times x \times \cdots x}_{n \text{ facteurs}}}$ pour $n > 0$ vspace{10}
+        Soit $a$ et $b$ deux nombres entiers : 
+        <div class="table 4cols">
+            ,, $x^a \times x^b = x^{a+b}$ & ,, $x^a \div x^b = x^{a-b}$ & ,, $\dfrac{x^a}{x^b} = x^{a-b}$ & ,, $(x^a)^b = x^{a\times b}$ 
+        </div>
+	</div>
+	
+    
+    <div class="styled">
+        Simplifier les expressions suivantes : 
+         <div class="table 2cols">
+        <div class="num" data-valign-num="middle"><math-input label="$2^3 \times 2^{-4} \div 2^{3} = $" valid="5sqrt(2)"  input-width="90"></math-input></div> &
+        <div class="num" data-valign-num="middle"><math-input label="$\sqrt{20} = $" valid="2sqrt(5)"  input-width="90"></math-input></div> ||
+             <div class="num" data-valign-num="middle"><math-input label="$\sqrt{80} = $" valid="4sqrt(5)"  input-width="90"></math-input></div> &
+            <div class="num" data-valign-num="middle"><math-input label="$\sqrt{80} = $" valid="4sqrt(5)"  input-width="90"></math-input></div> ||
+             <div class="num" data-valign-num="middle"><math-input label="$\sqrt{80} = $" valid="4sqrt(5)"  input-width="90"></math-input></div> &
+            <div class="num" data-valign-num="middle"><math-input label="$\sqrt{80} = $" valid="4sqrt(5)"  input-width="90"></math-input></div>
+             </div>
+	</div>
+	
+</div>
+    
+    
+    <!-- Arrondir  -->
+<div class="box" data-title="Arrondir" data-num="$N_{14}$ \iPencil" data-date="1">
+    <div class="styled">
+        Arrondir à l'unité les nombres suivants :  
+         <div class="table 4cols">
+        <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> &
+        <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> & 
+             <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> &
+            <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div>
+        </div>
+        vspace{5}
+        Arrondir au dixième les nombres suivants :  
+         <div class="table 4cols">
+        <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> &
+        <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> & 
+             <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> &
+            <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div>
+        </div>
+        vspace{5}
+        Arrondir au centième les nombres suivants :  
+         <div class="table 4cols">
+        <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> &
+        <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> & 
+             <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> &
+            <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div>
+        </div>
+        vspace{5}
+        Arrondir au millième les nombres suivants :  
+         <div class="table 4cols">
+        <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> &
+        <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> & 
+             <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div> &
+            <div class="num" data-valign-num="middle"><math-input label="$\frac{-1}{3} = $" valid="0"  input-width="40"></math-input></div>
+        </div>
+	</div>
+	
+</div>
+    
+    
+<div class="newpage"></div>    
+     
+    
+<!-- Ensemble de nombres  -->
+<div class="box" data-title="Ensemble de nombres" data-num="$N_{15}$" data-date="1">
+	<div class="titled hide" data-title="\boxD Définitions" data-color="#666666">
+		,, L'ensemble des *{bold::nombres entiers naturels} est $\{0;1;2;3;\cdots;1023;\cdots\}$. Il se note $\N$. <br>
+        ,, L'ensemble des *{bold::nombres entiers relatifs} est $\{\cdots;-76;\cdots;-2;-1;0;1;2;\cdots;13;\cdots\}$. Il se note $\mathbb{Z}$. <br>
+        ,, L'ensemble des *{bold::nombres entiers relatifs positifs} se note $\mathbb{Z}^+ = \N$. <br>
+        ,, L'ensemble des *{bold::nombres entiers relatifs négatifs} est $\{\cdots;-15;\cdots;-2;-1;0\}$. Il se note $\mathbb{Z}^-$. <br>
+        ,, L'ensemble des *{bold::nombres décimaux} se note $\mathbb{D}$. <br>
+        ,, L'ensemble des *{bold::nombres rationnels} se note $\mathbb{Q}$. <br>
+        ,, L'ensemble des *{bold::nombres réels} se note $\mathbb{R}$. <br>
+        ,, L'ensemble des *{bold::nombres réels positifs} se note $\mathbb{R}^+$. <br>
+        ,, L'ensemble des *{bold::nombres réels négatifs} se note $\mathbb{R}^-$. vspace{10}
+        On a : $\N \subset \mathbb{Z} \subset \mathbb{D} \subset \mathbb{Q} \subset \mathbb{R}$
+        
+        
+	</div>
+	
+    
+    <div class="styled">
+        Donner le plus petit ensemble auquel les nombres suivants appartiennent :
+         <div class="table 4cols">
+           <div class="num">$-2$</div> &  <div class="num">$\sqrt{16}$</div> &  <div class="num">$\pi$</div> &  <div class="num">$\sqrt{5}^2$</div> ||
+            <div class="num">$\frac{5}{3}$</div> &  <div class="num">$\sqrt{2}$</div> &  <div class="num">$\frac{-9}{10}$</div> &  <div class="num">$-\frac{3\pi}{\pi}$</div> 
+        </div>
+	</div>
+	
+</div>
+    
+<!-- Intervalle -->
+<div class="box" data-title="Intervalle" data-num="$N_{16}$" data-date="1">
+	<div class="titled hide" data-title="\boxD Définition" data-color="#666666">
+		Un intervalle est un ensemble contigu de nombres c'est à dire qu'il n'y pas de "trou" dans un intervalle. Par exemple l'ensemble $\N$ n'est pas un intervalle car c'est un ensemble discret. <br>
+        Un intervalle possède une borne inférieure et une borne suppérieur : <br> 
+        ,, L'ensemble des réels $x$ tels que $ a \leqslant x \leqslant b$ est représenté par l'intervalle $[a;b]$ <br>
+        ,, L'ensemble des réels $x$ tels que $ a < x \leqslant b$ est représenté par l'intervalle $]a;b]$ <br>
+        ,, L'ensemble des réels $x$ tels que $ a \leqslant x < b$ est représenté par l'intervalle $[a;b[$ <br>
+        ,, L'ensemble des réels $x$ tels que $ a < x < b$ est représenté par l'intervalle $]a;b[$ <br>
+        ,, L'ensemble des réels $x$ tels que $ x \geqslant b$ est représenté par l'intervalle $]-\infty;b]$ <br>
+        ,, L'ensemble des réels $x$ tels que $ x < b$ est représenté par l'intervalle $]-\infty;b[$ <br>
+        ,, L'ensemble des réels $x$ tels que $ a \leqslant x$ est représenté par l'intervalle $[a;+\infty[$ <br>
+        ,, L'ensemble des réels $x$ tels que $ a < x$ est représenté par l'intervalle $]a;+\infty[$ <br>    
+	</div>
+	<div class="titled hide" data-title="\boxE Exemples" data-color="#666666">
+        ,, L'ensemble des réels $\R$ est l'intervalle $]-\infty;+\infty[$ <br>
+        ,, L'ensemble des réels $\R^+$ est l'intervalle $[0;+\infty[$ <br>
+        ,, L'ensemble des réels $\R^-$ est l'intervalle $]-\infty;0]$ <br>
+        ,, L'ensemble des réels $\R^{+*}$ est l'intervalle $]0;+\infty[$ <br>
+        ,, L'ensemble des réels $\R^{-*}$ est l'intervalle $]-\infty;0[$ vspace{10}
+        Des ensembles de nombres peuvent être représenté par des réunions d'intervalles disjoints (des "sommes" d'intervalles qui n'ont pas de nombre en commun) : <br>
+        ,, L'ensemble $\R\backslash \{ a\}$ correspond à  $]-\infty;a[\cup]a;+\infty[$ <br>
+        ,, L'ensemble $\R^* = \R\backslash \{ 0\}$ correspond à  $]-\infty;0[\cup]0;+\infty[$ <br>
+        ,, L'ensemble des réels $\R^+$ est l'intervalle $[0;+\infty[$ <br>
+        ,, L'ensemble des réels $\R^-$ est l'intervalle $]-\infty;0]$
+    </div>    
+    
+    <div class="styled">
+        Donner sous forme d'intervalles l'ensemble des nombres réels $x$ suivants :
+         <div class="table 3cols">
+           <div class="num">$-2 \leqslant x \leqslant 4$</div> &  <div class="num">$3 < x \leqslant 5$</div> &  <div class="num">$ x \geqslant 7$</div> ||
+            <div class="num">$-8 \leqslant x \leqslant -6$ ou $0 <  x < 3$ </div> &  <div class="num">$-2 < x \leqslant 2$ ou $x \in R^{+*}$</div> &  <div class="num">$x \in R^{+*}\backslash\{ 3\}$</div> 
+        </div>
+	</div>
+	
+</div>    
+    
 </body>
 </html>

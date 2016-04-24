@@ -6,12 +6,12 @@
 </head>
 
 <body  data-type="animation" data-title="Fonction du second degré" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Fonction du second degré" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
-data-start-page="1"
+data-start-page="21"
 data-left="$2^e$-$F_4$"
 data-main-width="900">
 
 <!-- forme développée -->
-<div class="box" data-title="Forme développée" data-num="$N_1$" data-time="2m">
+<div class="box" data-title="Forme développée" data-num="$N_1$" data-date="1">
     <div class="titled hide" data-title="\boxD Définition : Fonction du second degré" data-color="#660000">
 		Une fonction $f$ définie sur $\R$ est une *{bold::fonction polynôme du second degré} ou *{bold::fonction du second degré} si elle est de la forme *{bo1#000000;pa2::$f(x) = ax^2+bx+c$} où $a$, $b$ et $c$ sont des réels tels que $a \not= 0$.
 	</div>
@@ -26,16 +26,6 @@ data-main-width="900">
 
 	</div>
 	
-    <div class="frame" data-title="Correction" data-width='600' data-title-style="font-variant: small-caps" data-label="Afficher la correction">
-        <div class="table" cells="*,*|w50%" data-table-style="width: 100%">
-        <div class="num">$a=-3$ ; $b=2$ et $c = 6$</div> &
-        <div class="num">c'est une fonction affine</div> ||
-        <div class="num">$a=36$ ; $b=-84$ et $c = 49$</div> &
-        <div class="num">$a=16$ ; $b=64$ et $c = 64$</div> ||
-        <div class="num">$a=9$ ; $b=0$ et $c = 49$</div> &
-        <div class="num">$a=16$ ; $b=-48$ et $c = 36$</div>    
-        </div>    
-    </div>
     
 	<div class="styled">
         Déterminer si les fonctions suivantes sont des fonctions du second degré et donner le cas échéant les trois coefficients $a$, $b$ et $c$ : 
@@ -51,22 +41,12 @@ data-main-width="900">
 </div>	
 
 <!-- forme canonique -->
-<div class="box" data-title="Forme canonique" data-time="2m" data-num="$N_2$">
+<div class="box" data-title="Forme canonique" data-date="1" data-num="$N_2$">
 	<div class="titled hide" data-title="\boxT Théorème : Forme canonique" data-color="#660066">
 		La *{bold::forme canonique} de la fonction du second degré $f$ définie par $f(x) = ax^2+bx+c$ est : vspace{}  
         *{bo1#000000;pa2::$f(x) = a(x-\alpha)^2 + \beta$}  avec $\displaystyle \alpha = -\frac{b}{2a} $ et $\beta = f(\alpha)$. Cette *{bold::forme canonique} est *{bold::unique}. 
 	</div>
     
-    <div class="frame" data-title="Correction" data-width='600' data-title-style="font-variant: small-caps" data-label="Afficher la correction">
-        <div class="table" cells="*,*|w50%" data-table-style="width: 100%">
-        <div class="num">$a=-3$ ; $b=2$ et $c = 6$</div> &
-        <div class="num">c'est une fonction affine</div> ||
-        <div class="num">$a=36$ ; $b=-84$ et $c = 49$</div> &
-        <div class="num">$a=16$ ; $b=64$ et $c = 64$</div> ||
-        <div class="num">$a=9$ ; $b=0$ et $c = 49$</div> &
-        <div class="num">$a=16$ ; $b=-48$ et $c = 36$</div>    
-        </div>    
-    </div>
     
     <div class="styled">
         Donner la forme canonique des fonctions du second degré  suivantes : 
@@ -76,13 +56,16 @@ data-main-width="900">
              <div class="num"> $f_3(x) = 7x - x^2 -10$</div> ||
             <div class="num"> $f_4(x) = 9x^2 + 16 - 24x$</div> &
             <div class="num"> $f_5(x) = 81 - 49x^2$</div> &
-             <div class="num">$f_6(x) = 7 + \sqrt{140}x +  5x^2$</div> 
+             <div class="num">$f_6(x) = 7 + \sqrt{140}x +  5x^2$</div> ||
+            <div class="num"> $f_7(x) = 6x^2 - 9x +1$</div> &
+            <div class="num"> $f_8(x) = \frac{x^2}{3} - \frac{x}{6} + 1$</div> &
+             <div class="num">$f_9(x) = 4 -12x + 9x^2$</div> 
         </div>
 	</div>
 </div>	
     
 <!-- forme canonique : parabole-->
-<div class="box" data-title="Forme canonique : parabole" data-time="2m" data-num="$N_3$">
+<div class="box" data-title="Forme canonique : parabole" data-date="1" data-num="$N_3$">
 	<div class="titled hide" data-title="\boxP Propriété" data-color="#006666">
 		La parabole $C_f$, courbe représentative de la fonction du second degré $f$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ a pour sommet $S(\alpha;\beta)$
 	</div>
@@ -90,32 +73,26 @@ data-main-width="900">
     <div class="styled">
         Donner la forme canonique des fonctions du second degré  suivantes : 
 		<div class="table" cells="*,*|w300;center">
-            <div class="figure" data-width="7" data-height="6">
-                painterGrid(3)
-                showMark()
-                markUpdate(3,2.5,1,1,1,2,0,0)
-                f1 = curveFunction('2(x-1)^2-4',-10,10,0.001)
-                lineWidth(f1,3)
-                foreground(f1,'#ff0000')
-            </div>
+            <draw width='6cm' height='7cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		      mark({center: 'middle',cmy: 2})
+		      grid(3)
+              width(3)    
+		      curve('2(x-1)^2-4',-10,10) 
+	       </draw>
             &
-            <div class="figure" data-width="7" data-height="6">
-                painterGrid(3)
-                showMark()
-                markUpdate(3,2.5,1,1,1,2,0,0)
-                f1 = curveFunction('-2(x+1)^2+2',-10,10,0.001)
-                lineWidth(f1,3)
-                foreground(f1,'#ff0000')
-            </div>
+            <draw width='6cm' height='7cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		      mark({center: 'middle',cmy: 2})
+		      grid(3)
+              width(3)    
+		      curve('-2(x+1)^2+2',-10,10) 
+	       </draw>
             &
-            <div class="figure" data-width="7" data-height="6">
-                painterGrid(3)
-                showMark()
-                markUpdate(3,2.5,1,1,1,2,0,0)
-                f1 = curveFunction('-4(x-2)^2+6',-10,10,0.001)
-                lineWidth(f1,3)
-                foreground(f1,'#ff0000')
-            </div>
+            <draw width='6cm' height='7cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		      mark({Ox: '2cm',Oy: '4cm',cmy: 2})
+		      grid(3)
+              width(3)    
+		      curve('-4(x-2)^2+6',-10,10) 
+	       </draw>
             ||
             Parabole $C_{f_1}$ & Parabole $C_{f_2}$ & Parabole $C_{f_3}$
         </div>
@@ -125,7 +102,7 @@ data-main-width="900">
 <div class="newpage"></div>
 
 <!-- Symétrie de la parabole -->
-<div class="box" data-title="Symétrie de la parabole" data-time="2m" data-num="$N_4$">
+<div class="box" data-title="Symétrie de la parabole" data-date="1" data-num="$N_4$">
 	<div class="titled hide" data-title="\boxP Propriété : Symétrie de la parabole" data-color="#006666">
 		La parabole $C_f$, courbe représentative de la fonction du second degré $f$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ est symétrique par rapport à la droite verticale d'équation $x= \alpha$. 
 	</div>
@@ -258,7 +235,7 @@ data-main-width="900">
     
     
 <!-- Signe d'un trinôme -->
-<div class="box" data-title="Inéquation du second degré et signe d'un trinôme : forme canonique" data-time="2m" data-num="$N_7$">
+<div class="box" data-title="Inéquation du second degré et signe d'un trinôme : forme canonique" data-date="1" data-num="$N_7$">
 	
     <div class="titled hide" data-title="$\blacksquare$ Définition et propriétés" data-color="#660000">
 		Soient  $a$, $b$ et $c$ des nombres réels tels que $a \not= 0$ et $f$ la fonction du second degré définie par $f(x) = ax^2+bx+c$ de courbe représentative $\mathcal{C}_f$.
@@ -431,7 +408,7 @@ $\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points
     
     
 <!-- Forme factorisée -->
-<div class="box" data-title="Forme factorisée" data-time="2m" data-num="$N_8$">
+<div class="box" data-title="Forme factorisée" data-date="1" data-num="$N_8$">
 	<div class="titled hide" data-title="\boxT Théorème" data-color="#660000">
 		Soit la forme développée de la fonction  $f(x) = ax^2 + bx+ c $  ($a \not= 0$). Dans certains cas, il est possible d'écrire $f$ sous forme *{bold::factorisée} : *{bo1#000000::$f(x) = a(x-x_1)(x-x_2)$}
 	</div>
@@ -455,7 +432,7 @@ $\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points
     
     
 <!-- Signe d'un trinôme -->
-<div class="box" data-title="Signe d'un trinôme: forme factorisée" data-time="2m" data-num="$N_9$">
+<div class="box" data-title="Signe d'un trinôme: forme factorisée" data-date="1" data-num="$N_9$">
 	<div class="titled hide" data-title="\boxP Propriétés" data-color="#660000">
 		On considère le trinôme $ax^2 + bx +c$ associé à la fonction $f(x) = ax^2 + bx +c$ dont la forme factorisée existe : $f(x) = a(x-x_1)(x-x_2)$ avec $x_1 \leqslant x_2$. vspace{10}
         ,, Pour $a > 0$
@@ -588,7 +565,7 @@ $\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points
 </div> 
         
 <!-- Inéquation $f(x) \geqslant g(x)$ -->
-<div class="box" data-title="Inéquation $f(x) \geqslant g(x)$" data-time="2m">
+<div class="box" data-title="Inéquation $f(x) \geqslant g(x)$">
     <div class="styled" style="text-align: left">
     Soient $2$ fonctions $f$ et $g$ définies par $f(x) = x^2-6x+2$ et $g(x) = -2x^2-3x+8$ de courbes représentatives $\mathcal{C}_f$ et $\mathcal{C}_g$. 
 <div class="table" cells="*,*|w50%" data-table-style="width: 100%">
@@ -601,49 +578,180 @@ $\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points
 </div> 
         
 <!-- Histoire de pont -->
-<div class="box" data-title="Histoire de pont" data-time="2m">        
+<div class="box" data-title="Histoire de pont">        
 <div class="styled">
 Un pont est soutenu par un arc parabolique d'une portée de $200\;m$ et d'une hauteur de $80\;m$. Le pont et l'arc se coupent à $40\;m$ de la rive. Quelle est la hauteur du pont ?
 </div>
 </div>  
+    
+<!-- Paramétrage -->
+<div class="box" data-title="Paramétrage">        
+<div class="styled">
+On considère l’équation $(E) : x^2 + 2x + m = 0$. L’objectif de l’exercice est de déterminer pour quelles valeurs de $m$ l’équation $(E)$ admet au moins une solution.
+    <div class="num">Résoudre, dans $\R$, les équations : $x^2 + 2x = 0$ et $x^2 + 2x + 1 = 0$</div>
+    <div class="num">Vérifier que pour tout réel $x$ : $x^2 + 2x + m = (x + 1)^2 − 1 + m$</div>
+    <div class="num">Justifier alors que résoudre l’équation $(E)$ revient à résoudre l’équation $(x + 1)^2 = 1 − m$.</div>
+    <div class="num">Conclure.</div>
+</div>
+</div>    
         
 <div class="newpage"></div>        
         
 <!-- Algorithme 1 -->
-<div class="box" data-title="Algorithme : forme canonique" data-time="2m">        
+<div class="box" data-title="Algorithme : forme canonique">        
 <div class="styled">
 Soit une fonction du second degré $f(x) = ax^2+bx+c$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$.
-Ecrire un algorithme en *{bold::javascript} qui détermine les réels $\alpha$ et $\beta$ de la forme canonique d'une fonction du second degré.
-</div>
-</div>   
-        
-<!-- Dans un jardin -->
-<div class="box" data-title="Dans un jardin" data-time="2m">        
-<div class="styled">
-À l'intérieur d'un jardin carré dont la longueur du côté est $10$ mètres, un jardinier souhaite installer, le long du bord, une allée en graviers de largeur constante. Comment faire en sorte que l'aire de l'allée soit égale à celle du carré intérieur ?
-</div>
-</div>  
-        
-<!-- Algorithme : Racines d'un trinôme -->
-<div class="box" data-title="Algorithme : Racines d'un trinôme" data-time="2m"> 
-<div class="frame" data-title="Correction de l'exercice $n^\circ 17$" data-width="600">
-	<div class="styled">
-	Voici une <a class="algse btn btn-default" data-editable="0" data-file="algo1-c1.algse" target="_blank"><i class="fa fa-file-code-o fa-lg no-print"></i> correction</a>. vspace{10}	
-	Voici une autre <a class="algse btn btn-default" data-editable="0" data-file="algo1-c2.algse" target="_blank"><i class="fa fa-file-code-o fa-lg no-print"></i> correction</a> utilisant une fonction javascript.  
-</div>
-	
-</div>	
-	
-	       
-<div class="styled">
-Ecrire un <dropdown data-id="algse-1" data-class="btn btn-default" label="<i class='fa fa-file-code-o'></i> algorithme" style="margin-left: -2px;margin-right: -2px"></dropdown>   qui détermine les solutions de l'équation du second degré $ax^2 + bx + c = 0$.
+    Ecrire un <dropdown data-id="algse-1" data-class="btn btn-default" label="<i class='fa fa-file-code-o'></i> algorithme" style="margin-left: -2px;margin-right: -2px"></dropdown>  qui détermine les réels $\alpha$ et $\beta$ de la forme canonique d'une fonction du second degré.
 
 <div drop-id="algse-1" style="width: 800px;margin: auto;margin-top: 10px" data-init='true'>
-          <iframe style="margin-top: 0px;border: 1px solid #444444" class="algse" data-file="algo1.algse"></iframe>
+          <iframe style="margin-top: 0px;border: 1px solid #444444;height: 300px" class="algse" data-file="algo1.algse"></iframe>
       </div>
         
 </div>
-</div>          
+</div>   
+ 
+    
+    
+ 
+    
+<!-- A partir d'une parabole -->
+<div class="box" data-title="A partir d'une parabole">        
+<div class="styled">
+    <div class="table 2cols">
+Le graphique ci-contre donne la courbe représentative d’un trinôme défini sur $\R$ par $f(x)=ax^2 +bx+c$ : 
+   
+    <div class="num">Donner par lecture graphique $f (0)$; $f (−1)$; $f (−2)$.</div>
+    <div class="num">En déduire $a$, $b$ et $c$ puis l’expression de $f$.</div>
+        &
+        
+         <draw width='10cm' height='6cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		      mark({Ox: '6cm',Oy: '3cm',cmy: 1,dy: 2,dx : 2})
+		      grid(3)
+              width(3)    
+		      curve('2(x+1)^2-1',-10,10) 
+	       </draw>
+    </div>    
+</div>
+</div>   
+    
+<!-- A partir canonique -->
+<div class="box" data-title="A partir de la forme canonique">        
+<div class="styled">
+    <div class="table 2cols">
+Ci-contre est donnée la représentation graphique $\mathcal{C}_f$ d’une fonction trinône $f$ définie sur $\R$ par sa forme canonique $f(x) = a(x−\alpha)^2 + \beta$.
+   
+    <div class="num">Lire graphiquement les coordonnées du sommet de la parabole représentant la fonction $f$.</div>
+    <div class="num">Déterminer l’expression de $f$.</div>
+        &
+        
+         <draw width='10cm' height='6cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		      mark({Ox: '3cm',Oy: '3cm',cmy: 1,dy: 0.5,dx : 1})
+		      grid(3)
+              width(3)    
+		      curve('-2(x-3)^2+5',-10,10) 
+	       </draw>
+    </div>    
+</div>
+</div>       
+        
+<!--  -->
+<div class="box" data-title=" ">        
+<div class="styled">
+    <div class="table 2cols">
+On considère la droite $(d)$ d’équation $y = 2x + 3$ et $A$ le point de coordonnées $(1; 1)$. $M$ est un point quelconque de la droite $(d)$ et on note $x$ l’abscisse de $M$. On considère le point $B$ de coordonnées $(0; 3)$. <br>
+On définit la fonction $f$ par : $f(x) = AM^2$.        
+   
+    <div class="num">Justifier que l’ordonnée de $M$ est $y_M = 2x + 3$. Vérifier que $f(x)=5x^2 +6x+5$.</div>
+    <div class="num">Vérifier que l’expression $5 (x + 0, 6)^2 + 3,2$ est la forme canonique du trinôme $f$.</div>
+    <div class="num">Étudier les variations de la fonction $f$. Pour quelle valeur $x_0$ la fonction atteint-elle son extremum ?</div> 
+    <div class="num">$M_0$ est le point de la droite $(d)$ tel que la distance $AM^2$ soit minimale. Justifier que les coordonnées de $M_0$ sont $(−0, 6; 1, 8)$.</div>     
+    <div class="num">Vérifier que $B$ est un point de la droite $(d)$.</div> 
+     <div class="num">Déterminer la nature du triangle $ABM_0$. Que peut-on dire des droites $(AM_0)$ et $(d)$ ?</div>     
+        &
+        
+         <draw width='10cm' height='12cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		      mark({Ox: '6cm',Oy: '7cm',cmy: 1,dy: 1,dx : 1})
+		      grid(3)
+              width(3)    
+		      curve('2x+3',-10,10) 
+              point(-2.3,'2*(-2.3)+3',{name: 'M',top: -0.4})
+              point(1,'1',{name: 'A'})
+              dash(5)
+              line(-2.3,'2*(-2.3)+3',1,1)
+	       </draw>
+    </div>    
+</div>
+</div> 
+    
+<div class="newpage"></div>
+    
+     
+<!-- Vases -->
+<div class="box" data-title="Vases">        
+<div class="styled">
+Un artisan fabrique entre $0$ et $60$ vases par jour et estime que le coût de production de $x$ vases est modélisé par la fonction $C$ donnée par $C(x) = x^2 − 10x + 500$. On note $R(x)$ la recette, en euros, correspondant à la vente de $x$ vases fabriqués. vspace{10}Un vase est vendu $50$ €.vspace{10}
+    <div class="num">Exprimer $R(x)$ en fonction de $x$.</div>
+    <div class="num">Calculer le coût, la recette et le bénéfice réalisés lorsque l’artisan vend $50$ vases.</div>
+    <div class="num">Vérifier que le bénéfice, en euros, réalisé par l’artisan est donné par la fonction $B$ dont l’expression est : $B(x) = −x^2 + 60x − 500$.</div>
+    <div class="num">Développe l’expression : $−(x − 30)^2 + 400$. En déduire le nombre de vases à vendre pour réaliser un bénéfice maximum.</div>
+</div>
+</div> 
+    
+    
+<!-- Position relative  -->
+<div class="box" data-title="Position relative">        
+<div class="styled">
+    <div class="table 2cols">
+Voici la droite $(d)$ d’équation $y = 6x + 30$ et la parabole $\mathcal{P}$ représentant la fonction $f$ : $f (x) = −4x^2 + 30x + 10$.        
+   vspace{10}
+    <div class="num">Démontrer, qu’étudier les positions relatives de la droite $(d)$ et de la parabole $\mathcal{P}$ revient à résoudre l’inéquation $−4x^2 + 24x − 20 \geqslant  0$.</div>
+    <div class="num">Vérifier que l’expression $5 (x + 0, 6)^2 + 3,2$ est la forme canonique du trinôme $f$.</div>
+    <div class="num">Vérifier que, pour tout réel $x$ : $−4x^2 + 24x − 20 = −4(x − 3)^2 + 16$.</div> 
+    <div class="num">Résoudre alors l’inéquation $−4x^2 + 24x − 20 \geqslant  0$.</div>     
+    <div class="num">Conclure.</div>     
+        &
+        
+         <draw width='10cm' height='9cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		      mark({Ox: '2cm',Oy: '6cm',cmy: 20,dy: 1,dx : 1,cmx: 2})
+		      grid(3)
+              width(3)    
+		      curve('-4x^2 + 30x+10',-10,20) 
+              curve('6x + 30',-10,20) 
+	       </draw>
+    </div>    
+</div>
+</div> 
+    
+    
+<!-- Une parabole et $3$ points -->
+<div class="box" data-title="Une parabole et $3$ points">        
+<div class="styled">
+La parabole $\mathcal{P}$ coupe l'axe des ordonnées en $A(0 ; 3)$ et passe par $B(1 ; -1)$ et $C(3 ; 1)$. Déterminer son équation sous la forme $y=ax^2+bx+c$ puis sous la forme canonique. Tracer cette parabole.
+</div>
+</div>  
+    
+    
+<!-- Dans un théâtre-->
+<div class="box" data-title="Dans un théâtre">        
+<div class="styled">
+Le directeur d'une salle de théâtre a remarqué qu'à $40$ € la place, il peut compter jusqu'à $500$ spectateurs et que chaque baisse de $2,50$ € lui amène $100$ personnes de plus. 
+vspace{10}
+Soit $x$ le nombre de baisses du prix de la place de $2,50$ €. On modélise cette situation par la fonction $g$.
+    vspace{10}
+    <div class="num">Déterminer l'expression de la fonction $g$. </div>
+    <div class="num"> Dresser le tableau de variation de $g$ puis tracer sa courbe représentative dans un repère.</div>
+    <div class="num">Combien doit-il faire payer la place pour avoir une recette maximale ?</div>
+</div>
+</div>
+    
+    
+<!-- Une belle volée -->
+<div class="box" data-title="Une belle volée">        
+<div class="styled">
+Un tennisman frappe droit devant lui une volée à $1\;m$ du filet  alors que la balle est à $0,9\;m$ de hauteur en $A$. La balle franchit le filet en $B$ à une hauteur de $1,1\;m$ et atteint en $C$ une hauteur maximale de $1,3\;m$.
+La longueur d'un terrain de tennis est $23,77\;m$. La balle sortira-t-elle du cours ?
+</div>
+</div>     
         
 </body>
 </html>
