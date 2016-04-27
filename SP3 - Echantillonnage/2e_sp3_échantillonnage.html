@@ -6,7 +6,7 @@
 </head>
 
 <body  data-type="animation" data-title="Echantillonnage" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Echantillonnage" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
-data-start-page="7"
+data-start-page="55"
 data-left="$2^e$-$SP_3$"
 data-main-width="900">
 
@@ -23,7 +23,7 @@ data-main-width="900">
         text('Taille : $N$',440,160) 
         text('Proportion du caractère : $p$',370,180)       
         color('#ff0000')
-        oval(220,160,120,100)
+        oval(220,160,140,90)
         text('échantillon',165,90,{css: 'tdu;textsc;bold;fs16'}) 
         text('Taille : $\\color{#ff0000}{n}$',180,130) 
         text('Proportion du caractère : $\\color{#ff0000}{f}$',110,150)      
@@ -34,7 +34,7 @@ data-main-width="900">
     <div class="titled hide" data-title="\boxP Intervalle de fluctuation" data-color="#666666">
         Quand on choisit un échantillon de taille $n$ (tel que $n \geqslant 25$) dans une population qui contient une proportion $p$ (telle que $p\in [0,2;0,8]$) du caractère étudié alors la proportion $f$ du caractère dans l'échantillon est telle que :  vspace{10}
 
-<centering-box>$ f \in \Bigg[\;  p -  \dfrac{1}{\sqrt{n}}  ;  p +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
+<centering-box style="display: inline-block">$ f \in \Bigg[\;  p -  \dfrac{1}{\sqrt{n}}  ;  p +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
 
         vspace{5}
 avec une probabilité de $95\%$.
@@ -68,10 +68,10 @@ Cet intervalle est appelé  *{bold::intervalle de fluctuation asymptotique à $9
 La proportion $p$ (telle que $p\in [0,2;0,8]$) dans la population est connue et la proportion $f$ dans cet échantillon  est connue.
 
 vspace{}
-<centering-box>L'échantillon provient-il de la population ? *{bold::On fait l'hypothèse que oui.}</centering-box>
+<centering-box style="display: inline-block">L'échantillon provient-il de la population ? *{bold::On fait l'hypothèse que oui.}</centering-box>
 
-vspace{}
- <centering-box>Si : $ f \not\in \Bigg[\;  p -  \dfrac{1}{\sqrt{n}}  ;  p +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
+vspace{10}
+ <centering-box style="display: inline-block">Si : $ f \not\in \Bigg[\;  p -  \dfrac{1}{\sqrt{n}}  ;  p +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
  vspace{10}
 Il y a $95\%$ de chance que l'hypothèse précédente soit fausse : on rejette l'hypothèse au seuil de $95\%$ ou avec un risque de $5\%$ (sinon on ne la rejette pas).
 
@@ -94,7 +94,7 @@ On décide de changer les méthodes de travail des équipes de cette chaîne de 
     <div class="titled hide" data-title="\boxP Intervalle de confiance" data-color="#666666">
         Quand  un échantillon de taille $n$ (tel que $n \geqslant 25$)  contient une proportion $f$ (telle que $f\in [0,2;0,8]$) du caractère étudié alors la proportion $p$ du caractère dans la population est telle que :  vspace{10}
 
-<centering-box>$ p \in \Bigg[\;  f -  \dfrac{1}{\sqrt{n}}  ;  f +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
+<centering-box style="display: inline-block">$ p \in \Bigg[\;  f -  \dfrac{1}{\sqrt{n}}  ;  f +  \dfrac{1}{\sqrt{n}}  \; \Bigg] $</centering-box>
 
         vspace{}
 avec une probabilité de $95\%$.
@@ -110,7 +110,7 @@ Cet intervalle est appelé  *{bold::intervalle de confiance à $95\%$} qui a pou
 	<div class="styled">
            En Italie, un sondage est effectué sur la politique budgétaire du pays. La question posée est : "pensez-vous que la rigueur actuelle soit suffisante pour régler le problème du déficit de l'Etat ". 
 
-vspace{10}
+vspace{5}
 Sur les $1\;000$ personnes interrogées, $30\%$ ont répondu non. Donner l'intervalle de confiance à $95\%$ du pourcentage d'Italiens qui répondraient non. 
 	</div>
 </div>
@@ -157,7 +157,7 @@ Pour chacun des échantillons, examiner l'hypothèse suivante : cet échantillon
     <div class="titled hide" data-title="\boxM Méthode" data-color="#666666">
         Soient deux échantillons de proportions respectives $f_1$ et $f_2$ d'un caractère. On détermine les deux intervalles de confiance de ces deux échantillons. On fait l'hypothèse qu'ils proviennent d'une *{tdu::même} population.  vspace{10}
 
-<centering-box>*{bold::Si les deux intervalles à $95\%$ sont disjoints (aucun nombre en commun) alors on rejette l'hypothèse, sinon on ne la rejette pas.}</centering-box>
+<centering-box style="display: inline-block">*{bold::Si les deux intervalles à $95\%$ sont disjoints (aucun nombre en commun) alors on rejette l'hypothèse, sinon on ne la rejette pas.}</centering-box>
 
 	</div>
     

@@ -6,7 +6,7 @@
 </head>
 
 <body  data-type="animation" data-title="Repérage sur le cercle trigonométrique" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Repérage sur le cercle trigonométrique" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
-data-start-page="7"
+data-start-page="44"
 data-left="$2^e$-$G_3$"
 data-main-width="900">
 
@@ -18,7 +18,8 @@ data-main-width="900">
         Dans un repère orthonormé $(O;I;J)$, le *{bold::cercle trigonométrique} $(\mathcal{C})$ est le cercle de centre $O$ et de rayon $1$. Ce cercle est muni d'un sens de parcours appelé *{bold::sens direct} (sens inverse des aiguilles d'une montre). <br>
         La mesure en *{bold::radian} d'un angle correspond à la longueur de l'arc du cercle trigonométrique qu'il intercepte.  La mesure en radian est *{bold::proportionnelle} à la mesure en degré. vspace{10}
         Pour repérer un point $M$ du cercle trigonométrique,
-on enroule autour du cercle un axe orienté, gradué, d’origine le point $I$. On peut alors associer, au point $M$, un réel $x$, abscisse d’un point de l’axe qui vient se superposer au point $M$.
+on enroule autour du cercle un axe orienté, gradué, d’origine le point $I$. On peut alors associer, au point $M$, un réel $x$, abscisse d’un point de l’axe qui vient se superposer au point $M$. <br>
+        Quand on fait un tour alors on se retourve avec le même point sur le cercle trigonométrique. De ce fait le même point $M$ est associé aux réels $x$; $x+2\pi$ ; $x-2\pi$ ; $x+k\times 2\pi$ et $x-k\times 2\pi$ ($k \in \mathbb{Z}$)     
             &
         <div class="draw" width='9cm' height='9cm' style="margin-left: 30px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
 		mark({dx: 4,dy: 4,axes: false})
@@ -50,9 +51,10 @@ on enroule autour du cercle un axe orienté, gradué, d’origine le point $I$
 	
    
 	<div class="styled">
+        vspace{5}
             <div class="num" data-valign-num="middle"> Convertir $\displaystyle \frac{\pi}{5}$, $\displaystyle \frac{5\pi}{2}$ et $\displaystyle \frac{-\pi}{4}$ en degré puis les placer sur le cercle trigonométrique. </div>
-             <div class="num" data-valign-num="middle">Placer sur le cercle trigonométrique $\displaystyle -\frac{\pi}{3}$, $\displaystyle -\frac{\pi}{2}$, $\displaystyle \frac{11\pi}{8}$, $\displaystyle -\frac{5\pi}{8}$ et $\displaystyle \frac{17\pi}{6}$. </div>
-        <div class="num" data-valign-num="middle">Soit un point $A$ tel que $\displaystyle (\vecteur{OI},\vecteur{OA}) = -\frac{\pi}{2}$. Donner $4$ mesures différentes de l'angle orienté $\displaystyle (\vecteur{OI},\vecteur{OA})$. </div>
+             <div class="num" data-valign-num="middle" style="margin-top: 5px">Placer sur le cercle trigonométrique $\displaystyle -\frac{\pi}{3}$, $\displaystyle -\frac{\pi}{2}$, $\displaystyle \frac{11\pi}{8}$, $\displaystyle -\frac{5\pi}{8}$ et $\displaystyle \frac{17\pi}{6}$. </div>
+        <div class="num" data-valign-num="2px" style="margin-top: 5px">Soit un point $A$ du cercle trigonométrique associé au nombre $-\dfrac{\pi}{2}$. Donner quatre autres nombres qui correspondent au même point $A$. </div>
 	</div>
 </div>	
 
@@ -62,18 +64,22 @@ on enroule autour du cercle un axe orienté, gradué, d’origine le point $I$
     
     <div class="titled hide" data-title="\boxD Définition" data-color="#666666">
         <div class="table" cells="*,*|vat">
-        On se place dans un repère orthonormé $(O;\vecteur{OI}; \vecteur{OJ})$. Soit $M$ un point sur le cercle trigonométrique tel que $(\vecteur{OI},\vecteur{OM}) = x$ ($x$ est donc la mesure principale de l'angle vecteur $(\vecteur{OI},\vecteur{OM}) $) alors : $M\Big(\cos{(x)};\sin{(x)}\Big)$ ou $M\Big(\cos{x};\sin{x}\Big)$. <br>
+        On se place dans un repère orthonormé $(O;I; J)$. Soit $M$ un point sur le cercle trigonométrique associé au nombre $x$ ($x$ est la longueur de l'arc de cercle de $I$ à $M$. On note $\alpha = \widehat{IOM}$) alors : $M\Big(\cos{(x)};\sin{(x)}\Big)$ ou $M\Big(\cos{x};\sin{x}\Big)$ ou encore <br>
+            $M\Big(\cos{(\alpha)};\sin{(\alpha)}\Big)$ ou $M\Big(\cos{\alpha};\sin{\alpha}\Big)$
+            vspace{20}
             Pour $x \in \mathbb{R}$ et $k \in \mathbb{Z}$ : 
 
-\vspace{5pt}
+vspace{5}
 
-\num{1}  $(\cos{x})^2  + (\sin{x})^2 = 1$
+,,  $(\cos{x})^2  + (\sin{x})^2 = 1$
 
-\vspace{5pt}
-\num{2} $-1 \leqslant \cos{x} \leqslant 1 $ et $-1 \leqslant \sin{x} \leqslant 1 $ 
+vspace{5}
+,, $-1 \leqslant \cos{x} \leqslant 1 $ et $-1 \leqslant \sin{x} \leqslant 1 $ 
 
-\vspace{5pt}
-\num{3} $\cos{(x + k\times 2 \pi)} = \cos{x}$ et $\sin{(x + k\times 2 \pi)} = \sin{x}$
+vspace{5}
+,, $\cos{(x + k\times 2 \pi)} = \cos{x}$ et $\sin{(x + k\times 2 \pi)} = \sin{x}$
+            vspace{10}
+,, $\tan{(x)} = \dfrac{\sin{(x)}}{\cos{(x)}}$
 
             &
         <div class="draw" width='6.5cm' height='6.8cm' style="margin-left: 30px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
@@ -114,9 +120,7 @@ on enroule autour du cercle un axe orienté, gradué, d’origine le point $I$
 	
    
 	<div class="styled">
-            <div class="num" data-valign-num="middle"> Convertir $\displaystyle \frac{\pi}{5}$, $\displaystyle \frac{5\pi}{2}$ et $\displaystyle \frac{-\pi}{4}$ en degré puis les placer sur le cercle trigonométrique. </div>
-             <div class="num" data-valign-num="middle">Placer sur le cercle trigonométrique $\displaystyle -\frac{\pi}{3}$, $\displaystyle -\frac{\pi}{2}$, $\displaystyle \frac{11\pi}{8}$, $\displaystyle -\frac{5\pi}{8}$ et $\displaystyle \frac{17\pi}{6}$. </div>
-        <div class="num" data-valign-num="middle">Soit un point $A$ tel que $\displaystyle (\vecteur{OI},\vecteur{OA}) = -\frac{\pi}{2}$. Donner $4$ mesures différentes de l'angle orienté $\displaystyle (\vecteur{OI},\vecteur{OA})$. </div>
+             On se place dans un repère orthonormé $(O;I; J)$. Soit $M$ un point sur le cercle trigonométrique associé au nombre $x$ : $x$ est la longueur de l'arc de cercle de $I$ à $M$. On note $\alpha = \widehat{IOM}$. On pose $A(\cos{(x)};0)$ et $B(0;\sin{(x)})$. En utilisant le triangle $AOM$, démontrer que $(\cos{x})^2  + (\sin{x})^2 = 1$.
 	</div>
 </div>	
 
@@ -124,34 +128,24 @@ on enroule autour du cercle un axe orienté, gradué, d’origine le point $I$
     
 <div class="box" data-title="Valeurs usuelles" data-num="$N_3$" data-date="1" >
     <div class="titled hide" data-title="\boxP Propriétés" data-color="#666666">
-        <div class="table 3cols" cells="*,*|c">
-        <div class="draw" width='6.5cm' height='6.8cm' style="margin-left: 30px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+        <div class="table 3cols" cells="*,*|c" data-table-style="border-spacing : 0px 40px">
+        <div class="draw" width='6.5cm' height='6.8cm' style="margin-left: 30px;border: 0px solid #444444;background: #ffffff;border-radius: 20px">
 		mark({dx: 3,dy: 3,axes: false})
 		//grid(0)
 		circle(0,0,3)
-		point('sqrt(2)/2','sqrt(2)/2','M')
-		dash(4)
-		down('sqrt(2)/2')
-		line('sqrt(2)/2','sqrt(2)/2',0,'sqrt(2)/2')
+		point('1','0',{name: 'M',left: 0.05,top: 0.05})
 		dash(0)
-		line(0,0,'sqrt(2)/2','sqrt(2)/2')
 		arrow('->')
 		line(0,0,1,0)
 		line(0,0,0,1)
-		arc(0,0,1.5,0,45)
-		math('\\cos{(x)}','sqrt(2)/2-0.25',0,{fontSize: '11pt'})
-		math('\\sin{(x)}',-0.4,'sqrt(2)/2+0.08',{fontSize: '11pt'})
-		math('45^\\circ',0.47,0.34,{fontSize: '12pt'})
 		math('O',-0.1,-0.01,{fontSize: '12pt'})
 		math('I',1.05,0.05,{fontSize: '12pt'})
-		math('J',0,1.15,{fontSize: '12pt'})
-        math('\\widehat{IOM} = 45^\\circ','-0.5','-0.4',{fontSize: '12pt'})  
-         math('x = \\dfrac{\\pi}{4}','-0.18','-0.65',{fontSize: '12pt'})      
-        color('#ff0000') 
-        arrow('-')    
-        math('x',0.85,0.7,{fontSize: '12pt'})    
+		math('J',0,1.2,{fontSize: '12pt'})
+        math('\\widehat{IOM} = 0^\\circ','-0.45','-0.35',{fontSize: '12pt'})  
+         math('x = 0','-0.18','-0.65',{fontSize: '12pt'})      
+           
 	</div>
-        $\cos{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$ ; $\sin{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$
+        $\cos{(0)} = 1$ ; $\sin{(0)} = 0$
             
             &
             
@@ -159,6 +153,36 @@ on enroule autour du cercle un axe orienté, gradué, d’origine le point $I$
 		mark({dx: 3,dy: 3,axes: false})
 		//grid(0)
 		circle(0,0,3)
+		point('sqrt(3)/2','1/2','M')
+		dash(4)
+		down('1/2')
+		line('sqrt(3)/2','1/2',0,'1/2')
+		dash(0)
+		line(0,0,'sqrt(3)/2','1/2')
+		arrow('->')
+		line(0,0,1,0)
+		line(0,0,0,1)
+		arc(0,0,1.5,0,30)
+		math('\\cos{(x)}','sqrt(3)/2-0.25',-0.05,{fontSize: '11pt'})
+		math('\\sin{(x)}',-0.4,'1/2+0.08',{fontSize: '11pt'})
+		math('30^\\circ',0.53,0.24,{fontSize: '12pt'})
+		math('O',-0.1,-0.01,{fontSize: '12pt'})
+		math('I',1.05,0.05,{fontSize: '12pt'})
+		math('J',0,1.2,{fontSize: '12pt'})
+        math('\\widehat{IOM} = 30^\\circ','-0.45','-0.30',{fontSize: '12pt'})  
+         math('x = \\dfrac{\\pi}{6}','-0.18','-0.60',{fontSize: '12pt'})      
+        color('#ff0000') 
+        arrow('-')    
+        math('x',1.02,0.32,{fontSize: '12pt'})    
+	</div>
+        $\cos{(\frac{\pi}{6})} = \dfrac{\sqrt{3}}{2}$ ; $\sin{(\frac{\pi}{6})} = \dfrac{1}{2}$
+            
+            &
+            
+           <div class="draw" width='6.5cm' height='6.8cm' style="margin-left: 30px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+		mark({dx: 3,dy: 3,axes: false})
+		//grid(0)
+		circle(0,0,3)
 		point('sqrt(2)/2','sqrt(2)/2','M')
 		dash(4)
 		down('sqrt(2)/2')
@@ -174,14 +198,41 @@ on enroule autour du cercle un axe orienté, gradué, d’origine le point $I$
 		math('45^\\circ',0.47,0.34,{fontSize: '12pt'})
 		math('O',-0.1,-0.01,{fontSize: '12pt'})
 		math('I',1.05,0.05,{fontSize: '12pt'})
-		math('J',0,1.15,{fontSize: '12pt'})
-        math('\\widehat{IOM} = 45^\\circ','-0.5','-0.4',{fontSize: '12pt'})  
-         math('x = \\dfrac{\\pi}{4}','-0.18','-0.65',{fontSize: '12pt'})      
+		math('J',0,1.2,{fontSize: '12pt'})
+        math('\\widehat{IOM} = 45^\\circ','-0.45','-0.30',{fontSize: '12pt'})  
+         math('x = \\dfrac{\\pi}{4}','-0.18','-0.60',{fontSize: '12pt'})      
         color('#ff0000') 
         arrow('-')    
-        math('x',0.85,0.7,{fontSize: '12pt'})    
+        math('x',0.95,0.5,{fontSize: '12pt'})    
 	</div>
-        $\cos{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$ ; $\sin{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$
+        $\cos{(\frac{\pi}{4})} = \dfrac{\sqrt{2}}{2}$ ; $\sin{(\frac{\pi}{4})} = \dfrac{\sqrt{2}}{2}$  ||
+           <div class="draw" width='6.5cm' height='6.8cm' style="margin-left: 30px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+		mark({dx: 3,dy: 3,axes: false})
+		//grid(0)
+		circle(0,0,3)
+		point('1/2','sqrt(3)/2','M')
+		dash(4)
+		down('sqrt(3)/2')
+		line('1/2','sqrt(3)/2',0,'sqrt(3)/2')
+		dash(0)
+		line(0,0,'1/2','sqrt(3)/2')
+		arrow('->')
+		line(0,0,1,0)
+		line(0,0,0,1)
+		arc(0,0,1.5,0,60)
+		math('\\cos{(x)}','1/2-0.25',-0.05,{fontSize: '11pt'})
+		math('\\sin{(x)}',-0.4,'sqrt(3)/2+0.08',{fontSize: '11pt'})
+		math('60^\\circ',0.22,0.22,{fontSize: '12pt'})
+		math('O',-0.1,-0.01,{fontSize: '12pt'})
+		math('I',1.05,0.05,{fontSize: '12pt'})
+		math('J',0,1.2,{fontSize: '12pt'})
+        math('\\widehat{IOM} = 60^\\circ','-0.45','-0.30',{fontSize: '12pt'})  
+         math('x = \\dfrac{\\pi}{3}','-0.18','-0.60',{fontSize: '12pt'})      
+        color('#ff0000') 
+        arrow('-')    
+        math('x',0.95,0.52,{fontSize: '12pt'})    
+	</div>
+        $\cos{(\frac{\pi}{3})} = \dfrac{1}{2}$ ; $\sin{(\frac{\pi}{3})} = \dfrac{\sqrt{3}}{2}$
             
             &
             
@@ -189,120 +240,77 @@ on enroule autour du cercle un axe orienté, gradué, d’origine le point $I$
 		mark({dx: 3,dy: 3,axes: false})
 		//grid(0)
 		circle(0,0,3)
-		point('sqrt(2)/2','sqrt(2)/2','M')
+		point('0','1',{name: 'M',top: -0.2})
 		dash(4)
-		down('sqrt(2)/2')
-		line('sqrt(2)/2','sqrt(2)/2',0,'sqrt(2)/2')
+		down('1')
+		line('0','1',0,'1')
 		dash(0)
-		line(0,0,'sqrt(2)/2','sqrt(2)/2')
+		line(0,0,'0','1')
 		arrow('->')
 		line(0,0,1,0)
 		line(0,0,0,1)
-		arc(0,0,1.5,0,45)
-		math('\\cos{(x)}','sqrt(2)/2-0.25',0,{fontSize: '11pt'})
-		math('\\sin{(x)}',-0.4,'sqrt(2)/2+0.08',{fontSize: '11pt'})
-		math('45^\\circ',0.47,0.34,{fontSize: '12pt'})
+		arc(0,0,1.5,0,90)
+		math('\\cos{(x)}','-0.25',-0.13,{fontSize: '11pt'})
+		math('\\sin{(x)}',-0.45,'1+0.12',{fontSize: '11pt'})
+		math('90^\\circ',0.42,0.53,{fontSize: '12pt'})
 		math('O',-0.1,-0.01,{fontSize: '12pt'})
 		math('I',1.05,0.05,{fontSize: '12pt'})
-		math('J',0,1.15,{fontSize: '12pt'})
-        math('\\widehat{IOM} = 45^\\circ','-0.5','-0.4',{fontSize: '12pt'})  
-         math('x = \\dfrac{\\pi}{4}','-0.18','-0.65',{fontSize: '12pt'})      
+		math('J',0,1.2,{fontSize: '12pt'})
+        math('\\widehat{IOM} = 90^\\circ','-0.45','-0.30',{fontSize: '12pt'})  
+         math('x = \\dfrac{\\pi}{2}','-0.18','-0.60',{fontSize: '12pt'})      
         color('#ff0000') 
         arrow('-')    
-        math('x',0.85,0.7,{fontSize: '12pt'})    
+        math('x',0.85,0.75,{fontSize: '12pt'})    
 	</div>
-        $\cos{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$ ; $\sin{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$  ||
-            
-            <div class="draw" width='6.5cm' height='6.8cm' style="margin-left: 30px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
-		mark({dx: 3,dy: 3,axes: false})
-		//grid(0)
-		circle(0,0,3)
-		point('sqrt(2)/2','sqrt(2)/2','M')
-		dash(4)
-		down('sqrt(2)/2')
-		line('sqrt(2)/2','sqrt(2)/2',0,'sqrt(2)/2')
-		dash(0)
-		line(0,0,'sqrt(2)/2','sqrt(2)/2')
-		arrow('->')
-		line(0,0,1,0)
-		line(0,0,0,1)
-		arc(0,0,1.5,0,45)
-		math('\\cos{(x)}','sqrt(2)/2-0.25',0,{fontSize: '11pt'})
-		math('\\sin{(x)}',-0.4,'sqrt(2)/2+0.08',{fontSize: '11pt'})
-		math('45^\\circ',0.47,0.34,{fontSize: '12pt'})
-		math('O',-0.1,-0.01,{fontSize: '12pt'})
-		math('I',1.05,0.05,{fontSize: '12pt'})
-		math('J',0,1.15,{fontSize: '12pt'})
-        math('\\widehat{IOM} = 45^\\circ','-0.5','-0.4',{fontSize: '12pt'})  
-         math('x = \\dfrac{\\pi}{4}','-0.18','-0.65',{fontSize: '12pt'})      
-        color('#ff0000') 
-        arrow('-')    
-        math('x',0.85,0.7,{fontSize: '12pt'})    
-	</div>
-        $\cos{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$ ; $\sin{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$
+        $\cos{(\frac{\pi}{2})} = 0$ ; $\sin{(\frac{\pi}{2})} = 1$
             
             &
-            
             <div class="draw" width='6.5cm' height='6.8cm' style="margin-left: 30px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
 		mark({dx: 3,dy: 3,axes: false})
 		//grid(0)
 		circle(0,0,3)
-		point('sqrt(2)/2','sqrt(2)/2','M')
+		point('-1','0',{name: 'M',top: -0.15})
 		dash(4)
-		down('sqrt(2)/2')
-		line('sqrt(2)/2','sqrt(2)/2',0,'sqrt(2)/2')
+		//down('1')
+		//line('0','1',0,'1')
 		dash(0)
-		line(0,0,'sqrt(2)/2','sqrt(2)/2')
+		line(0,0,'-1','0')
 		arrow('->')
 		line(0,0,1,0)
 		line(0,0,0,1)
-		arc(0,0,1.5,0,45)
-		math('\\cos{(x)}','sqrt(2)/2-0.25',0,{fontSize: '11pt'})
-		math('\\sin{(x)}',-0.4,'sqrt(2)/2+0.08',{fontSize: '11pt'})
-		math('45^\\circ',0.47,0.34,{fontSize: '12pt'})
+		arc(0,0,1.5,0,180)
+		//math('\\cos{(x)}','-0.25',-0.13,{fontSize: '11pt'})
+		//math('\\sin{(x)}',-0.45,'1+0.12',{fontSize: '11pt'})
+		math('180^\\circ',-0.3,0.65,{fontSize: '12pt'})
 		math('O',-0.1,-0.01,{fontSize: '12pt'})
 		math('I',1.05,0.05,{fontSize: '12pt'})
-		math('J',0,1.15,{fontSize: '12pt'})
-        math('\\widehat{IOM} = 45^\\circ','-0.5','-0.4',{fontSize: '12pt'})  
-         math('x = \\dfrac{\\pi}{4}','-0.18','-0.65',{fontSize: '12pt'})      
+		math('J',0,1.2,{fontSize: '12pt'})
+        math('\\widehat{IOM} = 180^\\circ','-0.45','-0.30',{fontSize: '12pt'})  
+         math('x = \\pi','-0.18','-0.60',{fontSize: '12pt'})      
         color('#ff0000') 
         arrow('-')    
-        math('x',0.85,0.7,{fontSize: '12pt'})    
+        math('x',-0.15,1.15,{fontSize: '12pt'})    
 	</div>
-        $\cos{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$ ; $\sin{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$
-            
-            &
-            
-            <div class="draw" width='6.5cm' height='6.8cm' style="margin-left: 30px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
-		mark({dx: 3,dy: 3,axes: false})
-		//grid(0)
-		circle(0,0,3)
-		point('sqrt(2)/2','sqrt(2)/2','M')
-		dash(4)
-		down('sqrt(2)/2')
-		line('sqrt(2)/2','sqrt(2)/2',0,'sqrt(2)/2')
-		dash(0)
-		line(0,0,'sqrt(2)/2','sqrt(2)/2')
-		arrow('->')
-		line(0,0,1,0)
-		line(0,0,0,1)
-		arc(0,0,1.5,0,45)
-		math('\\cos{(x)}','sqrt(2)/2-0.25',0,{fontSize: '11pt'})
-		math('\\sin{(x)}',-0.4,'sqrt(2)/2+0.08',{fontSize: '11pt'})
-		math('45^\\circ',0.47,0.34,{fontSize: '12pt'})
-		math('O',-0.1,-0.01,{fontSize: '12pt'})
-		math('I',1.05,0.05,{fontSize: '12pt'})
-		math('J',0,1.15,{fontSize: '12pt'})
-        math('\\widehat{IOM} = 45^\\circ','-0.5','-0.4',{fontSize: '12pt'})  
-         math('x = \\dfrac{\\pi}{4}','-0.18','-0.65',{fontSize: '12pt'})      
-        color('#ff0000') 
-        arrow('-')    
-        math('x',0.85,0.7,{fontSize: '12pt'})    
-	</div>
-        $\cos{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$ ; $\sin{(\frac{\pi}{4})} = \frac{\sqrt{2}}{2}$
+        $\cos{(\pi)} = -1$ ; $\sin{(\pi)} = 0$
             
         </div>    
-    </div>    
+    </div>  
+    
+    <div class="styled">
+             On se place dans un repère orthonormé $(O;I; J)$. Soit $M$ un point sur le cercle trigonométrique associé au nombre $\dfrac{\pi}{6}$ : $\dfrac{\pi}{6}$ est la longueur de l'arc de cercle de $I$ à $M$. On note $\alpha = \widehat{IOM}$. On pose $A(\cos{(\frac{\pi}{6})};0)$ et $B(0;\sin{(\frac{\pi}{6})})$. vspace{10}
+        <div class="num">Faire une figure.</div>
+        <div class="num">Donner la mesure de $\alpha$ en degré.</div>
+         <div class="num">Démontrer que $OA = BM$</div>
+        <div class="num">Démontrer que $OMJ$ est un triangle isocèle.</div>
+        <div class="num">Démontrer que $\widehat{MOJ} = 60^\circ$</div>
+        <div class="num">Démontrer que $OMJ$ est un triangle équilatéral.</div>
+        <div class="num">Que dire de la droite $(BM)$ dans le triangle $OMJ$ ?</div>
+        <div class="num">En déduire que $B$ est le milieu de $[OJ]$. Donner la longueur $OB$.</div>
+        <div class="num">Calculer la longueur $BM$.</div>
+        <div class="num">Déduire des questions précédentes les valeurs exactes de $\sin{(\frac{\pi}{6})}$ et $\cos{(\frac{\pi}{6})}$</div>
+        
+	</div>
+    
 </div>    
 
        

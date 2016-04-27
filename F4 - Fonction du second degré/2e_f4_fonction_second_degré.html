@@ -6,7 +6,7 @@
 </head>
 
 <body  data-type="animation" data-title="Fonction du second degré" data-right="page $n^\circ #n$" data-after-animation="true" data-main-title="2e - Fonction du second degré" data-font-size="14" data-title-font-size="14" data-init="list" data-main-style="framed" 
-data-start-page="21"
+data-start-page="24"
 data-left="$2^e$-$F_4$"
 data-main-width="900">
 
@@ -73,21 +73,21 @@ data-main-width="900">
     <div class="styled">
         Donner la forme canonique des fonctions du second degré  suivantes : 
 		<div class="table" cells="*,*|w300;center">
-            <draw width='6cm' height='7cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
-		      mark({center: 'middle',cmy: 2})
+            <draw width='6cm' height='7.5cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		      mark({Ox: '3cm',Oy: '4cm',cmy: 2})
 		      grid(3)
               width(3)    
 		      curve('2(x-1)^2-4',-10,10) 
 	       </draw>
             &
-            <draw width='6cm' height='7cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
-		      mark({center: 'middle',cmy: 2})
+            <draw width='6cm' height='7.5cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+		      mark({Ox: '3cm',Oy: '3cm',cmy: 2})
 		      grid(3)
               width(3)    
 		      curve('-2(x+1)^2+2',-10,10) 
 	       </draw>
             &
-            <draw width='6cm' height='7cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
+            <draw width='6cm' height='7.5cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
 		      mark({Ox: '2cm',Oy: '4cm',cmy: 2})
 		      grid(3)
               width(3)    
@@ -109,7 +109,8 @@ data-main-width="900">
     
     <div class="styled">
         Tracer la courbe représentative des fonctions suivantes en traçant l'axe de symétrie : 
-		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+        vspace{10}
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%;border-spacing: 0px 10px">
             <div class="num">  $f_1(x) = (x-8)^2+2$</div> &
             <div class="num"> $f_2(x) = 2(x+1)^2+3$</div> &
              <div class="num"> $f_3(x) = -2(4+x)^2-3$</div> ||
@@ -121,11 +122,11 @@ data-main-width="900">
 </div>	
     
 <!-- Sens de variation -->
-<div class="box" data-title="Sens de variation" data-time="2m" data-num="$N_5$">
+<div class="box" data-title="Sens de variation" data-date="1" data-num="$N_5$">
 	<div class="titled hide" data-title="\boxP Sens de variation" data-color="#660000">
 		On considère la fonction du second degré $f$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ alors : vspace{}
-        
-        <div class="table 2cols" cells="*,*|c">
+        vspace{20}
+        <div class="table 2cols" cells="*,*|c" data-table-style='border-spacing: 0px 5px'>
         si $a > 0$ & si $a < 0$ ||
          <drawing width='400' height='150' style="margin-left: 10px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
 		move(10,5)
@@ -192,20 +193,29 @@ data-main-width="900">
     
     <div class="styled">
         Construire le tableau de variations des fonctions du second degré  suivantes : 
-		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
+        vspace{10}
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%;border-spacing: 0px 10px">
             <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
             <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
              <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
             <div class="num"> $f_4(x) = (5x-3)^2$</div> &
             <div class="num"> $f_5(x) = 9x^2-2x+5$</div> &
              <div class="num">$f_6(x) = (7x+8)(7x-8)$</div> 
+            ||
+            <div class="num"> $f_7(x) = (x-3)^2$</div> &
+            <div class="num"> $f_8(x) = x^2-x+3$</div> &
+             <div class="num">$f_9(x) = (2x+3)(x-1)$</div> 
+            ||
+            <div class="num"> $f_{10}(x) = (3x+1)^2$</div> &
+            <div class="num"> $f_{11}(x) = x^2-2x+1$</div> &
+             <div class="num">$f_{12}(x) = (2x+4)(x+1)$</div> 
         </div>
 	</div>
 </div>	 
     
     
 <!-- Extremum -->
-<div class="box" data-title="Extremum" data-time="2m" data-num="$N_6$">
+<div class="box" data-title="Extremum" data-date="1" data-num="$N_6$">
 	<div class="titled hide" data-title="\boxP Extremum" data-color="#660000">
 		On considère la fonction du second degré $f$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ alors : vspace{}
         $f$ admet $\beta$ comme extremum qui est atteint pour $x=\alpha$. <br>
@@ -218,14 +228,23 @@ data-main-width="900">
     
     
     <div class="styled">
-        Construire le tableau de variations des fonctions du second degré  suivantes : 
-		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
-            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
-            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
-             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
-            <div class="num"> $f_4(x) = (5x-3)^2$</div> &
-            <div class="num"> $f_5(x) = 9x^2-2x+5$</div> &
-             <div class="num">$f_6(x) = (7x+8)(7x-8)$</div> 
+        Construire le tableau de variations des fonctions du second degré  suivantes :
+        vspace{10}
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%;border-spacing: 0px 10px">
+            <div class="num">  $f_1(x) = -(x-4)^2+1$</div> &
+            <div class="num"> $f_2(x) = 3(x+1)^2+2$</div> &
+             <div class="num"> $f_3(x) = (2x-4)(2-x)$</div> ||
+            <div class="num"> $f_4(x) = (3x-2)^2$</div> &
+            <div class="num"> $f_5(x) = 5x^2-5x+1$</div> &
+             <div class="num">$f_6(x) = (6x+4)(6x-4)$</div> 
+            ||
+            <div class="num"> $f_7(x) = (3x+6)^2$</div> &
+            <div class="num"> $f_8(x) = 2x^2-4x+3$</div> &
+             <div class="num">$f_9(x) = (x+1)(x-1)$</div>
+            ||
+            <div class="num"> $f_{10}(x) = (4x+1)^2$</div> &
+            <div class="num"> $f_{11}(x) = x^2-4x+4$</div> &
+             <div class="num">$f_{12}(x) = (2x+4)(2x-4)$</div> 
         </div>
 	</div>
 </div>	     
@@ -260,10 +279,10 @@ $\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points
 	</div>
     
     <div class="titled hide" data-title="\boxP Signe" data-color="#660000">
-		On considère le trinôme $ax^2 + bx +c$ associé à la fonction $f(x) = ax^2 + bx +c$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ alors:           
+		On considère le trinôme $ax^2 + bx +c$ associé à la fonction $f(x) = ax^2 + bx +c$ de forme canonique $f(x) = a(x-\alpha)^2 + \beta$ alors:           vspace{10}
         <div class="table" cells="*,*|c">
         si $a > 0$ et $\beta \geqslant 0$ & si $a < 0$ et $\beta \geqslant 0$ ||
-         <drawing width='350' height='100' style="border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+         <drawing width='350' height='100' style="border: 0px solid #444444;background: #ffffff;border-radius: 5px;margin-bottom: 20px">
 		move(10,5)
 		down('h-10')
 		right('w-20')
@@ -290,7 +309,7 @@ $\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points
         
         &
         
-        <drawing width='450' height='100' style="border: 0px solid #444444;background: #ffffff;border-radius: 5px">
+        <drawing width='450' height='100' style="border: 0px solid #444444;background: #ffffff;border-radius: 5px;margin-bottom: 20px">
 		move(10,5)
 		down('h-10')
 		right('w-20')
@@ -394,13 +413,15 @@ $\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points
    
     <div class="styled">
         Construire le tableau de variations des fonctions du second degré  suivantes : 
-		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
-            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
-            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
-             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
+        vspace{10}
+		<div class="table" cells="*,*|w33%" data-table-style="width: 100%;border-spacing: 0px 10px">
             <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
             <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
              <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
+            ||
+            <div class="num">  $f_4(x) = -3(x-2)^2+1$</div> &
+            <div class="num"> $f_5(x) = 2(x+1)^2+3$</div> &
+             <div class="num"> $f_6(x) = (3x-6)(2-x)$</div> 
         </div>
 	</div>
 </div> 
@@ -410,20 +431,19 @@ $\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points
 <!-- Forme factorisée -->
 <div class="box" data-title="Forme factorisée" data-date="1" data-num="$N_8$">
 	<div class="titled hide" data-title="\boxT Théorème" data-color="#660000">
-		Soit la forme développée de la fonction  $f(x) = ax^2 + bx+ c $  ($a \not= 0$). Dans certains cas, il est possible d'écrire $f$ sous forme *{bold::factorisée} : *{bo1#000000::$f(x) = a(x-x_1)(x-x_2)$}
+		Soit la forme développée de la fonction  $f(x) = ax^2 + bx+ c $  ($a \not= 0$). Dans certains cas, il est possible d'écrire $f$ sous forme *{bold::factorisée} : *{bo1#000000::$f(x) = a(x-x_1)(x-x_2)$}.<br>On remarque que $f(x_1) = 0$ et $f(x_2) = 0$ : c'est un bon moyen de trouver la forme factorisée de la foncion $f$. 
+        <br>On appelle les nombre $x_1$ et $x_2$ les *{bold::racines} de $f$.
 	</div>
     
    
     <div class="styled">
-        Construire le tableau de variations des fonctions du second degré  suivantes : 
-		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
-            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
-            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
-             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
-            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
-            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
-             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
-        </div>
+        <div class="num">On considère la fonction $f$ définie par $f(x) = 3x^2 + 6x - 45$</div>
+         <div class="item" data-value="a) " style="margin-left: 50px">Calculer $f(3)$ et $f(-5)$</div>
+        <div class="item" data-value="b) " style="margin-left: 50px">Donner la forme factorisée de la fonction $f$</div>
+        <div class="num">On considère la fonction $f$ définie par $f(x) = -2x^2 + 4x +16$</div>
+         <div class="item" data-value="a) " style="margin-left: 50px">Démontrer que $-2$ est une racine de $f$.</div>
+        <div class="item" data-value="d) " style="margin-left: 50px">Démontrer que $4$ est une racine de $f$.</div>
+        <div class="item" data-value="c) " style="margin-left: 50px">Donner la forme factorisée de la fonction $f$</div>
 	</div>
 </div>
     
@@ -552,37 +572,26 @@ $\bullet$ $ax^2 + bx + c \geqslant 0$ $\rightarrow$ les abscisses $x$ des points
     
    
     <div class="styled">
-        Construire le tableau de variations des fonctions du second degré  suivantes : 
-		<div class="table" cells="*,*|w33%" data-table-style="width: 100%">
-            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
-            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
-             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> ||
-            <div class="num">  $f_1(x) = -2(x-3)^2+2$</div> &
-            <div class="num"> $f_2(x) = 4(x+2)^2+6$</div> &
-             <div class="num"> $f_3(x) = (5x-8)(2-6x)$</div> 
-        </div>
+       <div class="num">On considère la fonction $f$ définie par $f(x) = 5x^2 -5x -10$</div>
+         <div class="item" data-value="a) " style="margin-left: 50px">Démontrer que $-1$ est une racine de $f$.</div>
+        <div class="item" data-value="b) " style="margin-left: 50px">Démontrer que $2$  est une racine de $f$.</div>
+        <div class="item" data-value="c) " style="margin-left: 50px">Donner la forme factorisée de la fonction $f$ puis dresser le tableau de signes</div>
+        
+        <div class="num">On considère la fonction $f$ définie par $f(x) = -4x^2 - 4x + 80$</div>
+         <div class="item" data-value="a) " style="margin-left: 50px">Démontrer que $4$ est une racine de $f$.</div>
+        <div class="item" data-value="b) " style="margin-left: 50px">Démontrer que $-5$  est une racine de $f$.</div>
+        <div class="item" data-value="c) " style="margin-left: 50px">Donner la forme factorisée de la fonction $f$ puis dresser le tableau de signes</div>
+        
+        <div class="num">On considère la fonction $f$ définie par $f(x) = -4x^2 - 4x + 8$</div>
+         <div class="item" data-value="a) " style="margin-left: 50px">Démontrer que $-2$ est une racine de $f$.</div>
+        <div class="item" data-value="b) " style="margin-left: 50px">Trouver une autre racine de $f$.</div>
+        <div class="item" data-value="c) " style="margin-left: 50px">Donner la forme factorisée de la fonction $f$ puis dresser le tableau de signes</div>
+        
+        
 	</div>
 </div> 
         
-<!-- Inéquation $f(x) \geqslant g(x)$ -->
-<div class="box" data-title="Inéquation $f(x) \geqslant g(x)$">
-    <div class="styled" style="text-align: left">
-    Soient $2$ fonctions $f$ et $g$ définies par $f(x) = x^2-6x+2$ et $g(x) = -2x^2-3x+8$ de courbes représentatives $\mathcal{C}_f$ et $\mathcal{C}_g$. 
-<div class="table" cells="*,*|w50%" data-table-style="width: 100%">
- <div class="num">  Etudier le signe de $f(x) - g(x)$</div> &
- <div class="num"> Résoudre $f(x) \geqslant g(x)$</div> ||
- <div class="num">  Etudier la position de $\mathcal{C}_f$ par rapport à  $\mathcal{C}_g$. </div> &
- <div class="num"> Dans un même repère, tracer $\mathcal{C}_f$ et $\mathcal{C}_g$. </div> 
-  </div>    
-    </div>
-</div> 
-        
-<!-- Histoire de pont -->
-<div class="box" data-title="Histoire de pont">        
-<div class="styled">
-Un pont est soutenu par un arc parabolique d'une portée de $200\;m$ et d'une hauteur de $80\;m$. Le pont et l'arc se coupent à $40\;m$ de la rive. Quelle est la hauteur du pont ?
-</div>
-</div>  
+  
     
 <!-- Paramétrage -->
 <div class="box" data-title="Paramétrage">        
