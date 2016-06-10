@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine On
+<FilesMatch ".(eot|ttf|otf|woff|php|algs|txt|js|html|algse)">
+	Header set Access-Control-Allow-Origin "*"
+</FilesMatch>

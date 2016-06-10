@@ -13,7 +13,7 @@ data-main-width="900">
 <!--Définition et vocabulaire-->
 <div class="box" data-title="Ensemble de définition" data-num="$N_1$" data-date="1">
     
-    <div class="titled hide" data-title="\boxD Ensemble de définition" data-color="#666666">
+    <div class="titled hide" data-title="\boxD Ensemble de définition" data-color="#444444">
        L'ensemble de définition d'une fonction $f$ représente l'ensemble des réels $x$ (antécédents) pour lesquels il existe une image $f(x)$ (qui est unique). On note souvent cet ensemble de définition $\mathcal{D}_f$. vspace{10}
         En seconde il faut vérifier $2$ points : <br>
         ,, On ne peut pas diviser par $0$ : ce qui entraine généralement la résolution d'une équation<br>
@@ -32,7 +32,7 @@ data-main-width="900">
     
 <!-- Sens de variatons -->
 <div class="box" data-title="Sens de variation" data-num="$N_2$" data-time="2m" data-date="1">
-    <div class="titled hide" data-title="\boxD Fonction croissante" data-color="#660000">
+    <div class="titled hide" data-title="\boxD Fonction croissante" data-color="#444444">
 		Une fonction $f$ définie sur un intervalle $I$ est  *{bold::croissante} lorsque pour tous les réels $a$ et $b$ dans $I$ : 
 <br>
 si $a \leqslant b$ alors $f(a) \leqslant f(b)$ (*{bold::l'ordre est respecté})
@@ -41,7 +41,7 @@ si $a \leqslant b$ alors $f(a) \leqslant f(b)$ (*{bold::l'ordre est respecté})
         
 
         
-    <div class="titled hide" data-title="\boxD Fonction décroissante" data-color="#660000">
+    <div class="titled hide" data-title="\boxD Fonction décroissante" data-color="#444444">
 		Une fonction $f$ définie sur un intervalle $I$ est  *{bold::décroissante} lorsque pour tous les réels $a$ et $b$ dans $I$ : 
 <br>
 si $a \leqslant b$ alors $f(a) \geqslant f(b)$ (*{bold::l'ordre n'est pas respecté})
@@ -49,7 +49,7 @@ si $a \leqslant b$ alors $f(a) \geqslant f(b)$ (*{bold::l'ordre n'est pas respec
 	</div>
     
         
-    <div class="titled hide" data-title="\boxD Fonction monotone" data-color="#660000">
+    <div class="titled hide" data-title="\boxD Fonction monotone" data-color="#444444">
 		Une fonction $f$ est *{bold::monotone} sur un intervalle $I$ si elle est soit croissante ou soit décroissante sur $I$ (mais pas les deux).
     
         <div class="table 2cols" cells="*,*|c">
@@ -64,7 +64,7 @@ si $a \leqslant b$ alors $f(a) \geqslant f(b)$ (*{bold::l'ordre n'est pas respec
         set('ya','(xa-1)^2+1')    
         point('xa','ya','') 
         dash(5)    
-        width(1)    
+        width(2)    
         line('xa','0','xa','ya') 
         line('xa','ya','0','ya') 
         math('f(a)',-0.55,'ya+0.27')
@@ -89,7 +89,7 @@ si $a \leqslant b$ alors $f(a) \geqslant f(b)$ (*{bold::l'ordre n'est pas respec
         set('ya','-(xa-1)^2+6')    
         point('xa','ya','') 
         dash(5)    
-        width(1)    
+        width(2)    
         line('xa','0','xa','ya') 
         line('xa','ya','0','ya') 
         math('f(a)',-0.75,'ya+0.25')
@@ -129,7 +129,7 @@ si $a \leqslant b$ alors $f(a) \geqslant f(b)$ (*{bold::l'ordre n'est pas respec
 <!-- Tableau variation -->
 <div class="box" data-title="Tableau variation" data-date="1" data-num="$N_3$">
     
-    <div class="titled hide" data-title="\boxD Tableau variation" data-color="#660000">
+    <div class="titled hide" data-title="\boxD Tableau variation" data-color="#444444">
 		Au lieu de spécifier qu'une fonction est croissante sur un intervalle, on place une flèche montante dans un tableau. Au lieu de spécifier qu'une fonction est décroissante sur un intervalle, on place une flèche descendante dans un tableau : vspace{10}
         
     <div class="table 2cols" data-table-style="border-spacing: 0px 15px">
@@ -384,7 +384,7 @@ si $a \leqslant b$ alors $f(a) \geqslant f(b)$ (*{bold::l'ordre n'est pas respec
   
 <!-- Extremum -->
 <div class="box" data-title="Extremum" data-date="1" data-num="$N_4$">
-    <div class="titled hide" data-title="\boxD Maximum et minimum d'une fonction" data-color="#660000">
+    <div class="titled hide" data-title="\boxD Maximum et minimum d'une fonction" data-color="#444444">
 		,, Dire que $f$ admet un *{bold::maximum} en $a$ sur l’intervalle $I$ signifie que : Il existe un réel $M$ tel que pour tout $x$ dans $I$ : $f(x) \leqslant M$ et $M= f(a)$. vspace{10}
         ,, Dire que $f$ admet un *{bold::minimum} en $a$ sur l’intervalle $I$ signifie que : Il existe un réel $m$ tel que pour tout $x$ dans $I$ : $f(x) \geqslant m$ et $m= f(a)$. vspace{10}
         ,, $f$ admet un *{bold::extremum} en $a$ sur l’intervalle $I$ si elle admet un maximum ou un minimum.
@@ -407,11 +407,11 @@ si $a \leqslant b$ alors $f(a) \geqslant f(b)$ (*{bold::l'ordre n'est pas respec
     
 <!-- Résoudre graphiquement une équation et une inéquation -->
 <div class="box" data-title="Résoudre graphiquement une équation et une inéquation" data-date="1" data-num="$N_5$">
-    <div class="titled hide" data-title="\boxM Méthode pour résoudre une équation graphiquement" data-color="#660000">
+    <div class="titled hide" data-title="\boxM Méthode pour résoudre une équation graphiquement" data-color="#444444">
 		Pour résoudre graphiquement une équation du type $f(x) = g(x)$, il suffit de tracer les représentations graphiques $\mathcal{C}_f$ et $\mathcal{C}_g$  de $f$ puis $g$ puis de déterminer graphiquement le point ou les points d'intersection (s'ils existent) de $\mathcal{C}_f$ et $\mathcal{C}_g$. 
     </div>
     
-    <div class="titled hide" data-title="\boxM Méthode pour résoudre une inéquation graphiquement" data-color="#660000">
+    <div class="titled hide" data-title="\boxM Méthode pour résoudre une inéquation graphiquement" data-color="#444444">
 		Pour résoudre graphiquement une inéquation du type $f(x) \leqslant g(x)$, il suffit de tracer les représentations graphiques $\mathcal{C}_f$ et $\mathcal{C}_g$  de $f$ puis $g$ : <br>
         ,, Quand $\mathcal{C}_f$ est *{bold::en dessous} de $\mathcal{C}_g$ alors $f(x) \leqslant g(x)$ <br>
         ,, Quand $\mathcal{C}_f$ est *{bold::au dessus} de $\mathcal{C}_g$ alors $f(x) \geqslant g(x)$ <br>
@@ -447,15 +447,15 @@ si $a \leqslant b$ alors $f(a) \geqslant f(b)$ (*{bold::l'ordre n'est pas respec
     Soit $u$ une fonction définie sur $D_u$ et $k$ un nombre réel. 
     </div>
     
-	<div class="titled hide" data-title="\boxD Définition" data-color="#660000">
+	<div class="titled hide" data-title="\boxD Définition" data-color="#444444">
 		La fonction $u+k$ est définie sur $D_u$ et par : *{\boxed::$(u+k)(x) = u(x) + k$}
 	</div>
     
-    <div class="titled hide" data-title="\boxP Propriété : courbe représentative" data-color="#006666">
+    <div class="titled hide" data-title="\boxP Propriété : courbe représentative" data-color="#444444">
 		Dans un repère $(O,\overrightarrow{i},\overrightarrow{j})$, si $u$ a pour courbe représentative $C_u$ alors la courbe représentative  $C_{u+k}$ de $u+k$ est l'image de  $C_u$ par la translation de vecteur $k\overrightarrow{j}$.
 	</div>
     
-    <div class="titled hide" data-title="\boxP Propriété : variations" data-color="#006666">
+    <div class="titled hide" data-title="\boxP Propriété : variations" data-color="#444444">
 		Si $u$ est monotone (croissante ou décroissante) sur un intervalle $I$ alors $u+k$ a le même sens de variation que $u$ sur $I$.
 	</div>
     
@@ -488,12 +488,12 @@ si $a \leqslant b$ alors $f(a) \geqslant f(b)$ (*{bold::l'ordre n'est pas respec
     Soit $u$ une fonction définie sur $D_u$ et $k$ un nombre réel. 
     </div>
     
-	<div class="titled hide" data-title="\boxD Définition" data-color="#660000">
+	<div class="titled hide" data-title="\boxD Définition" data-color="#444444">
 		La fonction $ku$ est définie sur $D_u$ et par : *{\boxed::$(ku)(x) = k \times u(x)$}
 	</div>
     
     
-    <div class="titled hide" data-title="\boxP Propriété : variations" data-color="#006666">
+    <div class="titled hide" data-title="\boxP Propriété : variations" data-color="#444444">
 		Si $k > 0$ alors $u$ et $ku$ ont la même monotonie (croissante ou décroissante) sur un intervalle $I$. <br>
         Si $k < 0$ alors $u$ et $ku$ sont de monotonie contraire (croissante ou décroissante) sur un intervalle $I$.      
 	</div>

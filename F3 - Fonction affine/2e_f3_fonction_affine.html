@@ -13,17 +13,17 @@ data-main-width="900">
 <!--Définition et vocabulaire-->
 <div class="box" data-title="Définitions et propriétés" data-num="$N_1$" data-date="1">
     
-    <div class="titled hide" data-title="\boxD Fonction affine" data-color="#666666">
+    <div class="titled hide" data-title="\boxD Fonction affine" data-color="#444444">
        Une fonction *{bold::affine} $f$ est définie par $f(x) = a\times x +b = ax+b$ où $a$ et $b$ sont deux nombres réels. <br>
     $a$ est le *{bold::coefficient directeur} de la fonction $f$ et $b$ est l'*{bold::ordonnée à l'origine}. <br>
     Quand $b=0$ alors la fonction $f(x) = a\times x = ax$ est appelée fonction *{bold::linéaire}.    
         
 	</div>
     
-    <div class="titled hide" data-title="\boxP Tableau de variation" data-color="#666666">
+    <div class="titled hide" data-title="\boxP Tableau de variation" data-color="#444444">
         On considère une fonction affine $f(x) = ax +b$ avec $a \not= 0$. Si $a=0$ cette fonction affine est *{bold::constante} et vaut $f(x) = b$. L'ensemble de définition de $f$ est $\mathcal{D}_f = ]-\infty;+\infty[ = \R$. vspace{1}
        <div class="table 2cols" cells="*,*|c">
-        si $a > 0$ & si $a < 0$ ||
+        si $a > 0$ & si $a &lt; 0$ ||
          <drawing width='300' height='150' style="margin-left: 60px;border: 0px solid #444444;background: #ffffff;border-radius: 5px">
 		move(10,5)
 		down('h-10')
@@ -95,13 +95,14 @@ data-main-width="900">
 <div class="box" data-title="Représentation graphique d'une fonction affine" data-num="$N_2$" data-date="1">
     
     
-    <div class="titled hide" data-title="\boxP Représentation graphique" data-color="#666666">
+    <div class="titled hide" data-title="\boxP Représentation graphique" data-color="#444444">
         On considère une fonction affine $f(x) = ax +b$. La représentation graphique $\mathcal{C}_f$ de $f$ est une *{bold::droite non-verticale}. Pour la tracer il suffit de placer  $2$ points. Cette droite a pour équation $y = f(x) = ax+b$. vspace{1}
        <div class="table 3cols" cells="*,*|c">
-        si $a > 0$ & si $a < 0$ & si $a = 0$ ||
+        si $a > 0$ & si $a &lt; 0$ & si $a = 0$ ||
          <draw width='6cm' height='6cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
 		mark({center: 'middle'})
-		grid(5)
+		grid(3)
+        width(3)     
 		curve('2x+1',-10,10)
         arrow('<-')
         line(0.2,1,1.5,1)
@@ -114,7 +115,8 @@ data-main-width="900">
         
         <draw width='6cm' height='6cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
 		mark({center: 'middle'})
-		grid(5)
+		grid(3)
+        width(3)    
 		curve('-3x-1.5',-10,10)
         arrow('<-')    
         line(0.2,-1.5,1.5,-1.5)
@@ -126,7 +128,8 @@ data-main-width="900">
 
         <draw width='6cm' height='6cm' style="margin-left: 10px;border: 1px solid #444444;background: #ffffff;border-radius: 5px">
 		mark({center: 'middle'})
-		grid(5)
+		grid(3)
+        width(3)
 		curve('1.5',-10,10)
         arrow('<-')     
         line(0.2,1.4,1.5,0.5)
@@ -165,7 +168,7 @@ data-main-width="900">
 <div class="box" data-title="Signe d'une fonction affine" data-num="$N_3$" data-date="1">
     
     
-    <div class="titled hide" data-title="\boxP Signe d'une fonction affine" data-color="#666666">
+    <div class="titled hide" data-title="\boxP Signe d'une fonction affine" data-color="#444444">
         On considère une fonction affine $f(x) = ax +b$. Si $a=0$ alors $f(x)$ est du signe de $b$ sinon :
       <div class="table 2cols" cells="*,*|c">
         si $a > 0$ & si $a < 0$ ||
@@ -269,7 +272,7 @@ data-main-width="900">
 <div class="box" data-title="Intersection de deux droites affines" data-num="$N_4$" data-date="1" data-newpage="none">
     
     
-    <div class="titled hide" data-title="\boxP Intersection" data-color="#666666">
+    <div class="titled hide" data-title="\boxP Intersection" data-color="#444444">
         On considère deux fonctions affines $f_1(x) = a_1x+b_1$ et $f_2(x) = a_2x+b_2$ de représentation graphique $\mathcal{C}_{f_1}$ et $\mathcal{C}_{f_2}$ d'équation respective $y = a_1x+b_1$ et $y=a_2x+b_2$. vspace{10}
         ,, Le point d'intersection (s'il existe)  $M(x_m;y_m)$ des courbes (droites) $\mathcal{C}_{f_1}$ et $\mathcal{C}_{f_2}$ est tel que son abscisse $x_m$ est la solution de l'équation : $a_1x+b_1 =a_2x+b_2$ et son ordonnée vaut : $y_m =a_1x_m+b_1 = a_2x_m+b_2  $  vspace{10}
         ,, $\mathcal{C}_{f_1}$ est *{bold::au dessus} de $\mathcal{C}_{f_2}$ quand $x$ est solution de l'inéquation $ a_1x+b_1 \geqslant  a_2x+b_2$ <br>
