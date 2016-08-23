@@ -12,7 +12,7 @@ data-main-width="900">
 
 <div class="box" data-title="Tester ses capacités de calcul">
 <div class="styled">
-    Voici un <a href="http://users.mathablette.fr/?83" target="blank">test</a> permettant d'évaluer ses capacités en calcul. Il suffit de lancer le <a href="http://users.mathablette.fr/?83" target="blank">test</a> (d'une durée de 50 minutes environ) puis de noter son score à la fin de chaque exercice de calcul. A la fin du <a href="http://users.mathablette.fr/?83" target="blank">test</a>, il est nécessaire de faire la somme des scores et ainsi obtenir un score final sur $100$. <br>
+    Voici un <a href="http://users.mathablette.fr/?83" target="blank" class="btn btn-default">test</a> permettant d'évaluer ses capacités en calcul. Il suffit de lancer le <a class="btn btn-default" href="http://users.mathablette.fr/?83" target="blank">test</a> (d'une durée de 50 minutes environ) puis de noter son score à la fin de chaque exercice de calcul. A la fin du <a class="btn btn-default" href="http://users.mathablette.fr/?83" target="blank">test</a>, il est nécessaire de faire la somme des scores et ainsi obtenir un score final sur $100$. <br>
 Si le score final (sur $100$) est : <br>
 
 <div class="table" style="margin-left: 30px" cells="*,1|w250;left&*,3|w200;left;pal10">
@@ -26,15 +26,15 @@ Si le score final (sur $100$) est : <br>
 
 <div class="box" data-title="Nombres relatifs" data-info-label="Rappels">
     <div class="info" data-name="Sans les parenthèses">
-        $-2 -6 = -8$
-        $-4 + 9 = 5$
+        $-2 -6 = -8$ <br>
+        $-4 + 9 = 5$ <br>
         $-10 +7 = -3$
         
     </div>
     <div class="info" data-name="Avec les parenthèses">
-        $-(-7) = 7$
-        $+(-3) = -3$
-        $+(+9)=9$
+        $-(-7) = 7$ <br>
+        $+(-3) = -3$ <br>
+        $+(+9)=9$ <br>
         $-(+4)=-4$
     </div>
     <div class="info" data-name="Priorités opératoires">
@@ -48,18 +48,22 @@ Si le score final (sur $100$) est : <br>
     
     <div class="styled">
     	
-    	Voici un <dropdown data-id="exo-1" data-class="btn btn-blue" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur le calcul avec des nombres relatifs : vspace{5}
-  	
-            <div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
-           <exo-mathablette data-id="LYC_1N_5"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="10" data-height="420" data-num="0">
+    	Voici deux exercices sur le calcul avec des nombres relatifs : vspace{5} 
+    	
+    	<centering>
+    	<dropdown data-id="exo-1" data-class="btn btn-default" label="exercice intéractif" style="margin-left: -2px;margin-right: -2px"></dropdown>  
+    	hspace{20}
+    	<dropdown data-id="exo-2" data-class="btn btn-default" label="exercice simple" style="margin-left: -2px;margin-right: -2px"></dropdown> 
+  	</centering> 
+    		vspace{5}
+    		<div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_1N_5"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="10" data-height="450" data-num="0">
     		</exo-mathablette>
-        </div>    
-    		
-    		
-    	Voici un <dropdown data-id="exo-2" data-class="btn btn-blue" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur le calcul avec des nombres relatifs : vspace{5}
+        </div>   
+    	
   	
             <div  drop-id="exo-2" data-init='true'>
-           <exo-mathablette drop-id="exo-2"  data-id="LYC_1N_1" data-style="border: 1px solid #444444;border-radius: 8px;background: #ffffff;padding: 5px" data-count="10" data-height="350" data-time="0.6666" data-num="0" >
+           <exo-mathablette drop-id="exo-2"  data-id="LYC_1N_1" data-style="border: 1px solid #444444;border-radius: 8px;background: #ffffff;padding: 5px" data-count="10" data-height="350" data-time="0.666666666" data-num="0" >
         
     		</exo-mathablette>	
         </div>    
@@ -67,7 +71,7 @@ Si le score final (sur $100$) est : <br>
 </div>
 </div>
 
-<div class="box" data-title="Entrainement $n^\circ 2$ : fractions" data-num="none" data-info-label="Rappels">
+<div class="box" data-title="Calcul fractionnaire" data-info-label="Rappels">
     <div class="info" data-name="Addition ou soustraction">
        Pour additionner ou soustraire deux fractions il faut les mettre au même dénominateur (le plus petit possible) :
        $\dfrac{1}{6} - \dfrac{4}{9} = \dfrac{1\times \color{#ff0000}{3}}{6 \times \color{#ff0000}{3}} - \dfrac{4\times \color{#0000FF}{2}}{9 \times \color{#0000FF}{2}} = \dfrac{3}{18} - \dfrac{8}{18} = -\dfrac{5}{18}$
@@ -87,61 +91,92 @@ Si le score final (sur $100$) est : <br>
     </div>
     
     <div class="info" data-name="Priorités opératoires">
-       Dans un calcul :
-       $\bullet$ On commence par les parenthèses
-       $\bullet$ Puis les divisions
-       $\bullet$ Puis les multiplications
-       $\bullet$ Enfin, on calcule de gauche à droite
+       Dans un calcul : <br>
+       $\bullet$ On commence par les parenthèses <br>
+       $\bullet$ Puis les divisions <br>
+       $\bullet$ Puis les multiplications <br>
+       $\bullet$ Enfin, on calcule de gauche à droite <br>
        
     </div>
     
     <div class="styled">
-    Voici l'<a href="http://users.mathablette.fr/?85" target="blank">entrainement</a>  au calcul $n^\circ 2$ : fractions. Cet <a href="http://users.mathablette.fr/?85" target="blank">entrainement</a> a une durée d'environ $10$ minutes pour un score sur $9$.
+        
+        $\bullet$ Voici un <dropdown data-id="exo-1" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur le calcul fractionnaire ($5$ calculs en $4$ minutes).  vspace{5}<div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_1N_6"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="5" data-height="540" data-num="0" data-time="4">
+    		</exo-mathablette>
+        </div>    
+        
+        
+        vspace{10}
+        
+        $\bullet$ Voici un <dropdown data-id="exo-2" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur le calcul fractionnaire avec priorités opératoires ($4$ calculs en $6$ minutes). vspace{5}<div  drop-id="exo-2" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_1N_7"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="4" data-height="560" data-num="0" data-time="6">
+    		</exo-mathablette>
+        </div>    
+        
+     
+        
 </div>
 </div>
 
-<div class="box" data-title="Entrainement $n^\circ 3$ : racines carrées" data-num="none" data-info-label="Rappels">
-    <div class="info" data-name="Simplication">
-       L'objectif est de simplifier $\sqrt{98}$ : 
+<div class="box" data-title="Calculer avec des racines carrées" data-info-label="Rappels">
+    <div class="info" data-name="Simplication" data-width="700">
+       L'objectif est de simplifier $\sqrt{98}$ : vspace{20}
        
-	1- Il faut décomposer $98$ avec une multiplication dont le *{#ff0000::premier} facteur est un carré parfait : $4$ ; $9$ ; $16$ ; $25$ ; $36$ ; $\color{#ff0000}{49}$ ; $64$ ; $81$ ; $100$ ; $121$ ; $144$. Ce qui donne : $98 = \color{#ff0000}{49} \times 2$
+	1- Il faut décomposer $98$ avec une multiplication dont le *{#ff0000::premier} facteur est un carré parfait : $4$ ; $9$ ; $16$ ; $25$ ; $36$ ; $\color{#ff0000}{49}$ ; $64$ ; $81$ ; $100$ ; $121$ ; $144$. Ce qui donne : $98 = \color{#ff0000}{49} \times 2$ vspace{10}
 	
-	2- Il faut utiliser la propriété : $\sqrt{a \times b} = \sqrt{a} \times \sqrt{b}$. Ce qui donne pour cet exemple : $\sqrt{98}= \sqrt{ \color{#ff0000}{49} \times 2} =  \sqrt{\color{#ff0000}{49}} \times \sqrt{2}$
+	2- Il faut utiliser la propriété : $\sqrt{a \times b} = \sqrt{a} \times \sqrt{b}$. Ce qui donne pour cet exemple : $\sqrt{98}= \sqrt{ \color{#ff0000}{49} \times 2} =  \sqrt{\color{#ff0000}{49}} \times \sqrt{2}$ vspace{10}
 	
-	3- Comme $\color{#ff0000}{49}$ est un carré parfait, on peut alors simplifier : $\sqrt{98}= \sqrt{\color{#ff0000}{49}} \times \sqrt{2} = \color{#0000ff}{7} \times \sqrt{2} = 7\sqrt{2}$ 
+	3- Comme $\color{#ff0000}{49}$ est un carré parfait, on peut alors simplifier : $\sqrt{98}= \sqrt{\color{#ff0000}{49}} \times \sqrt{2} = \color{#0000ff}{7} \times \sqrt{2} = 7\sqrt{2}$ vspace{10}
     </div>
     
     <div class="styled">
-    Voici l'<a href="http://users.mathablette.fr/?86" target="blank">entrainement</a>  au calcul $n^\circ 3$ : racines carrées. Cet <a href="http://users.mathablette.fr/?86" target="blank">entrainement</a> a une durée d'environ $10$ minutes pour un score sur $15$.
-</div>
+     $\bullet$ Voici un <dropdown data-id="exo-1" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur la simplification de racines carrées ($7$ simplifications en $5$ minutes).  vspace{5}<div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_1N_12"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="7" data-height="480" data-num="0" data-time="5">
+    		</exo-mathablette>
+        </div>  
+       </div>
 </div>
 
-<div class="box" data-title="Entrainement $n^\circ 4$ : puissances" data-num="none" data-info-label="Rappels">
+<div class="box" data-title="Puissances"  data-info-label="Rappels">
     <div class="info" data-name="Règles">
-        $10^3 \times 10^{-5} = 10^{3+-5} = 10^{-2}$
-        $10^{-1} \div 10^{-3} = 10^{-1--3} = 10^{2}$
-        $(10^{-1})^{3} = 10^{-1\times 3} = 10^{-3}$
+        $10^3 \times 10^{-5} = 10^{3+-5} = 10^{-2}$ <br>
+        $10^{-1} \div 10^{-3} = 10^{-1--3} = 10^{2}$ <br>
+        $(10^{-1})^{3} = 10^{-1\times 3} = 10^{-3}$ <br>
         
         $10^3 \times 10^{-5}  \div 10^4 \times (10^3)^4= 10^{3+-5 - 4 + 3\times 4} = 10^{6}$
     </div>
     
-    <div class="styled">
-    Voici l'<a href="http://users.mathablette.fr/?87" target="blank">entrainement</a>  au calcul $n^\circ 4$ : puissances. Cet <a href="http://users.mathablette.fr/?87" target="blank">entrainement</a> a une durée d'environ $9$ minutes pour un score sur $15$.
-</div>
+   <div class="styled">
+     $\bullet$ Voici un <dropdown data-id="exo-1" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur la simplification de puissances ($5$ simplifications en $30$ secondes).  vspace{5}<div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_1N_13"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="5" data-height="480" data-num="0" data-time="0.5">
+    		</exo-mathablette>
+        </div>  
+        vspace{10}
+        $\bullet$ Voici un <dropdown data-id="exo-2" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur la simplification (complexe) de puissances ($3$ simplifications en $4$ minutes).  vspace{5}
+        <div  drop-id="exo-2" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_1N_14"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="3" data-height="520" data-num="0" data-time="4">
+    		</exo-mathablette>
+        </div>  
+     </div>
 </div>
 
-<div class="box" data-title="Entrainement $n^\circ 5$ : expression littérale" data-num="none" data-info-label="Rappels">
+<div class="box" data-title="Simplifier une expression littérale" data-info-label="Rappels">
     <div class="info" data-name="Exemple">
         $\color{#ff0000}{-2x^2} \color{#009900}{+3x} \color{#0000ff}{+4} \color{#ff0000}{+5x^2}  \color{#009900}{-10x} \color{#0000ff}{-3} = \color{#ff0000}{3x^2} \color{#009900}{-7x} \color{#0000ff}{+1}$
        
     </div>
     
     <div class="styled">
-    Voici l'<a href="http://users.mathablette.fr/?88" target="blank">entrainement</a>  au calcul $n^\circ 5$ : expressions littérales. Cet <a href="http://users.mathablette.fr/?88" target="blank">entrainement</a> a une durée d'environ $10$ minutes pour un score sur $16$.
-</div>
+     $\bullet$ Voici un <dropdown data-id="exo-1" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur la simplification d'expression littérale ($8$ simplifications en $5$ minutes).  vspace{5}
+     <div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_2N_2"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="8" data-height="540" data-num="0" data-time="5">
+    		</exo-mathablette>
+        </div>  
+       </div>
 </div>
 
-<div class="box" data-title="Entrainement $n^\circ 6$ : distributivité et factorisation" data-num="none" data-info-label="Rappels">
+<div class="box" data-title="Distributivité et factorisation"  data-info-label="Rappels">
     <div class="info" data-name="Distributivité">
         $\color{#ff0000}{-2x}(6 - 7x) = \color{#ff0000}{-2x}\times 6 + \color{#ff0000}{(-2x)} \times (-7) = -12x +14x^2$
        
@@ -152,12 +187,22 @@ Si le score final (sur $100$) est : <br>
        
     </div>
     
-    <div class="styled">
-    Voici l'<a href="http://users.mathablette.fr/?89" target="blank">entrainement</a>  au calcul $n^\circ 6$ : distributivité et factorisation. Cet <a href="http://users.mathablette.fr/?89" target="blank">entrainement</a> a une durée d'environ $10$ minutes pour un score sur $20$.
-</div>
+     <div class="styled">
+     $\bullet$ Voici un <dropdown data-id="exo-1" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur la simple distributivité ($6$ calculs en $2$ minutes).  vspace{5}
+     <div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="4-N4-2"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="6" data-height="420" data-num="0" data-time="2">
+    		</exo-mathablette>
+        </div>  
+        vspace{10}
+        $\bullet$ Voici un <dropdown data-id="exo-2" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur la factoristion simple ($5$ factorisations en $2$ minutes).  vspace{5}
+        <div  drop-id="exo-2" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="4-N4-4"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="5" data-height="370" data-num="0" data-time="2">
+    		</exo-mathablette>
+        </div>  
+     </div>
 </div>
 
-<div class="box" data-title="Entrainement $n^\circ 7$ : développements" data-num="none" data-info-label="Rappels">
+<div class="box" data-title="Développements"  data-info-label="Rappels">
     <div class="info" data-name="Identités remarquables">
         $\bullet \; (a+b)^2 = (a)^2 + (b)^2 + 2\times (a)\times (b)$
         $\bullet \; (a-b)^2 = (a)^2 + (b)^2 - 2\times (a)\times (b)$
@@ -165,12 +210,16 @@ Si le score final (sur $100$) est : <br>
     </div>
     
     <div class="styled">
-    Voici l'<a href="http://users.mathablette.fr/?90" target="blank">entrainement</a>  au calcul $n^\circ 7$ : développements. Cet <a href="http://users.mathablette.fr/?90" target="blank">entrainement</a> a une durée d'environ $9$ minutes pour un score sur $15$.
-</div>
+     $\bullet$ Voici un <dropdown data-id="exo-1" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur des développements  ($5$ développements en $3$ minutes).  vspace{5}
+     <div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_2N_1"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="5" data-height="400" data-num="0" data-time="3">
+    		</exo-mathablette>
+        </div>  
+       </div>
 </div>
 
-<div class="box" data-title="Entrainement $n^\circ 8$ : équation à une inconnue" data-num="none" data-info-label="<i class='fa fa-bell' style='font-size: 11pt'></i> Rappels" data-info-width="115">
-    <div class="info" data-name="<i class='fa fa-heart'></i> Résoudre une équation" data-width="600">
+<div class="box" data-title="&Eacute;quation à une inconnue"  data-info-label="Rappels" data-info-width="115">
+    <div class="info" data-name="Résoudre une équation" data-width="600">
          L'objectif est de résoudre l'équation : $3x - 9  =  -2x + 5$ vspace{5}
         Il faut effectuer les même opérations à gauche et à droite du signe $=$ : vspace{5}
          <centering>
@@ -187,13 +236,34 @@ x  & = & \dfrac{14}{5} \\
              </centering>
     </div>
     
-    <div class="styled">
-    Voici l'<a href="http://users.mathablette.fr/?82" target="blank">entrainement</a>  au calcul $n^\circ 8$ : équation à une inconnue. Cet <a href="http://users.mathablette.fr/?82" target="blank">entrainement</a> a une durée d'environ $10$ minutes pour un score sur $20$.
-</div>
+     <div class="styled">
+     $\bullet$ Voici un <dropdown data-id="exo-1" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur la résolution d'équations  ($5$ résolutions en $3$ minutes).  vspace{5}
+     <div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_2N_5"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="5" data-height="400" data-num="0" data-time="3">
+    		</exo-mathablette>
+        </div>  
+       </div>
 </div>
 
 
-<div class="box" data-title="Entrainement $n^\circ 9$ : inéquation à une inconnue" data-num="none" data-info-label="Rappels">
+<div class="box" data-title="&Eacute;quation produit"  data-info-label="Rappels" data-info-width="115">
+    <div class="info" data-name="Résoudre une équation produit" data-width="600">
+         L'objectif est de résoudre l'équation : $ (12x -7)(7x+10)=0$ <br>
+        Ce qui donne soit $12x -7=0$ ou bien soit $7x+10=0$. 
+        Il faut donc maintenant résoudre $2$ équations.
+    </div>
+    
+     <div class="styled">
+     $\bullet$ Voici un <dropdown data-id="exo-1" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur la résolution d'équations produits  ($5$ résolutions en $6$ minutes).  vspace{5}
+     <div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_2N_4"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="5" data-height="400" data-num="0" data-time="6">
+    		</exo-mathablette>
+        </div>  
+       </div>
+</div>
+
+
+<div class="box" data-title="Inéquation à une inconnue"  data-info-label="Rappels">
     <div class="info" data-name="Résoudre une inéquation">
         L'objectif est de résoudre l'inéquation : $3x - 9  \leqslant  10x + 5$ vspace{5}
         Il faut résoudre comme une équation mais si on divise par un nombre négatif, il faut changer le sens de l'inéquation : vspace{5}
@@ -213,9 +283,14 @@ x  & \geqslant & -2 \\
         </centering>
     </div>
     
-    <div class="styled">
-    Voici l'<a href="http://users.mathablette.fr/?91" target="blank">entrainement</a>  au calcul $n^\circ 9$ : inéquation à une inconnue. Cet <a href="http://users.mathablette.fr/?91" target="blank">entrainement</a> a une durée d'environ $14$ minutes pour un score sur $20$.
-</div>
+<div class="styled">
+     $\bullet$ Voici un <dropdown data-id="exo-1" data-class="btn btn-default" label="exercice" style="margin-left: -2px;margin-right: -2px"></dropdown> sur la résolution d'inéquations  ($5$ résolutions en $4$ minutes).  vspace{5}
+     <div  drop-id="exo-1" data-init='true' style="margin-bottom: 10px">
+           <exo-mathablette data-id="LYC_2N_6"  data-style="border: 1px solid #444444;border-radius: 8px;padding: 5px;background: #ffffff"  data-count="5" data-height="360" data-num="0" data-time="4">
+    		</exo-mathablette>
+        </div>  
+       </div>
+    
 </div>
 
 </body>
